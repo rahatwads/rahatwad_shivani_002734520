@@ -2,8 +2,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package Ass2table;
+package EmployeeUI;
 
+import Ass2table.*;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
@@ -51,6 +52,7 @@ public class EmployeeTable extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
         btnDelete = new javax.swing.JButton();
+        btnUpdate = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -124,9 +126,14 @@ public class EmployeeTable extends javax.swing.JFrame {
 
             },
             new String [] {
-                "NAME", "EMPLOYEE ID", "AGE", "GENDER", "START DATE", "LEVEL", "TEAM INFO", "POSITION TITLE", "CELL NO", "EMAIL ADDRESS"
+                "NAME", "EMPLOYEE ID", "AGE", "GENDER", "START DATE", "LEVEL", "POSITION TITLE", "CELL NO", "EMAIL ADDRESS"
             }
         ));
+        jTable1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jTable1MouseClicked(evt);
+            }
+        });
         jScrollPane1.setViewportView(jTable1);
 
         btnDelete.setFont(new java.awt.Font("Helvetica Neue", 1, 14)); // NOI18N
@@ -134,6 +141,14 @@ public class EmployeeTable extends javax.swing.JFrame {
         btnDelete.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnDeleteActionPerformed(evt);
+            }
+        });
+
+        btnUpdate.setFont(new java.awt.Font("Helvetica Neue", 1, 14)); // NOI18N
+        btnUpdate.setText("UPDATE");
+        btnUpdate.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnUpdateActionPerformed(evt);
             }
         });
 
@@ -149,7 +164,9 @@ public class EmployeeTable extends javax.swing.JFrame {
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(btnAdd)
                                 .addGap(81, 81, 81)
-                                .addComponent(btnDelete))
+                                .addComponent(btnDelete)
+                                .addGap(78, 78, 78)
+                                .addComponent(btnUpdate))
                             .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 634, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(249, 249, 249)
@@ -235,7 +252,8 @@ public class EmployeeTable extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnAdd)
-                    .addComponent(btnDelete))
+                    .addComponent(btnDelete)
+                    .addComponent(btnUpdate))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 114, Short.MAX_VALUE)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 215, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(54, 54, 54))
@@ -257,7 +275,7 @@ public class EmployeeTable extends javax.swing.JFrame {
         if(txtName.getText().equals("") || txtEmpId.getText().equals("") || txtAge.getText().equals("") || txtGender.getText().equals("") || txtStartDate.getText().equals("") || txtLevel.getText().equals("") || txtPosition.getText().equals("") || txtCellno.getText().equals("")|| txtEmailAdd.getText().equals("")){
            JOptionPane .showMessageDialog(this, "Please Enter all data")  ;               
         } else{
-            String data[] = {txtName.getName(),txtEmpId.getText(),txtAge.getText(),txtGender.getText(),txtStartDate.getText(),txtLevel.getText(),txtPosition.getText(),txtCellno.getText(),txtEmailAdd.getText()};
+            String data[] = {txtName.getText(),txtEmpId.getText(),txtAge.getText(),txtGender.getText(),txtStartDate.getText(),txtLevel.getText(),txtPosition.getText(),txtCellno.getText(),txtEmailAdd.getText()};
         
             DefaultTableModel tblModel = (DefaultTableModel)jTable1.getModel();
             tblModel.addRow(data);
@@ -318,6 +336,75 @@ public class EmployeeTable extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_btnDeleteActionPerformed
 
+    private void jTable1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTable1MouseClicked
+     DefaultTableModel tblModel = (DefaultTableModel) jTable1.getModel();
+    String tblName = tblModel.getValueAt(jTable1.getSelectedRow(),0).toString();
+    String tblEmpId = tblModel.getValueAt(jTable1.getSelectedRow(),1).toString();
+    String tblAge = tblModel.getValueAt(jTable1.getSelectedRow(),2).toString();
+      String tblGender = tblModel.getValueAt(jTable1.getSelectedRow(),3).toString();
+      String tblStartDate = tblModel.getValueAt(jTable1.getSelectedRow(),4).toString();
+      String tblLevel = tblModel.getValueAt(jTable1.getSelectedRow(),5).toString();
+     String tblPosition = tblModel.getValueAt(jTable1.getSelectedRow(),6).toString();
+     String tblCellno = tblModel.getValueAt(jTable1.getSelectedRow(),7).toString();
+      String tblEmailAdd = tblModel.getValueAt(jTable1.getSelectedRow(),7).toString();
+     
+      
+      
+      
+      txtName.setText(tblName);
+     txtEmpId.setText(tblEmpId);
+     txtAge.setText(tblAge);
+     txtGender.setText(tblGender);
+      txtStartDate.setText(tblStartDate);
+      txtLevel.setText(tblLevel);
+     txtPosition.setText(tblPosition);
+     txtCellno.setText(tblCellno);
+      txtEmailAdd.setText(tblEmailAdd);
+      
+      
+      
+    }//GEN-LAST:event_jTable1MouseClicked
+
+    private void btnUpdateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUpdateActionPerformed
+        // TODO add your handling code here:
+      DefaultTableModel tblModel = (DefaultTableModel) jTable1.getModel();
+      
+      if(jTable1.getSelectedRowCount() == 1) {
+          
+          String Name = txtName.getText();
+          String EmpId = txtEmpId.getText();
+          String Age = txtAge.getText();
+          String Gender = txtGender.getText();
+          String StartDate = txtStartDate.getText();
+          String Level = txtLevel.getText();
+          String Position = txtPosition.getText();
+          String Cellno = txtCellno.getText();
+          String EmailAdd = txtEmailAdd.getText();
+          
+          tblModel.setValueAt(Name,jTable1.getSelectedRow(),0);
+          tblModel.setValueAt(EmpId,jTable1.getSelectedRow(),1);
+          tblModel.setValueAt(Age,jTable1.getSelectedRow(),2);
+          tblModel.setValueAt(Gender,jTable1.getSelectedRow(),3);
+          tblModel.setValueAt(StartDate,jTable1.getSelectedRow(),4);
+          tblModel.setValueAt(Level,jTable1.getSelectedRow(),5);
+          tblModel.setValueAt(Position,jTable1.getSelectedRow(),6);
+          tblModel.setValueAt(Cellno,jTable1.getSelectedRow(),7);
+          tblModel.setValueAt(EmailAdd,jTable1.getSelectedRow(),8);
+          
+          
+          JOptionPane.showMessageDialog(this, "update successful");
+          
+          
+          
+      }else{
+          if(jTable1.getRowCount() == 0){
+              
+              JOptionPane.showMessageDialog(this, "table is empty");
+          }
+      }
+        
+    }//GEN-LAST:event_btnUpdateActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -344,6 +431,7 @@ public class EmployeeTable extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(EmployeeTable.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
+        //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -356,6 +444,7 @@ public class EmployeeTable extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAdd;
     private javax.swing.JButton btnDelete;
+    private javax.swing.JButton btnUpdate;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -378,3 +467,5 @@ public class EmployeeTable extends javax.swing.JFrame {
     private javax.swing.JTextField txtStartDate;
     // End of variables declaration//GEN-END:variables
 }
+
+
