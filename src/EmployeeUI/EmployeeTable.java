@@ -376,20 +376,20 @@ public class EmployeeTable extends javax.swing.JFrame {
       String tblLevel = tblModel.getValueAt(jTable1.getSelectedRow(),5).toString();
      String tblPosition = tblModel.getValueAt(jTable1.getSelectedRow(),6).toString();
      String tblCellno = tblModel.getValueAt(jTable1.getSelectedRow(),7).toString();
-      String tblEmailAdd = tblModel.getValueAt(jTable1.getSelectedRow(),7).toString();
+      String tblEmailAdd = tblModel.getValueAt(jTable1.getSelectedRow(),8).toString();
      
       
       
       
-      txtName.setText(tblName);
+     txtName.setText(tblName);
      txtEmpId.setText(tblEmpId);
      txtAge.setText(tblAge);
      txtGender.setText(tblGender);
-      txtStartDate.setText(tblStartDate);
-      txtLevel.setText(tblLevel);
+     txtStartDate.setText(tblStartDate);
+     txtLevel.setText(tblLevel);
      txtPosition.setText(tblPosition);
      txtCellno.setText(tblCellno);
-      txtEmailAdd.setText(tblEmailAdd);
+     txtEmailAdd.setText(tblEmailAdd);
       
       
       
