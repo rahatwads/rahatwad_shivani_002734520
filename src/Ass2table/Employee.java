@@ -98,7 +98,7 @@ public class Employee {
     private String Gender;
     private String  Startdate;
     private String Level;
-   private String  Teaminfo;
+    private String  Teaminfo;
     private String Positiontitle;
     private String Phno;
     private String emailadd;
