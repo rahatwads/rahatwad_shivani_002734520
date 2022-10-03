@@ -5,6 +5,7 @@
 package EmployeeUI;
 
 import Ass2table.*;
+import java.awt.event.KeyEvent;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableRowSorter;
@@ -110,6 +111,12 @@ public class EmployeeTable extends javax.swing.JFrame {
             }
         });
 
+        txtAge.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                txtAgeKeyPressed(evt);
+            }
+        });
+
         txtGender.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtGenderActionPerformed(evt);
@@ -119,6 +126,12 @@ public class EmployeeTable extends javax.swing.JFrame {
         txtLevel.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtLevelActionPerformed(evt);
+            }
+        });
+
+        txtCellno.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                txtCellnoKeyPressed(evt);
             }
         });
 
@@ -443,6 +456,48 @@ public class EmployeeTable extends javax.swing.JFrame {
         tr.setRowFilter(RowFilter.regexFilter(jTextFieldSearch.getText().trim()));
         
     }//GEN-LAST:event_jTextFieldSearchKeyPressed
+
+    private void txtAgeKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtAgeKeyPressed
+        // TODO add your handling code here:
+        
+  String num = txtAge.getText();
+        int length = num.length();
+        char c = evt.getKeyChar();
+        if(evt.getKeyChar()>='0' && evt.getKeyChar()<='9'){
+             if(length<3){
+                 txtAge.setEditable(true);
+             }else{
+                 txtAge.setEditable(false);
+             }
+        }else {
+            if(evt.getExtendedKeyCode() ==KeyEvent.VK_BACK_SPACE || evt.getExtendedKeyCode() ==KeyEvent.VK_DELETE){
+            txtAge.setEditable(true);
+            
+        }else{
+                txtAge.setEditable(false);
+                }
+        }
+    }//GEN-LAST:event_txtAgeKeyPressed
+
+    private void txtCellnoKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtCellnoKeyPressed
+String num = txtCellno.getText();
+        int length = num.length();
+        char c = evt.getKeyChar();
+        if(evt.getKeyChar()>='0' && evt.getKeyChar()<='9'){
+             if(length<10){
+                 txtCellno.setEditable(true);
+             }else{
+                txtCellno.setEditable(false);
+             }
+        }else {
+            if(evt.getExtendedKeyCode() ==KeyEvent.VK_BACK_SPACE || evt.getExtendedKeyCode() ==KeyEvent.VK_DELETE){
+            txtCellno.setEditable(true);
+            
+        }else{
+                txtCellno.setEditable(false);
+                }
+        }
+    }//GEN-LAST:event_txtCellnoKeyPressed
 
     /**
      * @param args the command line arguments
