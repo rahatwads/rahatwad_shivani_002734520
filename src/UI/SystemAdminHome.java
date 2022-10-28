@@ -10,12 +10,12 @@ import java.awt.Color;
  *
  * @author shivanirahatwad
  */
-public class SystemAdminHomeJPanel extends javax.swing.JFrame {
+public class SystemAdminHome extends javax.swing.JFrame {
 
     /**
      * Creates new form SystemAdminHomeJPanel
      */
-    public SystemAdminHomeJPanel() {
+    public SystemAdminHome() {
         initComponents();
         
          getContentPane().setBackground(Color.pink);
@@ -143,20 +143,21 @@ public class SystemAdminHomeJPanel extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(SystemAdminHomeJPanel.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(SystemAdminHome.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(SystemAdminHomeJPanel.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(SystemAdminHome.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(SystemAdminHomeJPanel.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(SystemAdminHome.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(SystemAdminHomeJPanel.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(SystemAdminHome.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new SystemAdminHomeJPanel().setVisible(true);
+                new SystemAdminHome().setVisible(true);
             }
         });
     }
