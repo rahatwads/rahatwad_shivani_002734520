@@ -60,7 +60,7 @@ public class PatientLoginJPanel extends javax.swing.JFrame {
         jButton1.setText("LOGIN");
 
         jButton2.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
-        jButton2.setText("MENU");
+        jButton2.setText("HOME");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
