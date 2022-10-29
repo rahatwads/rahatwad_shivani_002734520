@@ -152,7 +152,7 @@ public class ViewPrescription extends javax.swing.JFrame {
             }
         });
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "11:30 A.M", "1:30 P.M", "5:00 P.M", "6:30 P.M" }));
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "11:30 A.M", "12:30 A.M ", "1:00 A.M", "1:30 P.M", "5:00 P.M", "5:30 A.M", "6:00 A.M", "6:30 P.M", "7:00 A.M", " " }));
         jComboBox1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jComboBox1ActionPerformed(evt);

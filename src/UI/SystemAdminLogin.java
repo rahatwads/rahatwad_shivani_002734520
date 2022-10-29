@@ -33,25 +33,39 @@ public class SystemAdminLogin extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
+        btnLogin = new javax.swing.JButton();
         btnHome1 = new javax.swing.JButton();
-        jTextField2 = new javax.swing.JTextField();
-        jPasswordField1 = new javax.swing.JPasswordField();
+        SystemTxt = new javax.swing.JTextField();
+        SystemPswd = new javax.swing.JPasswordField();
+        errorText = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
         jLabel1.setText("SYSTEM ADMIN LOGIN");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 60, 418, -1));
 
         jLabel4.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
         jLabel4.setText("USERNAME:");
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(147, 163, 118, -1));
 
         jLabel5.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
         jLabel5.setText("PASSWORD:");
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(147, 228, 174, -1));
 
-        jButton1.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
-        jButton1.setText("LOGIN");
+        btnLogin.setBackground(new java.awt.Color(0, 153, 51));
+        btnLogin.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
+        btnLogin.setText("LOGIN");
+        btnLogin.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnLoginActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 300, 136, -1));
 
+        btnHome1.setBackground(new java.awt.Color(51, 153, 255));
         btnHome1.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
         btnHome1.setText("HOME");
         btnHome1.addActionListener(new java.awt.event.ActionListener() {
@@ -59,60 +73,25 @@ public class SystemAdminLogin extends javax.swing.JFrame {
                 btnHome1ActionPerformed(evt);
             }
         });
+        getContentPane().add(btnHome1, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 350, 136, -1));
 
-        jPasswordField1.addActionListener(new java.awt.event.ActionListener() {
+        SystemTxt.setBackground(new java.awt.Color(255, 255, 204));
+        getContentPane().add(SystemTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(339, 165, 168, -1));
+
+        SystemPswd.setBackground(new java.awt.Color(255, 255, 204));
+        SystemPswd.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jPasswordField1ActionPerformed(evt);
+                SystemPswdActionPerformed(evt);
             }
         });
+        getContentPane().add(SystemPswd, new org.netbeans.lib.awtextra.AbsoluteConstraints(339, 230, 168, -1));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(147, 147, 147)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGap(18, 18, 18))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(74, 74, 74)))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jTextField2, javax.swing.GroupLayout.DEFAULT_SIZE, 168, Short.MAX_VALUE)
-                    .addComponent(jPasswordField1))
-                .addGap(183, 183, 183))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 418, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(36, 36, 36))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(229, 229, 229)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, 136, Short.MAX_VALUE)
-                    .addComponent(btnHome1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(84, 84, 84)
-                .addComponent(jLabel1)
-                .addGap(56, 56, 56)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel4)
-                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(40, 40, 40)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel5)
-                    .addComponent(jPasswordField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(71, 71, 71)
-                .addComponent(jButton1)
-                .addGap(43, 43, 43)
-                .addComponent(btnHome1)
-                .addContainerGap(66, Short.MAX_VALUE))
-        );
+        errorText.setFont(new java.awt.Font("Helvetica Neue", 3, 14)); // NOI18N
+        errorText.setForeground(new java.awt.Color(255, 0, 0));
+        getContentPane().add(errorText, new org.netbeans.lib.awtextra.AbsoluteConstraints(147, 371, 425, 18));
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/istockphoto-1318410710-170667a.jpg"))); // NOI18N
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 130, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -124,9 +103,46 @@ public class SystemAdminLogin extends javax.swing.JFrame {
          dispose();
     }//GEN-LAST:event_btnHome1ActionPerformed
 
-    private void jPasswordField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jPasswordField1ActionPerformed
+    private void SystemPswdActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SystemPswdActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jPasswordField1ActionPerformed
+    }//GEN-LAST:event_SystemPswdActionPerformed
+
+    private void btnLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLoginActionPerformed
+        // TODO add your handling code here:
+        String SystemAdmin = SystemTxt.getText();
+        String SystemPass = SystemPswd.getText();
+        
+        
+        if (SystemAdmin.equals("system") && SystemPass.equals("system")) {
+            
+             
+         HospitalHome HospitalHom = new HospitalHome();
+         HospitalHom.show();
+         dispose(); 
+          }else {
+        errorText.setText("Incorrect Credentials,Please enter correct details");
+        }
+        if (SystemAdmin.equals("system1") && SystemPass.equals("system1")) {
+            
+             
+         SystemAdminHome SystemAdminHom = new SystemAdminHome();
+         SystemAdminHom.show();
+         dispose(); 
+          }else {
+        errorText.setText("Incorrect Credentials,Please enter correct details");
+        }
+          if (SystemAdmin.equals("system2") && SystemPass.equals("system2")) {
+            
+             
+        SystemAdminHome SystemAdminHom = new SystemAdminHome();
+         SystemAdminHom.show();
+         dispose();
+          }else {
+        errorText.setText("Incorrect Credentials,Please enter correct details");
+        }
+        
+     
+    }//GEN-LAST:event_btnLoginActionPerformed
 
     /**
      * @param args the command line arguments
@@ -165,12 +181,14 @@ public class SystemAdminLogin extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JPasswordField SystemPswd;
+    private javax.swing.JTextField SystemTxt;
     private javax.swing.JButton btnHome1;
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton btnLogin;
+    private javax.swing.JLabel errorText;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JPasswordField jPasswordField1;
-    private javax.swing.JTextField jTextField2;
     // End of variables declaration//GEN-END:variables
 }

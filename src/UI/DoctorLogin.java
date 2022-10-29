@@ -37,26 +37,35 @@ public class DoctorLogin extends javax.swing.JFrame {
         btnhome2 = new javax.swing.JButton();
         DocPswdTxt = new javax.swing.JPasswordField();
         errortext = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
 
         jLabel4.setText("jLabel4");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jLabel1.setBackground(new java.awt.Color(204, 204, 204));
         jLabel1.setFont(new java.awt.Font("Helvetica Neue", 1, 24)); // NOI18N
         jLabel1.setText("DOCTOR LOGIN");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 30, -1, -1));
 
         jLabel2.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
         jLabel2.setText("USERNAME:");
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 130, 109, -1));
 
         jLabel3.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
         jLabel3.setText("PASSWORD:");
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(181, 199, -1, -1));
 
+        Doctxt.setBackground(new java.awt.Color(255, 255, 204));
         Doctxt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 DoctxtActionPerformed(evt);
             }
         });
+        getContentPane().add(Doctxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 130, 164, -1));
 
+        btnDocLogin.setBackground(new java.awt.Color(0, 153, 0));
         btnDocLogin.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
         btnDocLogin.setText("LOGIN");
         btnDocLogin.addActionListener(new java.awt.event.ActionListener() {
@@ -64,7 +73,9 @@ public class DoctorLogin extends javax.swing.JFrame {
                 btnDocLoginActionPerformed(evt);
             }
         });
+        getContentPane().add(btnDocLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 280, -1, -1));
 
+        btnhome2.setBackground(new java.awt.Color(51, 153, 255));
         btnhome2.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
         btnhome2.setText("HOME");
         btnhome2.addActionListener(new java.awt.event.ActionListener() {
@@ -72,66 +83,22 @@ public class DoctorLogin extends javax.swing.JFrame {
                 btnhome2ActionPerformed(evt);
             }
         });
+        getContentPane().add(btnhome2, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 330, 87, -1));
 
+        DocPswdTxt.setBackground(new java.awt.Color(255, 255, 204));
         DocPswdTxt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 DocPswdTxtActionPerformed(evt);
             }
         });
+        getContentPane().add(DocPswdTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 200, 164, -1));
 
         errortext.setFont(new java.awt.Font("Helvetica Neue", 2, 14)); // NOI18N
         errortext.setForeground(new java.awt.Color(255, 0, 0));
+        getContentPane().add(errortext, new org.netbeans.lib.awtextra.AbsoluteConstraints(145, 343, 472, 15));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(181, 181, 181)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(Doctxt, javax.swing.GroupLayout.DEFAULT_SIZE, 164, Short.MAX_VALUE)
-                    .addComponent(DocPswdTxt))
-                .addGap(58, 58, 58))
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(294, 294, 294)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel1)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                .addComponent(btnhome2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(btnDocLogin, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(160, 160, 160)
-                        .addComponent(errortext, javax.swing.GroupLayout.PREFERRED_SIZE, 472, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(58, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(30, 30, 30)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel1)
-                        .addGap(47, 47, 47)
-                        .addComponent(jLabel2))
-                    .addComponent(Doctxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(69, 69, 69)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel3)
-                    .addComponent(DocPswdTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 72, Short.MAX_VALUE)
-                .addComponent(btnDocLogin)
-                .addGap(33, 33, 33)
-                .addComponent(errortext)
-                .addGap(18, 18, 18)
-                .addComponent(btnhome2)
-                .addGap(44, 44, 44))
-        );
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/istockphoto-1318410710-170667a.jpg"))); // NOI18N
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 90, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -233,6 +200,7 @@ public class DoctorLogin extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     // End of variables declaration//GEN-END:variables
 
 }

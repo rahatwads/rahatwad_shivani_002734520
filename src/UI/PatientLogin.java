@@ -19,7 +19,7 @@ public class PatientLogin extends javax.swing.JFrame {
         initComponents();
         
         
-        getContentPane().setBackground(Color.white);
+//        getContentPane().setBackground(Color.white);
     }
 
     /**
@@ -39,18 +39,27 @@ public class PatientLogin extends javax.swing.JFrame {
         BtnHome = new javax.swing.JButton();
         PatientPswdTxt = new javax.swing.JPasswordField();
         errortxt = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Helvetica Neue", 1, 24)); // NOI18N
         jLabel1.setText("PATIENT LOGIN");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(268, 30, -1, -1));
 
         jLabel2.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
         jLabel2.setText("USERNAME:");
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 130, 109, -1));
 
         jLabel3.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
         jLabel3.setText("PASSWORD:");
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(181, 199, -1, -1));
 
+        PatientTxt.setBackground(new java.awt.Color(255, 255, 204));
+        getContentPane().add(PatientTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 130, 164, -1));
+
+        Patientloginbtn.setBackground(new java.awt.Color(0, 153, 51));
         Patientloginbtn.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
         Patientloginbtn.setText("LOGIN");
         Patientloginbtn.addActionListener(new java.awt.event.ActionListener() {
@@ -58,7 +67,9 @@ public class PatientLogin extends javax.swing.JFrame {
                 PatientloginbtnActionPerformed(evt);
             }
         });
+        getContentPane().add(Patientloginbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 280, -1, -1));
 
+        BtnHome.setBackground(new java.awt.Color(51, 153, 255));
         BtnHome.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
         BtnHome.setText("HOME");
         BtnHome.addActionListener(new java.awt.event.ActionListener() {
@@ -66,67 +77,22 @@ public class PatientLogin extends javax.swing.JFrame {
                 BtnHomeActionPerformed(evt);
             }
         });
+        getContentPane().add(BtnHome, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 330, 87, -1));
 
+        PatientPswdTxt.setBackground(new java.awt.Color(255, 255, 204));
         PatientPswdTxt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 PatientPswdTxtActionPerformed(evt);
             }
         });
+        getContentPane().add(PatientPswdTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 200, 164, -1));
 
         errortxt.setFont(new java.awt.Font("Helvetica Neue", 2, 18)); // NOI18N
         errortxt.setForeground(new java.awt.Color(255, 0, 0));
+        getContentPane().add(errortxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(102, 313, 492, 39));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(181, 181, 181)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(PatientTxt)
-                            .addComponent(PatientPswdTxt, javax.swing.GroupLayout.DEFAULT_SIZE, 164, Short.MAX_VALUE)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(294, 294, 294)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel1)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                .addComponent(BtnHome, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(Patientloginbtn, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                        .addGap(0, 86, Short.MAX_VALUE)))
-                .addGap(124, 124, 124))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(errortxt, javax.swing.GroupLayout.PREFERRED_SIZE, 492, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(96, 96, 96))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(30, 30, 30)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel1)
-                        .addGap(47, 47, 47)
-                        .addComponent(jLabel2))
-                    .addComponent(PatientTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(69, 69, 69)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel3)
-                    .addComponent(PatientPswdTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 54, Short.MAX_VALUE)
-                .addComponent(Patientloginbtn)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(errortxt, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(24, 24, 24)
-                .addComponent(BtnHome)
-                .addGap(44, 44, 44))
-        );
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/istockphoto-1318410710-170667a.jpg"))); // NOI18N
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 0, 650, 450));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -223,5 +189,6 @@ public class PatientLogin extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel5;
     // End of variables declaration//GEN-END:variables
 }

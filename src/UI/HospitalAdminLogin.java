@@ -32,25 +32,42 @@ public class HospitalAdminLogin extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
+        HospitalTxt = new javax.swing.JTextField();
+        btnLogin = new javax.swing.JButton();
         btnhome5 = new javax.swing.JButton();
-        jPasswordField1 = new javax.swing.JPasswordField();
+        HospitalPswd = new javax.swing.JPasswordField();
+        errorText = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Helvetica Neue", 1, 24)); // NOI18N
         jLabel1.setText("ADMIN LOGIN");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 30, -1, -1));
 
         jLabel2.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
         jLabel2.setText("USERNAME:");
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 120, 109, -1));
 
         jLabel3.setFont(new java.awt.Font("Helvetica Neue", 0, 18)); // NOI18N
         jLabel3.setText("PASSWORD:");
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(181, 199, -1, -1));
 
-        jButton1.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
-        jButton1.setText("LOGIN");
+        HospitalTxt.setBackground(new java.awt.Color(255, 255, 204));
+        getContentPane().add(HospitalTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 120, 164, -1));
 
+        btnLogin.setBackground(new java.awt.Color(0, 153, 51));
+        btnLogin.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
+        btnLogin.setText("LOGIN");
+        btnLogin.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnLoginActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(294, 279, -1, -1));
+
+        btnhome5.setBackground(new java.awt.Color(51, 153, 255));
         btnhome5.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
         btnhome5.setText("HOME");
         btnhome5.addActionListener(new java.awt.event.ActionListener() {
@@ -58,52 +75,17 @@ public class HospitalAdminLogin extends javax.swing.JFrame {
                 btnhome5ActionPerformed(evt);
             }
         });
+        getContentPane().add(btnhome5, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 330, 87, -1));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(181, 181, 181)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jTextField1, javax.swing.GroupLayout.DEFAULT_SIZE, 164, Short.MAX_VALUE)
-                            .addComponent(jPasswordField1)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(294, 294, 294)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel1)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                .addComponent(btnhome5, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jButton1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                        .addGap(0, 108, Short.MAX_VALUE)))
-                .addGap(124, 124, 124))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(30, 30, 30)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel1)
-                        .addGap(47, 47, 47)
-                        .addComponent(jLabel2))
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(69, 69, 69)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel3)
-                    .addComponent(jPasswordField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 57, Short.MAX_VALUE)
-                .addComponent(jButton1)
-                .addGap(68, 68, 68)
-                .addComponent(btnhome5)
-                .addGap(44, 44, 44))
-        );
+        HospitalPswd.setBackground(new java.awt.Color(255, 255, 204));
+        getContentPane().add(HospitalPswd, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 200, 164, -1));
+
+        errorText.setFont(new java.awt.Font("Helvetica Neue", 3, 14)); // NOI18N
+        errorText.setForeground(new java.awt.Color(255, 0, 0));
+        getContentPane().add(errorText, new org.netbeans.lib.awtextra.AbsoluteConstraints(139, 326, 446, 38));
+
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/istockphoto-1318410710-170667a.jpg"))); // NOI18N
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 90, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -114,6 +96,45 @@ public class HospitalAdminLogin extends javax.swing.JFrame {
          MainFram.show();
          dispose();
     }//GEN-LAST:event_btnhome5ActionPerformed
+
+    private void btnLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLoginActionPerformed
+        // TODO add your handling code here:
+        String HospitalUser = HospitalTxt.getText();
+        String HospitalPasswd = HospitalPswd.getText();
+        
+         if (HospitalUser.equals("hospital") && HospitalPasswd.equals("hospital")) {
+            
+             
+            HospitalHome HospitalHom = new HospitalHome();
+         HospitalHom.show();
+         dispose(); 
+          }else {
+        errorText.setText("Incorrect Credentials,Please enter correct details");
+        }
+        if (HospitalUser.equals("hospital1") && HospitalPasswd.equals("hospital1")) {
+            
+             
+            HospitalHome HospitalHom = new HospitalHome();
+         HospitalHom.show();
+         dispose(); 
+          }else {
+        errorText.setText("Incorrect Credentials,Please enter correct details");
+        }
+          if (HospitalUser.equals("hospital2") && HospitalPasswd.equals("hospital2")) {
+            
+             
+            HospitalHome HospitalHom = new HospitalHome();
+         HospitalHom.show();
+         dispose(); 
+          }else {
+        errorText.setText("Incorrect Credentials,Please enter correct details");
+        }
+        
+     
+        
+        
+        
+    }//GEN-LAST:event_btnLoginActionPerformed
 
     /**
      * @param args the command line arguments
@@ -152,12 +173,14 @@ public class HospitalAdminLogin extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JPasswordField HospitalPswd;
+    private javax.swing.JTextField HospitalTxt;
+    private javax.swing.JButton btnLogin;
     private javax.swing.JButton btnhome5;
-    private javax.swing.JButton jButton1;
+    private javax.swing.JLabel errorText;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JPasswordField jPasswordField1;
-    private javax.swing.JTextField jTextField1;
+    private javax.swing.JLabel jLabel4;
     // End of variables declaration//GEN-END:variables
 }
