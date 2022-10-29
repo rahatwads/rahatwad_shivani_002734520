@@ -18,7 +18,7 @@ public class SystemAdminLogin extends javax.swing.JFrame {
     public SystemAdminLogin() {
         initComponents();
         
-        getContentPane().setBackground(Color.pink);
+        getContentPane().setBackground(Color.white);
     }
 
     /**

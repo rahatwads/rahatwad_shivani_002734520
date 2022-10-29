@@ -17,7 +17,7 @@ public class HospitalAdminLogin extends javax.swing.JFrame {
      */
     public HospitalAdminLogin() {
         initComponents();
-        getContentPane().setBackground(Color.pink);
+        getContentPane().setBackground(Color.white);
     }
 
     /**

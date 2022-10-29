@@ -19,7 +19,7 @@ public class MainJFrame extends javax.swing.JFrame {
         initComponents();
         
         
-        getContentPane().setBackground(Color.pink);
+//        getContentPane().setBackground(Color.pink);
     }
 
     /**
@@ -37,15 +37,18 @@ public class MainJFrame extends javax.swing.JFrame {
         btnHospitalAdminlogin = new javax.swing.JButton();
         btncomadmin = new javax.swing.JButton();
         btnSystemAdmlogin = new javax.swing.JButton();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setBackground(new java.awt.Color(0, 102, 204));
+        setBackground(new java.awt.Color(204, 204, 204));
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setFont(new java.awt.Font("Helvetica Neue", 1, 24)); // NOI18N
-        jLabel1.setText("LOGIN AS:");
+        jLabel1.setFont(new java.awt.Font("Georgia", 1, 24)); // NOI18N
+        jLabel1.setText("LOGIN AS A :");
         jLabel1.setMaximumSize(new java.awt.Dimension(63, 20));
         jLabel1.setPreferredSize(new java.awt.Dimension(100, 100));
-        jLabel1.setSize(new java.awt.Dimension(100, 100));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 100, 200, 37));
 
         btnpatientlogin.setText("PATIENT");
         btnpatientlogin.addActionListener(new java.awt.event.ActionListener() {
@@ -53,6 +56,7 @@ public class MainJFrame extends javax.swing.JFrame {
                 btnpatientloginActionPerformed(evt);
             }
         });
+        getContentPane().add(btnpatientlogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 180, 151, -1));
 
         btndoclogin.setText("DOCTOR");
         btndoclogin.addActionListener(new java.awt.event.ActionListener() {
@@ -60,6 +64,7 @@ public class MainJFrame extends javax.swing.JFrame {
                 btndocloginActionPerformed(evt);
             }
         });
+        getContentPane().add(btndoclogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 230, 151, -1));
 
         btnHospitalAdminlogin.setText("HOSPITAL ADMIN");
         btnHospitalAdminlogin.addActionListener(new java.awt.event.ActionListener() {
@@ -67,6 +72,7 @@ public class MainJFrame extends javax.swing.JFrame {
                 btnHospitalAdminloginActionPerformed(evt);
             }
         });
+        getContentPane().add(btnHospitalAdminlogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 270, 151, -1));
 
         btncomadmin.setText("COMMUNITY ADMIN");
         btncomadmin.addActionListener(new java.awt.event.ActionListener() {
@@ -74,6 +80,7 @@ public class MainJFrame extends javax.swing.JFrame {
                 btncomadminActionPerformed(evt);
             }
         });
+        getContentPane().add(btncomadmin, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 310, -1, -1));
 
         btnSystemAdmlogin.setText("SYSTEM ADMIN");
         btnSystemAdmlogin.addActionListener(new java.awt.event.ActionListener() {
@@ -81,39 +88,16 @@ public class MainJFrame extends javax.swing.JFrame {
                 btnSystemAdmloginActionPerformed(evt);
             }
         });
+        getContentPane().add(btnSystemAdmlogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 350, 151, -1));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(281, 281, 281)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addComponent(btncomadmin, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnHospitalAdminlogin, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnpatientlogin, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btndoclogin, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnSystemAdmlogin, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(258, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(15, 15, 15)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(60, 60, 60)
-                .addComponent(btnpatientlogin)
-                .addGap(18, 18, 18)
-                .addComponent(btndoclogin)
-                .addGap(18, 18, 18)
-                .addComponent(btnHospitalAdminlogin)
-                .addGap(18, 18, 18)
-                .addComponent(btncomadmin)
-                .addGap(18, 18, 18)
-                .addComponent(btnSystemAdmlogin)
-                .addContainerGap(150, Short.MAX_VALUE))
-        );
+        jLabel3.setFont(new java.awt.Font("Helvetica Neue", 3, 36)); // NOI18N
+        jLabel3.setText("WELCOME");
+        jLabel3.setMaximumSize(new java.awt.Dimension(63, 20));
+        jLabel3.setPreferredSize(new java.awt.Dimension(100, 100));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 20, 200, 37));
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/medical-waste-disposal-for-hospitals.jpg"))); // NOI18N
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(-80, 0, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -197,5 +181,7 @@ public class MainJFrame extends javax.swing.JFrame {
     private javax.swing.JButton btndoclogin;
     private javax.swing.JButton btnpatientlogin;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     // End of variables declaration//GEN-END:variables
 }

@@ -19,7 +19,7 @@ public class PatientLogin extends javax.swing.JFrame {
         initComponents();
         
         
-        getContentPane().setBackground(Color.pink);
+        getContentPane().setBackground(Color.white);
     }
 
     /**
@@ -38,6 +38,7 @@ public class PatientLogin extends javax.swing.JFrame {
         Patientloginbtn = new javax.swing.JButton();
         BtnHome = new javax.swing.JButton();
         PatientPswdTxt = new javax.swing.JPasswordField();
+        errortxt = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -72,6 +73,9 @@ public class PatientLogin extends javax.swing.JFrame {
             }
         });
 
+        errortxt.setFont(new java.awt.Font("Helvetica Neue", 2, 18)); // NOI18N
+        errortxt.setForeground(new java.awt.Color(255, 0, 0));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -96,6 +100,10 @@ public class PatientLogin extends javax.swing.JFrame {
                                 .addComponent(Patientloginbtn, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                         .addGap(0, 86, Short.MAX_VALUE)))
                 .addGap(124, 124, 124))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(errortxt, javax.swing.GroupLayout.PREFERRED_SIZE, 492, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(96, 96, 96))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -111,9 +119,11 @@ public class PatientLogin extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
                     .addComponent(PatientPswdTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 55, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 54, Short.MAX_VALUE)
                 .addComponent(Patientloginbtn)
-                .addGap(68, 68, 68)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(errortxt, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(24, 24, 24)
                 .addComponent(BtnHome)
                 .addGap(44, 44, 44))
         );
@@ -140,13 +150,34 @@ public class PatientLogin extends javax.swing.JFrame {
         
         if (patient.equals("shivani") && password.equals("shivani123")) {
             
+            PatientHome PatientHom = new PatientHome();
+         PatientHom.show();
+         dispose(); 
+            
+        }else {
+        errortxt.setText("Incorrect Credentials,Please enter correct details");
+        }
+        if (patient.equals("mike") && password.equals("mike123")) {
+            
             AppointmentBookingJFrame AppointmentBookingJFram = new AppointmentBookingJFrame();
          AppointmentBookingJFram.show();
          dispose(); 
             
+        }else {
+        errortxt.setText("Incorrect Credentials,Please enter correct details");
+        }
+          if (patient.equals("joe") && password.equals("joe123")) {
+            
+            AppointmentBookingJFrame AppointmentBookingJFram = new AppointmentBookingJFrame();
+         AppointmentBookingJFram.show();
+         dispose(); 
+            
+        }else {
+        errortxt.setText("Incorrect Credentials,Please enter correct details");
         }
     }//GEN-LAST:event_PatientloginbtnActionPerformed
 
+    
     /**
      * @param args the command line arguments
      */
@@ -188,6 +219,7 @@ public class PatientLogin extends javax.swing.JFrame {
     private javax.swing.JPasswordField PatientPswdTxt;
     private javax.swing.JTextField PatientTxt;
     private javax.swing.JButton Patientloginbtn;
+    private javax.swing.JLabel errortxt;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

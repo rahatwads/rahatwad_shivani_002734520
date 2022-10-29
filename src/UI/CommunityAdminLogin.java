@@ -18,7 +18,7 @@ public class CommunityAdminLogin extends javax.swing.JFrame {
     public CommunityAdminLogin() {
         initComponents();
         
-             getContentPane().setBackground(Color.pink);
+             getContentPane().setBackground(Color.white);
     }
 
     /**
@@ -83,13 +83,13 @@ public class CommunityAdminLogin extends javax.swing.JFrame {
                             .addComponent(jPasswordField1)))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(294, 294, 294)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(Btnhome3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addGap(0, 246, Short.MAX_VALUE)))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, 114, Short.MAX_VALUE)
+                            .addComponent(Btnhome3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addGap(124, 124, 124))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
+                .addGap(0, 217, Short.MAX_VALUE)
                 .addComponent(jLabel1)
                 .addGap(201, 201, 201))
         );
