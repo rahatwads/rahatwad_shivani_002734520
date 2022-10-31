@@ -59,10 +59,9 @@ public class PatientHome extends javax.swing.JFrame {
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
+                {"02130", "JO CLINIC", "Dr John", "AVLBL"},
+                {"02134", "MM HOSPITAL", "Dr Jason", "AVLBL"},
+                {"02150", "BOSTON CHILDREN", "Dr Mike", "AVLBL"}
             },
             new String [] {
                 "ZIPCODE", "HOSPITAL NAME", "DOCTOR NAME", "AVAILABILITY"

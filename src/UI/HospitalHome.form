@@ -58,11 +58,35 @@
         <Component class="javax.swing.JTable" name="jTable1">
           <Properties>
             <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
-              <Table columnCount="4" rowCount="0">
-                <Column editable="true" title="ZIPCODE" type="java.lang.Object"/>
-                <Column editable="true" title="HOSPITAL NAME" type="java.lang.Object"/>
-                <Column editable="true" title="DOCTOR NAME" type="java.lang.Object"/>
-                <Column editable="true" title="AVAILABILITY" type="java.lang.Object"/>
+              <Table columnCount="4" rowCount="5">
+                <Column editable="true" title="ZIPCODE" type="java.lang.Object">
+                  <Data value="02130"/>
+                  <Data value="02134"/>
+                  <Data value="02150"/>
+                  <Data value="null"/>
+                  <Data value="null"/>
+                </Column>
+                <Column editable="true" title="HOSPITAL NAME" type="java.lang.Object">
+                  <Data value="JO CLINIC"/>
+                  <Data value="MM HOSPITAL"/>
+                  <Data value="BOSTON CHILDREN"/>
+                  <Data value="null"/>
+                  <Data value="null"/>
+                </Column>
+                <Column editable="true" title="DOCTOR NAME" type="java.lang.Object">
+                  <Data value="Dr John"/>
+                  <Data value="Dr Jason"/>
+                  <Data value="Dr Mike"/>
+                  <Data value="null"/>
+                  <Data value="null"/>
+                </Column>
+                <Column editable="true" title="AVAILABILITY" type="java.lang.Object">
+                  <Data value="AVLBL"/>
+                  <Data value="AVBL"/>
+                  <Data value="AVLBL"/>
+                  <Data value="null"/>
+                  <Data value="null"/>
+                </Column>
               </Table>
             </Property>
             <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
