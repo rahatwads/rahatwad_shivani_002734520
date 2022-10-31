@@ -88,7 +88,7 @@ public class CommunityAdminLogin extends javax.swing.JFrame {
 
         errorText.setFont(new java.awt.Font("Helvetica Neue", 3, 18)); // NOI18N
         errorText.setForeground(new java.awt.Color(255, 0, 0));
-        getContentPane().add(errorText, new org.netbeans.lib.awtextra.AbsoluteConstraints(195, 337, 402, 27));
+        getContentPane().add(errorText, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 400, 440, 27));
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/istockphoto-1318410710-170667a.jpg"))); // NOI18N
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 90, -1, -1));

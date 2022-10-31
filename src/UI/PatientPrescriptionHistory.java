@@ -48,6 +48,7 @@ public class PatientPrescriptionHistory extends javax.swing.JFrame {
         jLabel1.setText("DOCTOR'S PRESCRIPTION ");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 6, 319, -1));
 
+        btnlogout6.setBackground(new java.awt.Color(255, 255, 204));
         btnlogout6.setFont(new java.awt.Font("Helvetica Neue", 1, 14)); // NOI18N
         btnlogout6.setText("LOGOUT");
         btnlogout6.addActionListener(new java.awt.event.ActionListener() {

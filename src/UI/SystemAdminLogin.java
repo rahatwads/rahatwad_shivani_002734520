@@ -88,7 +88,7 @@ public class SystemAdminLogin extends javax.swing.JFrame {
 
         errorText.setFont(new java.awt.Font("Helvetica Neue", 3, 14)); // NOI18N
         errorText.setForeground(new java.awt.Color(255, 0, 0));
-        getContentPane().add(errorText, new org.netbeans.lib.awtextra.AbsoluteConstraints(147, 371, 425, 18));
+        getContentPane().add(errorText, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 440, 480, 20));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/istockphoto-1318410710-170667a.jpg"))); // NOI18N
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 130, -1, -1));

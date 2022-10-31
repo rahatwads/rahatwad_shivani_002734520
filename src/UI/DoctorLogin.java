@@ -95,7 +95,7 @@ public class DoctorLogin extends javax.swing.JFrame {
 
         errortext.setFont(new java.awt.Font("Helvetica Neue", 2, 14)); // NOI18N
         errortext.setForeground(new java.awt.Color(255, 0, 0));
-        getContentPane().add(errortext, new org.netbeans.lib.awtextra.AbsoluteConstraints(145, 343, 472, 15));
+        getContentPane().add(errortext, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 400, 490, 30));
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/istockphoto-1318410710-170667a.jpg"))); // NOI18N
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 90, -1, -1));

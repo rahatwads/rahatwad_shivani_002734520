@@ -89,7 +89,7 @@ public class PatientLogin extends javax.swing.JFrame {
 
         errortxt.setFont(new java.awt.Font("Helvetica Neue", 2, 18)); // NOI18N
         errortxt.setForeground(new java.awt.Color(255, 0, 0));
-        getContentPane().add(errortxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(102, 313, 492, 39));
+        getContentPane().add(errortxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 380, 492, 39));
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/istockphoto-1318410710-170667a.jpg"))); // NOI18N
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 0, 650, 450));
@@ -125,18 +125,19 @@ public class PatientLogin extends javax.swing.JFrame {
         }
         if (patient.equals("mike") && password.equals("mike123")) {
             
-            AppointmentBookingJFrame AppointmentBookingJFram = new AppointmentBookingJFrame();
-         AppointmentBookingJFram.show();
-         dispose(); 
+             
+            PatientHome PatientHom = new PatientHome();
+         PatientHom.show();
+         dispose();  
             
         }else {
         errortxt.setText("Incorrect Credentials,Please enter correct details");
         }
           if (patient.equals("joe") && password.equals("joe123")) {
             
-            AppointmentBookingJFrame AppointmentBookingJFram = new AppointmentBookingJFrame();
-         AppointmentBookingJFram.show();
-         dispose(); 
+            PatientHome PatientHom = new PatientHome();
+         PatientHom.show();
+         dispose();  
             
         }else {
         errortxt.setText("Incorrect Credentials,Please enter correct details");

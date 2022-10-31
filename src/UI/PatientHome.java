@@ -37,7 +37,7 @@ public class PatientHome extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jTextField1 = new javax.swing.JTextField();
         jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
+        btnbookapt = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -65,7 +65,7 @@ public class PatientHome extends javax.swing.JFrame {
                 {null, null, null, null}
             },
             new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4"
+                "ZIPCODE", "HOSPITAL NAME", "DOCTOR NAME", "AVAILABILITY"
             }
         ));
         jScrollPane1.setViewportView(jTable1);
@@ -86,15 +86,15 @@ public class PatientHome extends javax.swing.JFrame {
         });
         getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(81, 404, -1, -1));
 
-        jButton3.setBackground(new java.awt.Color(0, 204, 102));
-        jButton3.setFont(new java.awt.Font("Helvetica Neue", 1, 14)); // NOI18N
-        jButton3.setText("SELECT");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        btnbookapt.setBackground(new java.awt.Color(0, 204, 102));
+        btnbookapt.setFont(new java.awt.Font("Helvetica Neue", 1, 14)); // NOI18N
+        btnbookapt.setText("SELECT");
+        btnbookapt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                btnbookaptActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(423, 404, -1, -1));
+        getContentPane().add(btnbookapt, new org.netbeans.lib.awtextra.AbsoluteConstraints(423, 404, -1, -1));
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/wp2610913.jpg"))); // NOI18N
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(-20, 0, -1, -1));
@@ -106,9 +106,14 @@ public class PatientHome extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton2ActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void btnbookaptActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnbookaptActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton3ActionPerformed
+           AppointmentBookingJFrame AptFrame = new AppointmentBookingJFrame();
+         AptFrame.show();
+         dispose();
+        
+        
+    }//GEN-LAST:event_btnbookaptActionPerformed
 
     private void btnlogoutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnlogoutActionPerformed
         // TODO add your handling code here:
@@ -154,9 +159,9 @@ public class PatientHome extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnbookapt;
     private javax.swing.JButton btnlogout;
     private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

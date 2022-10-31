@@ -82,7 +82,7 @@ public class HospitalAdminLogin extends javax.swing.JFrame {
 
         errorText.setFont(new java.awt.Font("Helvetica Neue", 3, 14)); // NOI18N
         errorText.setForeground(new java.awt.Color(255, 0, 0));
-        getContentPane().add(errorText, new org.netbeans.lib.awtextra.AbsoluteConstraints(139, 326, 446, 38));
+        getContentPane().add(errorText, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 390, 470, 38));
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/istockphoto-1318410710-170667a.jpg"))); // NOI18N
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 90, -1, -1));
