@@ -51,7 +51,7 @@ public class MainJFrame extends javax.swing.JFrame {
                 btnpatientloginActionPerformed(evt);
             }
         });
-        getContentPane().add(btnpatientlogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(352, 181, 151, -1));
+        getContentPane().add(btnpatientlogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 250, 151, -1));
 
         btndoclogin.setText("DOCTOR");
         btndoclogin.addActionListener(new java.awt.event.ActionListener() {
@@ -59,7 +59,7 @@ public class MainJFrame extends javax.swing.JFrame {
                 btndocloginActionPerformed(evt);
             }
         });
-        getContentPane().add(btndoclogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(352, 230, 151, -1));
+        getContentPane().add(btndoclogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 290, 151, -1));
 
         btnHospitalAdminlogin.setText("HOSPITAL ADMIN");
         btnHospitalAdminlogin.addActionListener(new java.awt.event.ActionListener() {
@@ -67,7 +67,7 @@ public class MainJFrame extends javax.swing.JFrame {
                 btnHospitalAdminloginActionPerformed(evt);
             }
         });
-        getContentPane().add(btnHospitalAdminlogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(352, 271, 151, -1));
+        getContentPane().add(btnHospitalAdminlogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 200, 151, -1));
 
         btncomadmin.setText("COMMUNITY ADMIN");
         btncomadmin.addActionListener(new java.awt.event.ActionListener() {
@@ -75,7 +75,7 @@ public class MainJFrame extends javax.swing.JFrame {
                 btncomadminActionPerformed(evt);
             }
         });
-        getContentPane().add(btncomadmin, new org.netbeans.lib.awtextra.AbsoluteConstraints(352, 312, -1, -1));
+        getContentPane().add(btncomadmin, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 370, -1, -1));
 
         btnSystemAdmlogin.setText("SYSTEM ADMIN");
         btnSystemAdmlogin.addActionListener(new java.awt.event.ActionListener() {
@@ -83,7 +83,7 @@ public class MainJFrame extends javax.swing.JFrame {
                 btnSystemAdmloginActionPerformed(evt);
             }
         });
-        getContentPane().add(btnSystemAdmlogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(352, 347, 151, -1));
+        getContentPane().add(btnSystemAdmlogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 330, 151, -1));
 
         jLabel3.setFont(new java.awt.Font("Helvetica Neue", 3, 36)); // NOI18N
         jLabel3.setText("WELCOME");
