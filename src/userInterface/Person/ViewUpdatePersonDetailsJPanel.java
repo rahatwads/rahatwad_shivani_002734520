@@ -122,6 +122,9 @@ public class ViewUpdatePersonDetailsJPanel extends javax.swing.JPanel {
         lblCommunityError = new javax.swing.JLabel();
         lblCityError = new javax.swing.JLabel();
         lblZipcodeError = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+
+        setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         buttonGroup.add(radioBtnFemale);
         radioBtnFemale.setText("Male");
@@ -130,64 +133,80 @@ public class ViewUpdatePersonDetailsJPanel extends javax.swing.JPanel {
                 radioBtnFemaleActionPerformed(evt);
             }
         });
+        add(radioBtnFemale, new org.netbeans.lib.awtextra.AbsoluteConstraints(336, 240, -1, -1));
 
         lblCity.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblCity.setText("Zip Code:");
+        add(lblCity, new org.netbeans.lib.awtextra.AbsoluteConstraints(118, 427, 155, 25));
 
         buttonGroup.add(radioBtnMale);
         radioBtnMale.setText("Female");
+        add(radioBtnMale, new org.netbeans.lib.awtextra.AbsoluteConstraints(405, 240, -1, -1));
 
         txtPersonName.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 txtPersonNameKeyPressed(evt);
             }
         });
+        add(txtPersonName, new org.netbeans.lib.awtextra.AbsoluteConstraints(336, 142, 218, 30));
+        add(txtHouseAddress, new org.netbeans.lib.awtextra.AbsoluteConstraints(336, 288, 218, 30));
 
         txtCommunity.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 txtCommunityKeyPressed(evt);
             }
         });
+        add(txtCommunity, new org.netbeans.lib.awtextra.AbsoluteConstraints(336, 336, 218, 30));
 
         txtAge.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 txtAgeKeyPressed(evt);
             }
         });
+        add(txtAge, new org.netbeans.lib.awtextra.AbsoluteConstraints(336, 192, 218, 30));
 
         lblTitle.setFont(new java.awt.Font("Sitka Text", 1, 18)); // NOI18N
         lblTitle.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblTitle.setText("View/Update Person Details");
+        add(lblTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(203, 31, 351, 47));
 
         txtCity.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 txtCityKeyPressed(evt);
             }
         });
+        add(txtCity, new org.netbeans.lib.awtextra.AbsoluteConstraints(336, 384, 218, 30));
 
         lblAge.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblAge.setText("Age:");
+        add(lblAge, new org.netbeans.lib.awtextra.AbsoluteConstraints(118, 190, 155, 25));
 
         lblCity1.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblCity1.setText("City:");
+        add(lblCity1, new org.netbeans.lib.awtextra.AbsoluteConstraints(118, 384, 155, 25));
 
         lblName.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblName.setText("Name:");
+        add(lblName, new org.netbeans.lib.awtextra.AbsoluteConstraints(118, 142, 155, 25));
 
         txtZipcode.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 txtZipcodeKeyPressed(evt);
             }
         });
+        add(txtZipcode, new org.netbeans.lib.awtextra.AbsoluteConstraints(336, 432, 218, 30));
 
         lblHouseAddress.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblHouseAddress.setText("House Address:");
+        add(lblHouseAddress, new org.netbeans.lib.awtextra.AbsoluteConstraints(118, 290, 155, 25));
 
         lblAge1.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblAge1.setText("Gender:");
+        add(lblAge1, new org.netbeans.lib.awtextra.AbsoluteConstraints(118, 240, 155, 25));
 
         lblCommunity.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblCommunity.setText("Community:");
+        add(lblCommunity, new org.netbeans.lib.awtextra.AbsoluteConstraints(118, 336, 155, 25));
 
         btnGoBack.setText("<< Go Back");
         btnGoBack.addActionListener(new java.awt.event.ActionListener() {
@@ -195,6 +214,7 @@ public class ViewUpdatePersonDetailsJPanel extends javax.swing.JPanel {
                 btnGoBackActionPerformed(evt);
             }
         });
+        add(btnGoBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(336, 499, 104, 31));
 
         btnUpdatePerson.setText("Update");
         btnUpdatePerson.addActionListener(new java.awt.event.ActionListener() {
@@ -202,118 +222,22 @@ public class ViewUpdatePersonDetailsJPanel extends javax.swing.JPanel {
                 btnUpdatePersonActionPerformed(evt);
             }
         });
+        add(btnUpdatePerson, new org.netbeans.lib.awtextra.AbsoluteConstraints(469, 499, 85, 31));
 
         lblPersonId.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblPersonId.setText("Person Id:");
+        add(lblPersonId, new org.netbeans.lib.awtextra.AbsoluteConstraints(92, 101, 181, 23));
 
         txtPersonId.setEnabled(false);
+        add(txtPersonId, new org.netbeans.lib.awtextra.AbsoluteConstraints(336, 96, 218, 26));
+        add(lblPersonNameError, new org.netbeans.lib.awtextra.AbsoluteConstraints(587, 142, 171, 26));
+        add(lblPersonAgeError, new org.netbeans.lib.awtextra.AbsoluteConstraints(587, 192, 171, 26));
+        add(lblCommunityError, new org.netbeans.lib.awtextra.AbsoluteConstraints(587, 336, 171, 26));
+        add(lblCityError, new org.netbeans.lib.awtextra.AbsoluteConstraints(587, 384, 171, 26));
+        add(lblZipcodeError, new org.netbeans.lib.awtextra.AbsoluteConstraints(587, 432, 171, 26));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(92, 92, 92)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(lblTitle, javax.swing.GroupLayout.PREFERRED_SIZE, 351, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(lblHouseAddress, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(lblAge, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(lblCommunity, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(lblName, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(lblCity, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(lblCity1, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(lblAge1, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(lblPersonId, javax.swing.GroupLayout.PREFERRED_SIZE, 181, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(63, 63, 63)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(txtPersonName)
-                            .addComponent(txtHouseAddress)
-                            .addComponent(txtCommunity)
-                            .addComponent(txtAge)
-                            .addComponent(txtCity)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(radioBtnFemale)
-                                .addGap(18, 18, 18)
-                                .addComponent(radioBtnMale))
-                            .addComponent(txtZipcode)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addComponent(btnGoBack, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(btnUpdatePerson, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(txtPersonId, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addGap(33, 33, 33)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lblPersonNameError, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lblPersonAgeError, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lblCommunityError, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lblCityError, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lblZipcodeError, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(270, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(31, 31, 31)
-                .addComponent(lblTitle, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(lblPersonId, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(txtPersonId, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(2, 2, 2)))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(lblName, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtPersonName, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(lblAge, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(2, 2, 2)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(lblPersonAgeError, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(txtAge, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(lblAge1, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(radioBtnFemale)
-                                .addComponent(radioBtnMale)))
-                        .addGap(23, 23, 23)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(lblHouseAddress, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtHouseAddress, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(lblCommunity, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(txtCommunity, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(lblCommunityError, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(lblCity1, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(lblCity, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(txtCity, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(lblCityError, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(18, 18, 18)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(txtZipcode, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(lblZipcodeError, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                        .addGap(37, 37, 37)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(btnGoBack, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btnUpdatePerson, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addComponent(lblPersonNameError, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(118, Short.MAX_VALUE))
-        );
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/userInterface/Person/wp2610913.jpg"))); // NOI18N
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void clearFields()
@@ -541,6 +465,7 @@ public class ViewUpdatePersonDetailsJPanel extends javax.swing.JPanel {
     private javax.swing.JButton btnGoBack;
     private javax.swing.JButton btnUpdatePerson;
     private javax.swing.ButtonGroup buttonGroup;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel lblAge;
     private javax.swing.JLabel lblAge1;
     private javax.swing.JLabel lblCity;

@@ -51,46 +51,58 @@ public class CreatePatientVitalSIgnJPanel extends javax.swing.JPanel {
         txtWeight = new javax.swing.JTextField();
         btnSaveVitalSign = new javax.swing.JButton();
         btnGoBack = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
+
+        setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Create Patient Vitals Sign");
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(186, 45, 258, 48));
 
         lblRespiratoryRate.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblRespiratoryRate.setText("Respiratory Rate :");
+        add(lblRespiratoryRate, new org.netbeans.lib.awtextra.AbsoluteConstraints(55, 158, 174, 25));
 
         lblHeartRate.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblHeartRate.setText("Heart Rate :");
+        add(lblHeartRate, new org.netbeans.lib.awtextra.AbsoluteConstraints(55, 214, 174, 25));
 
         lblBloodPressure.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblBloodPressure.setText("Systolic Blood Pressure:");
+        add(lblBloodPressure, new org.netbeans.lib.awtextra.AbsoluteConstraints(55, 269, 174, 25));
 
         lblWeight.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblWeight.setText("Weight in Pounds :");
+        add(lblWeight, new org.netbeans.lib.awtextra.AbsoluteConstraints(55, 325, 174, 25));
 
         txtRespiratoryRate.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtRespiratoryRateActionPerformed(evt);
             }
         });
+        add(txtRespiratoryRate, new org.netbeans.lib.awtextra.AbsoluteConstraints(263, 158, 234, 25));
 
         txtHeartRate.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtHeartRateActionPerformed(evt);
             }
         });
+        add(txtHeartRate, new org.netbeans.lib.awtextra.AbsoluteConstraints(263, 214, 234, 25));
 
         txtBloodPressure.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtBloodPressureActionPerformed(evt);
             }
         });
+        add(txtBloodPressure, new org.netbeans.lib.awtextra.AbsoluteConstraints(263, 269, 234, 25));
 
         txtWeight.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtWeightActionPerformed(evt);
             }
         });
+        add(txtWeight, new org.netbeans.lib.awtextra.AbsoluteConstraints(263, 325, 234, 25));
 
         btnSaveVitalSign.setText("Save");
         btnSaveVitalSign.addActionListener(new java.awt.event.ActionListener() {
@@ -98,6 +110,7 @@ public class CreatePatientVitalSIgnJPanel extends javax.swing.JPanel {
                 btnSaveVitalSignActionPerformed(evt);
             }
         });
+        add(btnSaveVitalSign, new org.netbeans.lib.awtextra.AbsoluteConstraints(382, 403, 115, 36));
 
         btnGoBack.setText("<< Go Back");
         btnGoBack.addActionListener(new java.awt.event.ActionListener() {
@@ -105,62 +118,10 @@ public class CreatePatientVitalSIgnJPanel extends javax.swing.JPanel {
                 btnGoBackActionPerformed(evt);
             }
         });
+        add(btnGoBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(263, 403, -1, 36));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(55, 55, 55)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(lblRespiratoryRate, javax.swing.GroupLayout.DEFAULT_SIZE, 174, Short.MAX_VALUE)
-                            .addComponent(lblHeartRate, javax.swing.GroupLayout.DEFAULT_SIZE, 174, Short.MAX_VALUE)
-                            .addComponent(lblBloodPressure, javax.swing.GroupLayout.DEFAULT_SIZE, 174, Short.MAX_VALUE)
-                            .addComponent(lblWeight, javax.swing.GroupLayout.DEFAULT_SIZE, 174, Short.MAX_VALUE))
-                        .addGap(34, 34, 34)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(txtWeight, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 234, Short.MAX_VALUE)
-                            .addComponent(txtBloodPressure, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 234, Short.MAX_VALUE)
-                            .addComponent(txtHeartRate, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 234, Short.MAX_VALUE)
-                            .addComponent(txtRespiratoryRate, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 234, Short.MAX_VALUE)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(btnGoBack, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addGap(18, 18, 18)
-                                .addComponent(btnSaveVitalSign, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(186, 186, 186)
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 258, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(507, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(45, 45, 45)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(65, 65, 65)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblRespiratoryRate, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtRespiratoryRate, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(31, 31, 31)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblHeartRate, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtHeartRate, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(30, 30, 30)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblBloodPressure, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtBloodPressure, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(31, 31, 31)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblWeight, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtWeight, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(53, 53, 53)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(btnSaveVitalSign, javax.swing.GroupLayout.DEFAULT_SIZE, 36, Short.MAX_VALUE)
-                    .addComponent(btnGoBack, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(207, Short.MAX_VALUE))
-        );
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/userInterface/Person/wp2610913.jpg"))); // NOI18N
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void txtRespiratoryRateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtRespiratoryRateActionPerformed
@@ -221,6 +182,7 @@ public class CreatePatientVitalSIgnJPanel extends javax.swing.JPanel {
     private javax.swing.JButton btnGoBack;
     private javax.swing.JButton btnSaveVitalSign;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel lblBloodPressure;
     private javax.swing.JLabel lblHeartRate;
     private javax.swing.JLabel lblRespiratoryRate;

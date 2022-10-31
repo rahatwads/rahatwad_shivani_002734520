@@ -89,14 +89,14 @@ public class Encounter extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(178, 404, -1, -1));
-        getContentPane().add(jTextField8, new org.netbeans.lib.awtextra.AbsoluteConstraints(986, 363, 152, -1));
+        getContentPane().add(jTextField8, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 360, 152, -1));
 
         jTextField9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField9ActionPerformed(evt);
             }
         });
-        getContentPane().add(jTextField9, new org.netbeans.lib.awtextra.AbsoluteConstraints(986, 404, 152, -1));
+        getContentPane().add(jTextField9, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 400, 152, -1));
 
         jLabel9.setText("Doctor Name:");
         getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(44, 313, -1, -1));
@@ -106,20 +106,20 @@ public class Encounter extends javax.swing.JFrame {
 
         jLabel11.setFont(new java.awt.Font("Helvetica Neue", 0, 14)); // NOI18N
         jLabel11.setText("Prescription");
-        getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(758, 51, -1, -1));
+        getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 80, -1, -1));
 
         jLabel12.setText("Temperature:");
-        getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(887, 366, -1, -1));
+        getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 360, -1, -1));
 
         jLabel13.setFont(new java.awt.Font("Helvetica Neue", 1, 14)); // NOI18N
         jLabel13.setText("Patient Vitals");
-        getContentPane().add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(852, 273, -1, -1));
+        getContentPane().add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 290, 90, 20));
 
         jLabel14.setText("Pulse:");
-        getContentPane().add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(887, 407, -1, -1));
+        getContentPane().add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 400, -1, -1));
 
         jLabel15.setText("Blood Pressure:");
-        getContentPane().add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(887, 325, -1, -1));
+        getContentPane().add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 330, -1, -1));
 
         jLabel16.setText("Appointment Time:");
         getContentPane().add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(34, 407, -1, -1));
@@ -172,7 +172,7 @@ public class Encounter extends javax.swing.JFrame {
         jTextArea1.setRows(5);
         jScrollPane1.setViewportView(jTextArea1);
 
-        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(842, 49, 331, 193));
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 80, 331, 193));
 
         jLabel1.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
         jLabel1.setText("DIAGNOSIS - Vital signs& Prescription");
@@ -189,7 +189,7 @@ public class Encounter extends javax.swing.JFrame {
                 btnlogoutActionPerformed(evt);
             }
         });
-        getContentPane().add(btnlogout, new org.netbeans.lib.awtextra.AbsoluteConstraints(1064, 7, -1, -1));
+        getContentPane().add(btnlogout, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 10, -1, -1));
 
         jLabel2.setText("Hospital Name:");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(48, 48, -1, -1));
@@ -211,7 +211,7 @@ public class Encounter extends javax.swing.JFrame {
                 jTextField10ActionPerformed(evt);
             }
         });
-        getContentPane().add(jTextField10, new org.netbeans.lib.awtextra.AbsoluteConstraints(986, 322, 152, -1));
+        getContentPane().add(jTextField10, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 330, 152, -1));
         getContentPane().add(jDateChooser1, new org.netbeans.lib.awtextra.AbsoluteConstraints(178, 363, 191, -1));
 
         jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/wp2610913.jpg"))); // NOI18N

@@ -69,6 +69,9 @@ public class ManagePatientVitalSignJPanel extends javax.swing.JPanel {
         jTextField1 = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
         txtCountVitalSign = new javax.swing.JTextField();
+        jLabel3 = new javax.swing.JLabel();
+
+        setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         viewPatientDetailsTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -95,18 +98,23 @@ public class ManagePatientVitalSignJPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(viewPatientDetailsTable);
 
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 117, 775, 178));
+
         lblMngPersonTitle.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         lblMngPersonTitle.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblMngPersonTitle.setText("Manage Patient's Vital Signs");
+        add(lblMngPersonTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(221, 6, 391, 37));
 
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel1.setText("Search:");
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 76, 86, 29));
 
         txtSearchPersonName.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtSearchPersonNameActionPerformed(evt);
             }
         });
+        add(txtSearchPersonName, new org.netbeans.lib.awtextra.AbsoluteConstraints(134, 76, 240, 29));
 
         btnRefresh.setText("Refresh");
         btnRefresh.addActionListener(new java.awt.event.ActionListener() {
@@ -114,6 +122,7 @@ public class ManagePatientVitalSignJPanel extends javax.swing.JPanel {
                 btnRefreshActionPerformed(evt);
             }
         });
+        add(btnRefresh, new org.netbeans.lib.awtextra.AbsoluteConstraints(679, 76, 104, 29));
 
         btnAddVitalSign.setText("Add Vital Signs");
         btnAddVitalSign.addActionListener(new java.awt.event.ActionListener() {
@@ -121,6 +130,7 @@ public class ManagePatientVitalSignJPanel extends javax.swing.JPanel {
                 btnAddVitalSignActionPerformed(evt);
             }
         });
+        add(btnAddVitalSign, new org.netbeans.lib.awtextra.AbsoluteConstraints(381, 320, -1, 31));
 
         btnDisplayVitalSignStatus.setText("Display Patients Vital Sign Status");
         btnDisplayVitalSignStatus.addActionListener(new java.awt.event.ActionListener() {
@@ -128,6 +138,7 @@ public class ManagePatientVitalSignJPanel extends javax.swing.JPanel {
                 btnDisplayVitalSignStatusActionPerformed(evt);
             }
         });
+        add(btnDisplayVitalSignStatus, new org.netbeans.lib.awtextra.AbsoluteConstraints(571, 320, -1, 31));
 
         viewPatientVitalDetailsTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -150,14 +161,18 @@ public class ManagePatientVitalSignJPanel extends javax.swing.JPanel {
         });
         jScrollPane2.setViewportView(viewPatientVitalDetailsTable);
 
+        add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 426, 584, 104));
+
         btnViewVitalSign.setText("View Vital Sign");
         btnViewVitalSign.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnViewVitalSignActionPerformed(evt);
             }
         });
+        add(btnViewVitalSign, new org.netbeans.lib.awtextra.AbsoluteConstraints(191, 557, 110, 30));
 
         tbnDeleteVitalSign.setText("Delete Vital Sign");
+        add(tbnDeleteVitalSign, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 557, 118, 30));
 
         tbnUpdateVitalSign.setText("Update Vital Sign");
         tbnUpdateVitalSign.addActionListener(new java.awt.event.ActionListener() {
@@ -165,6 +180,7 @@ public class ManagePatientVitalSignJPanel extends javax.swing.JPanel {
                 tbnUpdateVitalSignActionPerformed(evt);
             }
         });
+        add(tbnUpdateVitalSign, new org.netbeans.lib.awtextra.AbsoluteConstraints(475, 557, 129, 30));
 
         btnAbnormalVitalSign.setText("Count Abnormal Vital Sign");
         btnAbnormalVitalSign.addActionListener(new java.awt.event.ActionListener() {
@@ -172,93 +188,15 @@ public class ManagePatientVitalSignJPanel extends javax.swing.JPanel {
                 btnAbnormalVitalSignActionPerformed(evt);
             }
         });
+        add(btnAbnormalVitalSign, new org.netbeans.lib.awtextra.AbsoluteConstraints(322, 701, -1, 30));
+        add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(319, 629, 284, 30));
 
         jLabel2.setText("Enter community to find the count of Abnormal Cases :");
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 629, 281, 30));
+        add(txtCountVitalSign, new org.netbeans.lib.awtextra.AbsoluteConstraints(509, 702, 103, 30));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(20, 20, 20)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(28, 28, 28)
-                                .addComponent(txtSearchPersonName, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(305, 305, 305)
-                                .addComponent(btnRefresh, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addGroup(layout.createSequentialGroup()
-                                    .addComponent(btnAddVitalSign)
-                                    .addGap(71, 71, 71)
-                                    .addComponent(btnDisplayVitalSignStatus))
-                                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 775, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                .addGroup(layout.createSequentialGroup()
-                                    .addGap(310, 310, 310)
-                                    .addComponent(tbnDeleteVitalSign, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(tbnUpdateVitalSign, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 584, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                    .addGap(302, 302, 302)
-                                    .addComponent(btnAbnormalVitalSign)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(txtCountVitalSign, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                        .addComponent(btnViewVitalSign, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 281, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGap(18, 18, 18)
-                                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 284, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(221, 221, 221)
-                        .addComponent(lblMngPersonTitle, javax.swing.GroupLayout.PREFERRED_SIZE, 391, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(396, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(lblMngPersonTitle, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(33, 33, 33)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtSearchPersonName, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnRefresh, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 178, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(215, 215, 215)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(btnAddVitalSign, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btnDisplayVitalSignStatus, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addGap(75, 75, 75)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(27, 27, 27)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnViewVitalSign, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(tbnDeleteVitalSign, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(tbnUpdateVitalSign, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(42, 42, 42)
-                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(42, 42, 42)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtCountVitalSign, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnAbnormalVitalSign, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE))
-                .addContainerGap(73, Short.MAX_VALUE))
-        );
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/userInterface/PatientVitalSign/wp2610913.jpg"))); // NOI18N
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void txtSearchPersonNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtSearchPersonNameActionPerformed
@@ -509,6 +447,7 @@ public class ManagePatientVitalSignJPanel extends javax.swing.JPanel {
     private javax.swing.JButton btnViewVitalSign;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTextField jTextField1;

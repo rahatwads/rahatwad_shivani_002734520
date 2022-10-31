@@ -53,6 +53,9 @@ public class ManagePersonJPanel extends javax.swing.JPanel {
         btnDeletePerson = new javax.swing.JButton();
         btnAddPerson1 = new javax.swing.JButton();
         updatePersonData = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
+
+        setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jTablePerson.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -79,18 +82,23 @@ public class ManagePersonJPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(jTablePerson);
 
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 122, 775, 178));
+
         lblMngPersonTitle.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         lblMngPersonTitle.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblMngPersonTitle.setText("Manage Person Details");
+        add(lblMngPersonTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(192, 28, 391, 37));
 
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel1.setText("Search:");
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 81, 86, 29));
 
         txtSearchPersonName.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtSearchPersonNameActionPerformed(evt);
             }
         });
+        add(txtSearchPersonName, new org.netbeans.lib.awtextra.AbsoluteConstraints(104, 81, 240, 29));
 
         btnRefresh.setText("Refresh");
         btnRefresh.addActionListener(new java.awt.event.ActionListener() {
@@ -98,6 +106,7 @@ public class ManagePersonJPanel extends javax.swing.JPanel {
                 btnRefreshActionPerformed(evt);
             }
         });
+        add(btnRefresh, new org.netbeans.lib.awtextra.AbsoluteConstraints(691, 81, 104, 29));
 
         btnViewPerson.setText("View");
         btnViewPerson.addActionListener(new java.awt.event.ActionListener() {
@@ -105,6 +114,7 @@ public class ManagePersonJPanel extends javax.swing.JPanel {
                 btnViewPersonActionPerformed(evt);
             }
         });
+        add(btnViewPerson, new org.netbeans.lib.awtextra.AbsoluteConstraints(368, 328, 94, 31));
 
         btnUpdatePerson.setText("Update");
         btnUpdatePerson.addActionListener(new java.awt.event.ActionListener() {
@@ -112,6 +122,7 @@ public class ManagePersonJPanel extends javax.swing.JPanel {
                 btnUpdatePersonActionPerformed(evt);
             }
         });
+        add(btnUpdatePerson, new org.netbeans.lib.awtextra.AbsoluteConstraints(589, 328, 94, 31));
 
         btnDeletePerson.setText("Delete");
         btnDeletePerson.addActionListener(new java.awt.event.ActionListener() {
@@ -119,6 +130,7 @@ public class ManagePersonJPanel extends javax.swing.JPanel {
                 btnDeletePersonActionPerformed(evt);
             }
         });
+        add(btnDeletePerson, new org.netbeans.lib.awtextra.AbsoluteConstraints(701, 328, 94, 31));
 
         btnAddPerson1.setText("Add");
         btnAddPerson1.addActionListener(new java.awt.event.ActionListener() {
@@ -126,6 +138,7 @@ public class ManagePersonJPanel extends javax.swing.JPanel {
                 btnAddPerson1ActionPerformed(evt);
             }
         });
+        add(btnAddPerson1, new org.netbeans.lib.awtextra.AbsoluteConstraints(477, 328, 94, 31));
 
         updatePersonData.setText("Upload");
         updatePersonData.addActionListener(new java.awt.event.ActionListener() {
@@ -133,63 +146,10 @@ public class ManagePersonJPanel extends javax.swing.JPanel {
                 updatePersonDataActionPerformed(evt);
             }
         });
+        add(updatePersonData, new org.netbeans.lib.awtextra.AbsoluteConstraints(562, 81, 101, 29));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(20, 20, 20)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addComponent(btnViewPerson, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(15, 15, 15)
-                                .addComponent(btnAddPerson1, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(btnUpdatePerson, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(btnDeletePerson, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 775, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(txtSearchPersonName, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(updatePersonData, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(28, 28, 28)
-                        .addComponent(btnRefresh, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(205, Short.MAX_VALUE))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(192, 192, 192)
-                .addComponent(lblMngPersonTitle, javax.swing.GroupLayout.PREFERRED_SIZE, 391, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(28, 28, 28)
-                .addComponent(lblMngPersonTitle, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(16, 16, 16)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(txtSearchPersonName, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(updatePersonData, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btnRefresh, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 178, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(28, 28, 28)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnViewPerson, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnUpdatePerson, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnDeletePerson, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnAddPerson1, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(325, Short.MAX_VALUE))
-        );
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/userInterface/Person/wp2610913.jpg"))); // NOI18N
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void txtSearchPersonNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtSearchPersonNameActionPerformed
@@ -320,6 +280,7 @@ public class ManagePersonJPanel extends javax.swing.JPanel {
     private javax.swing.JButton btnUpdatePerson;
     private javax.swing.JButton btnViewPerson;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTablePerson;
     private javax.swing.JLabel lblMngPersonTitle;
