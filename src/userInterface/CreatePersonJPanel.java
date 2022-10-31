@@ -17,7 +17,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author kinjal
+ * @author shivanirahatwad
  */
 public class CreatePersonJPanel extends javax.swing.JPanel {
 
