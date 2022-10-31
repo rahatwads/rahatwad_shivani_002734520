@@ -93,8 +93,15 @@ public class DoctorLogin extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(196, 196, 196)
-                .addComponent(errortext, javax.swing.GroupLayout.PREFERRED_SIZE, 426, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(196, 196, 196)
+                        .addComponent(errortext, javax.swing.GroupLayout.PREFERRED_SIZE, 426, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(319, 319, 319)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(btnhome2, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnDocLogin))))
                 .addContainerGap(139, Short.MAX_VALUE))
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
@@ -104,11 +111,7 @@ public class DoctorLogin extends javax.swing.JFrame {
                             .addGap(200, 200, 200)
                             .addComponent(jLabel1))
                         .addGroup(layout.createSequentialGroup()
-                            .addGap(240, 240, 240)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(btnDocLogin)
-                                .addComponent(btnhome2, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGap(3, 3, 3)
+                            .addGap(330, 330, 330)
                             .addComponent(DocPswdTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 164, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGroup(layout.createSequentialGroup()
                             .addGap(131, 131, 131)
@@ -125,7 +128,11 @@ public class DoctorLogin extends javax.swing.JFrame {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(395, Short.MAX_VALUE)
+                .addContainerGap(280, Short.MAX_VALUE)
+                .addComponent(btnDocLogin)
+                .addGap(18, 18, 18)
+                .addComponent(btnhome2)
+                .addGap(39, 39, 39)
                 .addComponent(errortext)
                 .addGap(17, 17, 17))
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -134,11 +141,6 @@ public class DoctorLogin extends javax.swing.JFrame {
                     .addComponent(jLabel1)
                     .addGap(30, 30, 30)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(layout.createSequentialGroup()
-                            .addGap(190, 190, 190)
-                            .addComponent(btnDocLogin)
-                            .addGap(21, 21, 21)
-                            .addComponent(btnhome2))
                         .addGroup(layout.createSequentialGroup()
                             .addGap(110, 110, 110)
                             .addComponent(DocPswdTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -183,7 +185,7 @@ public class DoctorLogin extends javax.swing.JFrame {
         }
         if (Doctor.equals("doctorj") && pswd.equals("doctorj")) {
 
-            ManagePatient DoctorHom = new ManagePatient();
+            DoctorHome DoctorHom = new DoctorHome();
             DoctorHom.show();
             dispose();
         }else {

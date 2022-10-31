@@ -167,9 +167,9 @@ public class MainJFrame extends javax.swing.JFrame {
 
     private void btnSystemAdmloginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSystemAdmloginActionPerformed
         // TODO add your handling code here:
-//        SystemAdminLogin SystemAdminLog = new SystemAdminLogin();
-//        SystemAdminLog.show();
-//        dispose();
+        SystemAdminLogin SystemAdminLog = new SystemAdminLogin();
+        SystemAdminLog.show();
+        dispose();
 
     }//GEN-LAST:event_btnSystemAdmloginActionPerformed
 

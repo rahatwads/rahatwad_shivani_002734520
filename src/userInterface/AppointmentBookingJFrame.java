@@ -62,7 +62,7 @@ public class AppointmentBookingJFrame extends javax.swing.JFrame {
         jTable1 = new javax.swing.JTable();
         txtdt = new javax.swing.JTextField();
         txttime = new javax.swing.JTextField();
-        jLabel12 = new javax.swing.JLabel();
+        btnCancel = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -133,6 +133,12 @@ public class AppointmentBookingJFrame extends javax.swing.JFrame {
         getContentPane().add(txtHospital, new org.netbeans.lib.awtextra.AbsoluteConstraints(332, 63, 138, -1));
         getContentPane().add(txtPid, new org.netbeans.lib.awtextra.AbsoluteConstraints(332, 98, 138, -1));
         getContentPane().add(txtPatientname, new org.netbeans.lib.awtextra.AbsoluteConstraints(332, 138, 138, -1));
+
+        jTextField4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField4ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(332, 173, 138, -1));
 
         jLabel10.setText("TIME:");
@@ -180,9 +186,13 @@ public class AppointmentBookingJFrame extends javax.swing.JFrame {
         getContentPane().add(txtdt, new org.netbeans.lib.awtextra.AbsoluteConstraints(376, 320, 101, -1));
         getContentPane().add(txttime, new org.netbeans.lib.awtextra.AbsoluteConstraints(365, 364, 103, -1));
 
-        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/userInterface/wp2610913.jpg"))); // NOI18N
-        jLabel12.setText("jLabel12");
-        getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        btnCancel.setText("CANCEL APPOINTMENT");
+        btnCancel.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCancelActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnCancel, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 410, 200, 30));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -218,7 +228,7 @@ public class AppointmentBookingJFrame extends javax.swing.JFrame {
         
             DefaultTableModel tblModel = (DefaultTableModel)jTable1.getModel();
             tblModel.addRow(data);
-            JOptionPane .showMessageDialog(this, "Data Added successfully")  ; 
+            JOptionPane .showMessageDialog(this, "Booked successfully")  ; 
             txtHospital.setText("");
             txtPid.setText("");
             txtPatientname.setText("");
@@ -236,6 +246,30 @@ public class AppointmentBookingJFrame extends javax.swing.JFrame {
     private void txtdtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtdtActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtdtActionPerformed
+
+    private void jTextField4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField4ActionPerformed
+
+    private void btnCancelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelActionPerformed
+        // TODO add your handling code here:
+          DefaultTableModel tblModel = (DefaultTableModel) jTable1.getModel();
+        
+        if(jTable1.getSelectedRowCount () == 1){
+            
+            tblModel.removeRow(jTable1.getSelectedRow());
+            
+        } else{
+            if(jTable1.getRowCount () == 0){
+                
+                JOptionPane .showMessageDialog(this, "TABLE IS EMPTY")  ;
+            }
+            else{
+            JOptionPane .showMessageDialog(this, "Please select any single row you want to delete")  ;
+            }
+        
+        }
+    }//GEN-LAST:event_btnCancelActionPerformed
 
     /**
      * @param args the command line arguments
@@ -281,11 +315,11 @@ public class AppointmentBookingJFrame extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnBook;
+    private javax.swing.JButton btnCancel;
     private javax.swing.JButton btnhome6;
     private javax.swing.JButton btnlogout1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;

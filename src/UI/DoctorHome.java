@@ -4,6 +4,8 @@
  */
 package UI;
 
+import userInterface.MainJFrame;
+
 /**
  *
  * @author shivanirahatwad

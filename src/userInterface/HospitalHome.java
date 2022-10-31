@@ -2,11 +2,13 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package UI;
+package userInterface;
 
-import userInterface.MainJFrame;
+import UI.*;
 import javax.swing.JOptionPane;
+import javax.swing.RowFilter;
 import javax.swing.table.DefaultTableModel;
+import javax.swing.table.TableRowSorter;
 
 /**
  *
@@ -36,7 +38,7 @@ public class HospitalHome extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
         jLabel2 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
+        jTextFieldSearch = new javax.swing.JTextField();
         btnUpdate = new javax.swing.JButton();
         btnDelete = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
@@ -51,6 +53,7 @@ public class HospitalHome extends javax.swing.JFrame {
         Avltxt = new javax.swing.JTextField();
         btnAdd = new javax.swing.JButton();
         jLabel9 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -89,7 +92,18 @@ public class HospitalHome extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Helvetica Neue", 1, 14)); // NOI18N
         jLabel2.setText("Search by NAME");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(261, 317, 136, -1));
-        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(434, 315, 124, -1));
+
+        jTextFieldSearch.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextFieldSearchActionPerformed(evt);
+            }
+        });
+        jTextFieldSearch.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jTextFieldSearchKeyPressed(evt);
+            }
+        });
+        getContentPane().add(jTextFieldSearch, new org.netbeans.lib.awtextra.AbsoluteConstraints(434, 315, 124, -1));
 
         btnUpdate.setFont(new java.awt.Font("Helvetica Neue", 1, 14)); // NOI18N
         btnUpdate.setText("VIEW/UPDATE");
@@ -164,9 +178,15 @@ public class HospitalHome extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnAdd, new org.netbeans.lib.awtextra.AbsoluteConstraints(337, 738, -1, -1));
-
-        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/wp2610913.jpg"))); // NOI18N
         getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 0, 1160, -1));
+
+        jButton1.setText("BACK");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 380, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -285,8 +305,8 @@ public class HospitalHome extends javax.swing.JFrame {
       String Availability = tblModel.getValueAt(jTable1.getSelectedRow(),3).toString();
         
      
-               ziptxt.setText(Zipcode);
-      hospitalNmTxt.setText(HospitalName);
+     ziptxt.setText(Zipcode);
+     hospitalNmTxt.setText(HospitalName);
      DocNmTxt.setText(DoctorName);
      Avltxt.setText(Availability);
      
@@ -294,6 +314,28 @@ public class HospitalHome extends javax.swing.JFrame {
       
       
     }//GEN-LAST:event_jTable1MouseClicked
+
+    private void jTextFieldSearchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldSearchActionPerformed
+        // TODO add your handling code here:
+        
+        
+    }//GEN-LAST:event_jTextFieldSearchActionPerformed
+
+    private void jTextFieldSearchKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextFieldSearchKeyPressed
+        // TODO add your handling code here:
+          DefaultTableModel tblModel = (DefaultTableModel) jTable1.getModel();
+        TableRowSorter<DefaultTableModel> tr=new TableRowSorter<DefaultTableModel> (tblModel);
+        jTable1.setRowSorter(tr);
+        tr.setRowFilter(RowFilter.regexFilter(jTextFieldSearch.getText().trim()));
+        
+    }//GEN-LAST:event_jTextFieldSearchKeyPressed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+         SystemAdminHome system = new SystemAdminHome();
+         system.show();
+         dispose();
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -322,6 +364,8 @@ public class HospitalHome extends javax.swing.JFrame {
         }
         //</editor-fold>
         //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -341,6 +385,7 @@ public class HospitalHome extends javax.swing.JFrame {
     private javax.swing.JButton btnUpdate;
     private javax.swing.JButton btnlogout;
     private javax.swing.JTextField hospitalNmTxt;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel4;
@@ -351,7 +396,7 @@ public class HospitalHome extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel9;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
-    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextFieldSearch;
     private javax.swing.JTextField ziptxt;
     // End of variables declaration//GEN-END:variables
 }

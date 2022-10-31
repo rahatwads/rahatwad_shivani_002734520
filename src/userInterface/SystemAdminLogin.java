@@ -2,9 +2,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package UI;
+package userInterface;
 
-import userInterface.MainJFrame;
+import UI.*;
 import java.awt.Color;
 
 /**
@@ -92,7 +92,7 @@ public class SystemAdminLogin extends javax.swing.JFrame {
         getContentPane().add(errorText, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 440, 480, 20));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI/istockphoto-1318410710-170667a.jpg"))); // NOI18N
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 130, -1, -1));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 110, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -170,6 +170,8 @@ public class SystemAdminLogin extends javax.swing.JFrame {
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(SystemAdminLogin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
 

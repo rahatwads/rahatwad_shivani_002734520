@@ -4,6 +4,7 @@
  */
 package UI;
 
+import userInterface.MainJFrame;
 import java.awt.Color;
 
 /**

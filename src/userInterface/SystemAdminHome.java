@@ -2,9 +2,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package UI;
+package userInterface;
 
-import userInterface.MainJFrame;
+import UI.*;
 import java.awt.Color;
 
 /**
@@ -33,9 +33,9 @@ public class SystemAdminHome extends javax.swing.JFrame {
 
         jLabel1 = new javax.swing.JLabel();
         btnlogout5 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
+        btnPatient = new javax.swing.JButton();
+        btnDoctor = new javax.swing.JButton();
+        btnHospital = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -50,22 +50,27 @@ public class SystemAdminHome extends javax.swing.JFrame {
             }
         });
 
-        jButton2.setFont(new java.awt.Font("Helvetica Neue", 0, 14)); // NOI18N
-        jButton2.setText("MANAGE PATIENT");
-
-        jButton3.setFont(new java.awt.Font("Helvetica Neue", 0, 14)); // NOI18N
-        jButton3.setText("MANAGE DOCTOR");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        btnPatient.setFont(new java.awt.Font("Helvetica Neue", 0, 14)); // NOI18N
+        btnPatient.setText("MANAGE PATIENT");
+        btnPatient.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                btnPatientActionPerformed(evt);
             }
         });
 
-        jButton4.setFont(new java.awt.Font("Helvetica Neue", 0, 14)); // NOI18N
-        jButton4.setText("MANAGE HOSPITAL");
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
+        btnDoctor.setFont(new java.awt.Font("Helvetica Neue", 0, 14)); // NOI18N
+        btnDoctor.setText("MANAGE DOCTOR");
+        btnDoctor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
+                btnDoctorActionPerformed(evt);
+            }
+        });
+
+        btnHospital.setFont(new java.awt.Font("Helvetica Neue", 0, 14)); // NOI18N
+        btnHospital.setText("MANAGE HOSPITAL");
+        btnHospital.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnHospitalActionPerformed(evt);
             }
         });
 
@@ -86,11 +91,11 @@ public class SystemAdminHome extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton3)
-                            .addComponent(jButton2))
+                            .addComponent(btnDoctor)
+                            .addComponent(btnPatient))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnHospital, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jButton5, javax.swing.GroupLayout.Alignment.TRAILING))
                         .addGap(163, 163, 163))
                     .addGroup(layout.createSequentialGroup()
@@ -109,11 +114,11 @@ public class SystemAdminHome extends javax.swing.JFrame {
                     .addComponent(btnlogout5))
                 .addGap(77, 77, 77)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton4)
-                    .addComponent(jButton2))
+                    .addComponent(btnHospital)
+                    .addComponent(btnPatient))
                 .addGap(123, 123, 123)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton3)
+                    .addComponent(btnDoctor)
                     .addComponent(jButton5))
                 .addContainerGap(164, Short.MAX_VALUE))
         );
@@ -121,13 +126,19 @@ public class SystemAdminHome extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void btnDoctorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDoctorActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton3ActionPerformed
+        DoctorHome doctorhome = new DoctorHome();
+        doctorhome.show();
+        dispose();
+    }//GEN-LAST:event_btnDoctorActionPerformed
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+    private void btnHospitalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHospitalActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton4ActionPerformed
+         HospitalHome hospitalhome= new HospitalHome();
+         hospitalhome.show();
+         dispose();
+    }//GEN-LAST:event_btnHospitalActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
@@ -135,10 +146,18 @@ public class SystemAdminHome extends javax.swing.JFrame {
 
     private void btnlogout5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnlogout5ActionPerformed
         // TODO add your handling code here:
-          MainJFrame MainFram = new MainJFrame();
-         MainFram.show();
+          PatientLogin patientlogin= new PatientLogin();
+         patientlogin.show();
          dispose();
     }//GEN-LAST:event_btnlogout5ActionPerformed
+
+    private void btnPatientActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPatientActionPerformed
+        // TODO add your handling code here:
+        ManagePatient managepatient= new ManagePatient();
+         managepatient.show();
+         dispose();
+        
+    }//GEN-LAST:event_btnPatientActionPerformed
 
     /**
      * @param args the command line arguments
@@ -167,6 +186,8 @@ public class SystemAdminHome extends javax.swing.JFrame {
         }
         //</editor-fold>
         //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -177,10 +198,10 @@ public class SystemAdminHome extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnDoctor;
+    private javax.swing.JButton btnHospital;
+    private javax.swing.JButton btnPatient;
     private javax.swing.JButton btnlogout5;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
