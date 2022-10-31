@@ -62,7 +62,7 @@ public class EncounterHistory extends javax.swing.JFrame {
                 btnlogoutActionPerformed(evt);
             }
         });
-        getContentPane().add(btnlogout, new org.netbeans.lib.awtextra.AbsoluteConstraints(579, 7, -1, -1));
+        getContentPane().add(btnlogout, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 10, -1, -1));
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
