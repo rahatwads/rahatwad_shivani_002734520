@@ -41,7 +41,6 @@ public class ManagePatient extends javax.swing.JFrame {
         btnMngPerson = new javax.swing.JButton();
         btnMngPatient = new javax.swing.JButton();
         btnLogout = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
         userContainer = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -67,8 +66,6 @@ public class ManagePatient extends javax.swing.JFrame {
             }
         });
 
-        jButton1.setText("BACK");
-
         javax.swing.GroupLayout leftPaneLayout = new javax.swing.GroupLayout(leftPane);
         leftPane.setLayout(leftPaneLayout);
         leftPaneLayout.setHorizontalGroup(
@@ -77,9 +74,7 @@ public class ManagePatient extends javax.swing.JFrame {
             .addComponent(btnMngPatient, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(leftPaneLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(leftPaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btnLogout, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                .addComponent(btnLogout, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         leftPaneLayout.setVerticalGroup(
             leftPaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -90,9 +85,7 @@ public class ManagePatient extends javax.swing.JFrame {
                 .addComponent(btnMngPatient)
                 .addGap(34, 34, 34)
                 .addComponent(btnLogout)
-                .addGap(32, 32, 32)
-                .addComponent(jButton1)
-                .addContainerGap(198, Short.MAX_VALUE))
+                .addContainerGap(253, Short.MAX_VALUE))
         );
 
         jSplitPane2.setLeftComponent(leftPane);
@@ -188,7 +181,6 @@ public class ManagePatient extends javax.swing.JFrame {
     private javax.swing.JButton btnLogout;
     private javax.swing.JButton btnMngPatient;
     private javax.swing.JButton btnMngPerson;
-    private javax.swing.JButton jButton1;
     private javax.swing.JSplitPane jSplitPane2;
     private javax.swing.JPanel leftPane;
     private javax.swing.JPanel userContainer;
