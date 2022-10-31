@@ -67,12 +67,7 @@ public class ManagePatient extends javax.swing.JFrame {
             }
         });
 
-        jButton1.setText("   <<  BACK");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
+        jButton1.setText("BACK");
 
         javax.swing.GroupLayout leftPaneLayout = new javax.swing.GroupLayout(leftPane);
         leftPane.setLayout(leftPaneLayout);
@@ -152,14 +147,6 @@ public class ManagePatient extends javax.swing.JFrame {
          MainFram.show();
          dispose();
     }//GEN-LAST:event_btnLogoutActionPerformed
-
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-        SystemAdminHome system = new SystemAdminHome();
-         system.show();
-         dispose();
-        
-    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments

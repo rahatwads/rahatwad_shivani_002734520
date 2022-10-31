@@ -6,6 +6,8 @@ package userInterface;
 
 import UI.*;
 import java.awt.Color;
+import java.awt.event.KeyEvent;
+import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
@@ -51,9 +53,9 @@ public class AppointmentBookingJFrame extends javax.swing.JFrame {
         txtHospital = new javax.swing.JTextField();
         txtPid = new javax.swing.JTextField();
         txtPatientname = new javax.swing.JTextField();
-        jTextField4 = new javax.swing.JTextField();
+        txtAge = new javax.swing.JTextField();
         jLabel10 = new javax.swing.JLabel();
-        jTextField6 = new javax.swing.JTextField();
+        txtCellno = new javax.swing.JTextField();
         jRadioButton1 = new javax.swing.JRadioButton();
         jRadioButton2 = new javax.swing.JRadioButton();
         jRadioButton3 = new javax.swing.JRadioButton();
@@ -63,6 +65,7 @@ public class AppointmentBookingJFrame extends javax.swing.JFrame {
         txtdt = new javax.swing.JTextField();
         txttime = new javax.swing.JTextField();
         btnCancel = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -131,25 +134,41 @@ public class AppointmentBookingJFrame extends javax.swing.JFrame {
             }
         });
         getContentPane().add(txtHospital, new org.netbeans.lib.awtextra.AbsoluteConstraints(332, 63, 138, -1));
+
+        txtPid.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                txtPidKeyPressed(evt);
+            }
+        });
         getContentPane().add(txtPid, new org.netbeans.lib.awtextra.AbsoluteConstraints(332, 98, 138, -1));
         getContentPane().add(txtPatientname, new org.netbeans.lib.awtextra.AbsoluteConstraints(332, 138, 138, -1));
 
-        jTextField4.addActionListener(new java.awt.event.ActionListener() {
+        txtAge.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField4ActionPerformed(evt);
+                txtAgeActionPerformed(evt);
             }
         });
-        getContentPane().add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(332, 173, 138, -1));
+        txtAge.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                txtAgeKeyPressed(evt);
+            }
+        });
+        getContentPane().add(txtAge, new org.netbeans.lib.awtextra.AbsoluteConstraints(332, 173, 138, -1));
 
         jLabel10.setText("TIME:");
         getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(83, 367, -1, -1));
 
-        jTextField6.addActionListener(new java.awt.event.ActionListener() {
+        txtCellno.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField6ActionPerformed(evt);
+                txtCellnoActionPerformed(evt);
             }
         });
-        getContentPane().add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(332, 241, 136, -1));
+        txtCellno.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                txtCellnoKeyPressed(evt);
+            }
+        });
+        getContentPane().add(txtCellno, new org.netbeans.lib.awtextra.AbsoluteConstraints(332, 241, 136, -1));
 
         jRadioButton1.setText("Female");
         getContentPane().add(jRadioButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(332, 208, -1, -1));
@@ -194,6 +213,14 @@ public class AppointmentBookingJFrame extends javax.swing.JFrame {
         });
         getContentPane().add(btnCancel, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 410, 200, 30));
 
+        jButton1.setText("confirm");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 760, -1, -1));
+
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
@@ -201,9 +228,9 @@ public class AppointmentBookingJFrame extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jRadioButton3ActionPerformed
 
-    private void jTextField6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField6ActionPerformed
+    private void txtCellnoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCellnoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField6ActionPerformed
+    }//GEN-LAST:event_txtCellnoActionPerformed
 
     private void btnhome6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnhome6ActionPerformed
         // TODO add your handling code here:
@@ -236,6 +263,7 @@ public class AppointmentBookingJFrame extends javax.swing.JFrame {
             txtdt.setText("");
             txttime.setText("");
         }
+        
             
     }//GEN-LAST:event_btnBookActionPerformed
 
@@ -247,9 +275,9 @@ public class AppointmentBookingJFrame extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_txtdtActionPerformed
 
-    private void jTextField4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField4ActionPerformed
+    private void txtAgeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtAgeActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField4ActionPerformed
+    }//GEN-LAST:event_txtAgeActionPerformed
 
     private void btnCancelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelActionPerformed
         // TODO add your handling code here:
@@ -271,6 +299,75 @@ public class AppointmentBookingJFrame extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_btnCancelActionPerformed
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+     
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void txtAgeKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtAgeKeyPressed
+        // TODO add your handling code here:
+        String num = txtAge.getText();
+        int length = num.length();
+        char c = evt.getKeyChar();
+        if(evt.getKeyChar()>='0' && evt.getKeyChar()<='9'){
+             if(length<3){
+                 txtAge.setEditable(true);
+             }else{
+                 txtAge.setEditable(false);
+             }
+        }else {
+            if(evt.getExtendedKeyCode() ==KeyEvent.VK_BACK_SPACE || evt.getExtendedKeyCode() ==KeyEvent.VK_DELETE){
+            txtAge.setEditable(true);
+            
+        }else{
+                txtAge.setEditable(false);
+                }
+        }
+    }//GEN-LAST:event_txtAgeKeyPressed
+
+    private void txtCellnoKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtCellnoKeyPressed
+        // TODO add your handling code here:
+        String num = txtCellno.getText();
+        int length = num.length();
+        char c = evt.getKeyChar();
+        if(evt.getKeyChar()>='0' && evt.getKeyChar()<='9'){
+             if(length<10){
+                 txtCellno.setEditable(true);
+             }else{
+                txtCellno.setEditable(false);
+             }
+        }else {
+            if(evt.getExtendedKeyCode() ==KeyEvent.VK_BACK_SPACE || evt.getExtendedKeyCode() ==KeyEvent.VK_DELETE){
+            txtCellno.setEditable(true);
+            
+        }else{
+                txtCellno.setEditable(false);
+                }
+        }
+    }//GEN-LAST:event_txtCellnoKeyPressed
+
+    private void txtPidKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtPidKeyPressed
+        // TODO add your handling code here:
+        String num = txtPid.getText();
+        int length = num.length();
+        char c = evt.getKeyChar();
+        if(evt.getKeyChar()>='0' && evt.getKeyChar()<='9'){
+             if(length<10){
+                 txtPid.setEditable(true);
+             }else{
+                txtPid.setEditable(false);
+             }
+        }else {
+            if(evt.getExtendedKeyCode() ==KeyEvent.VK_BACK_SPACE || evt.getExtendedKeyCode() ==KeyEvent.VK_DELETE){
+            txtPid.setEditable(true);
+            
+        }else{
+                txtPid.setEditable(false);
+                }
+        }
+    }//GEN-LAST:event_txtPidKeyPressed
+
+      
     /**
      * @param args the command line arguments
      */
@@ -318,6 +415,7 @@ public class AppointmentBookingJFrame extends javax.swing.JFrame {
     private javax.swing.JButton btnCancel;
     private javax.swing.JButton btnhome6;
     private javax.swing.JButton btnlogout1;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
@@ -333,8 +431,8 @@ public class AppointmentBookingJFrame extends javax.swing.JFrame {
     private javax.swing.JRadioButton jRadioButton3;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField6;
+    private javax.swing.JTextField txtAge;
+    private javax.swing.JTextField txtCellno;
     private javax.swing.JTextField txtDocName;
     private javax.swing.JTextField txtHospital;
     private javax.swing.JTextField txtPatientname;
