@@ -70,7 +70,7 @@ public class ViewCommunityPanel extends javax.swing.JPanel {
         ));
         jScrollPane1.setViewportView(tblCommunities);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(47, 94, 813, 154));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 90, 813, 154));
 
         btnViewCommunity.setText("View Community");
         btnViewCommunity.addActionListener(new java.awt.event.ActionListener() {
@@ -78,7 +78,7 @@ public class ViewCommunityPanel extends javax.swing.JPanel {
                 btnViewCommunityActionPerformed(evt);
             }
         });
-        add(btnViewCommunity, new org.netbeans.lib.awtextra.AbsoluteConstraints(502, 280, -1, -1));
+        add(btnViewCommunity, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 280, -1, -1));
 
         btnUpdateCommunity.setText("Update Community");
         btnUpdateCommunity.addActionListener(new java.awt.event.ActionListener() {
@@ -86,7 +86,7 @@ public class ViewCommunityPanel extends javax.swing.JPanel {
                 btnUpdateCommunityActionPerformed(evt);
             }
         });
-        add(btnUpdateCommunity, new org.netbeans.lib.awtextra.AbsoluteConstraints(681, 280, -1, -1));
+        add(btnUpdateCommunity, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 280, -1, -1));
 
         btnSaveCommunity.setText("Save Community");
         btnSaveCommunity.addActionListener(new java.awt.event.ActionListener() {
@@ -111,7 +111,7 @@ public class ViewCommunityPanel extends javax.swing.JPanel {
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ui/wp2610913.jpg"))); // NOI18N
         jLabel2.setText("jLabel2");
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, -1, -1));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnSaveCommunityActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSaveCommunityActionPerformed

@@ -72,7 +72,7 @@ public class ViewHousePanel extends javax.swing.JPanel {
         ));
         jScrollPane1.setViewportView(tblHouses);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(27, 86, 814, 193));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 90, 700, 193));
 
         btnViewHouse.setText("View House");
         btnViewHouse.addActionListener(new java.awt.event.ActionListener() {
@@ -80,7 +80,7 @@ public class ViewHousePanel extends javax.swing.JPanel {
                 btnViewHouseActionPerformed(evt);
             }
         });
-        add(btnViewHouse, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 307, -1, -1));
+        add(btnViewHouse, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 310, -1, -1));
 
         btnUpdateHouse.setText("Update House");
         btnUpdateHouse.addActionListener(new java.awt.event.ActionListener() {
@@ -88,7 +88,7 @@ public class ViewHousePanel extends javax.swing.JPanel {
                 btnUpdateHouseActionPerformed(evt);
             }
         });
-        add(btnUpdateHouse, new org.netbeans.lib.awtextra.AbsoluteConstraints(625, 307, -1, -1));
+        add(btnUpdateHouse, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 310, -1, -1));
 
         jLabel2.setText("Pin Code");
         add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(242, 482, -1, -1));
@@ -116,7 +116,7 @@ public class ViewHousePanel extends javax.swing.JPanel {
         add(txtHouseId, new org.netbeans.lib.awtextra.AbsoluteConstraints(379, 357, 149, -1));
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ui/wp2610913.jpg"))); // NOI18N
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 10, -1, -1));
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnSaveHouseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSaveHouseActionPerformed

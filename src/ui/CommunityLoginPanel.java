@@ -38,7 +38,7 @@ public class CommunityLoginPanel extends javax.swing.JPanel {
 
         jLabel1.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
         jLabel1.setText("Community Login");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(335, 65, -1, -1));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 60, -1, -1));
 
         lblCommunityAdminUsername.setText("Username");
         add(lblCommunityAdminUsername, new org.netbeans.lib.awtextra.AbsoluteConstraints(203, 155, -1, -1));
@@ -58,7 +58,7 @@ public class CommunityLoginPanel extends javax.swing.JPanel {
         add(btnCommunityAdminLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 290, -1, -1));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ui/wp2610913.jpg"))); // NOI18N
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 10, -1, -1));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnCommunityAdminLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCommunityAdminLoginActionPerformed

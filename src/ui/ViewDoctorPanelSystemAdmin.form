@@ -33,7 +33,7 @@
       </Events>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="464" y="239" width="-1" height="-1"/>
+          <AbsoluteConstraints x="380" y="240" width="-1" height="-1"/>
         </Constraint>
       </Constraints>
     </Component>
@@ -46,7 +46,7 @@
       </Events>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="570" y="239" width="-1" height="-1"/>
+          <AbsoluteConstraints x="500" y="240" width="-1" height="-1"/>
         </Constraint>
       </Constraints>
     </Component>
@@ -63,7 +63,7 @@
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="544" y="268" width="-1" height="-1"/>
+          <AbsoluteConstraints x="550" y="300" width="-1" height="-1"/>
         </Constraint>
       </Constraints>
     </Component>
@@ -96,11 +96,14 @@
     </Component>
     <Component class="javax.swing.JLabel" name="lblContactDetails">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Helvetica Neue" size="13" style="1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Contact Details"/>
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="122" y="649" width="94" height="-1"/>
+          <AbsoluteConstraints x="30" y="650" width="130" height="-1"/>
         </Constraint>
       </Constraints>
     </Component>
@@ -190,6 +193,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="btnSaveDoctor">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="0" green="99" red="0" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Save Doctor"/>
       </Properties>
       <Events>
@@ -197,7 +203,7 @@
       </Events>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="514" y="460" width="267" height="-1"/>
+          <AbsoluteConstraints x="440" y="460" width="200" height="-1"/>
         </Constraint>
       </Constraints>
     </Component>
@@ -354,7 +360,7 @@
       </Events>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="710" y="239" width="-1" height="-1"/>
+          <AbsoluteConstraints x="640" y="240" width="-1" height="-1"/>
         </Constraint>
       </Constraints>
     </Component>
@@ -367,7 +373,7 @@
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="10" y="10" width="-1" height="-1"/>
+          <AbsoluteConstraints x="-10" y="0" width="-1" height="-1"/>
         </Constraint>
       </Constraints>
     </Component>

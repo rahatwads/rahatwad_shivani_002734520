@@ -79,7 +79,7 @@ public class ViewEncountersPanel extends javax.swing.JPanel {
         ));
         jScrollPane1.setViewportView(tblEncounters);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(27, 125, 788, 158));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 130, 788, 158));
 
         btnViewEncounters.setText("View Encounter");
         btnViewEncounters.addActionListener(new java.awt.event.ActionListener() {
@@ -87,7 +87,7 @@ public class ViewEncountersPanel extends javax.swing.JPanel {
                 btnViewEncountersActionPerformed(evt);
             }
         });
-        add(btnViewEncounters, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 301, -1, -1));
+        add(btnViewEncounters, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 300, -1, -1));
 
         btnUpdateEncounters.setText("Update Encounter");
         btnUpdateEncounters.addActionListener(new java.awt.event.ActionListener() {
@@ -95,7 +95,7 @@ public class ViewEncountersPanel extends javax.swing.JPanel {
                 btnUpdateEncountersActionPerformed(evt);
             }
         });
-        add(btnUpdateEncounters, new org.netbeans.lib.awtextra.AbsoluteConstraints(607, 301, -1, -1));
+        add(btnUpdateEncounters, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 300, -1, -1));
 
         btnAddEncounter.setText("Add Encounter");
         btnAddEncounter.addActionListener(new java.awt.event.ActionListener() {
@@ -124,7 +124,7 @@ public class ViewEncountersPanel extends javax.swing.JPanel {
         add(txtEncounterId, new org.netbeans.lib.awtextra.AbsoluteConstraints(313, 348, 293, -1));
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ui/wp2610913.jpg"))); // NOI18N
-        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 0, -1, -1));
+        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnAddEncounterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddEncounterActionPerformed

@@ -86,7 +86,7 @@ public class DoctorPanel extends javax.swing.JPanel {
         jPanelDoctorLoginPanel.add(btnDoctorLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(333, 286, 130, 30));
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ui/wp2610913.jpg"))); // NOI18N
-        jPanelDoctorLoginPanel.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, -1, -1));
+        jPanelDoctorLoginPanel.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         add(jPanelDoctorLoginPanel, "jPanelDoctorLoginPanel");
 

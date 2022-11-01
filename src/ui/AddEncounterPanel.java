@@ -83,7 +83,7 @@ public class AddEncounterPanel extends javax.swing.JPanel {
         add(txtEncounterDate, new org.netbeans.lib.awtextra.AbsoluteConstraints(254, 256, 293, -1));
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ui/wp2610913.jpg"))); // NOI18N
-        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, -1, -1));
+        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnAddEncounterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddEncounterActionPerformed

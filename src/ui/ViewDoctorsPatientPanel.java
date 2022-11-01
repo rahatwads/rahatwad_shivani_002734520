@@ -63,10 +63,10 @@ public class ViewDoctorsPatientPanel extends javax.swing.JPanel {
         ));
         jScrollPane1.setViewportView(tblDoctorsList);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(64, 96, 777, 166));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 100, 777, 166));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ui/wp2610913.jpg"))); // NOI18N
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, -1, -1));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
 

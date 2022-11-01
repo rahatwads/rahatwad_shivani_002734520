@@ -110,7 +110,7 @@ public class SystemAdminPanel extends javax.swing.JPanel {
         hospitalAdminLoginPanel.add(btnSystemAdminLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 320, 120, -1));
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ui/wp2610913.jpg"))); // NOI18N
-        hospitalAdminLoginPanel.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, -1, -1));
+        hospitalAdminLoginPanel.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, -1, -1));
 
         add(hospitalAdminLoginPanel, "hospitalAdminLoginPanel");
 

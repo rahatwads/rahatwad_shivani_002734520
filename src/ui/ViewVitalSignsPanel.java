@@ -85,7 +85,7 @@ public class ViewVitalSignsPanel extends javax.swing.JPanel {
                 jButton1ActionPerformed(evt);
             }
         });
-        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(553, 268, -1, -1));
+        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 270, -1, -1));
 
         jButton2.setText("Update Vitals");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -93,7 +93,7 @@ public class ViewVitalSignsPanel extends javax.swing.JPanel {
                 jButton2ActionPerformed(evt);
             }
         });
-        add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(665, 268, -1, -1));
+        add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 270, -1, -1));
         add(txtTemperature, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 446, 150, -1));
 
         jLabel5.setText("Pulse rate");

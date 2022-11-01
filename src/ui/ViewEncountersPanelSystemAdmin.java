@@ -88,7 +88,7 @@ public class ViewEncountersPanelSystemAdmin extends javax.swing.JPanel {
                 btnViewEncountersActionPerformed(evt);
             }
         });
-        add(btnViewEncounters, new org.netbeans.lib.awtextra.AbsoluteConstraints(371, 301, -1, -1));
+        add(btnViewEncounters, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 300, -1, -1));
 
         btnUpdateEncounters.setText("Update Encounter");
         btnUpdateEncounters.addActionListener(new java.awt.event.ActionListener() {
@@ -96,7 +96,7 @@ public class ViewEncountersPanelSystemAdmin extends javax.swing.JPanel {
                 btnUpdateEncountersActionPerformed(evt);
             }
         });
-        add(btnUpdateEncounters, new org.netbeans.lib.awtextra.AbsoluteConstraints(509, 301, -1, -1));
+        add(btnUpdateEncounters, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 300, -1, -1));
 
         btnAddEncounter.setText("Add Encounter");
         btnAddEncounter.addActionListener(new java.awt.event.ActionListener() {
@@ -129,11 +129,11 @@ public class ViewEncountersPanelSystemAdmin extends javax.swing.JPanel {
                 btnDeleteEncounterActionPerformed(evt);
             }
         });
-        add(btnDeleteEncounter, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 301, -1, -1));
+        add(btnDeleteEncounter, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 300, -1, -1));
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ui/wp2610913.jpg"))); // NOI18N
         jLabel6.setText("jLabel6");
-        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 10, -1, -1));
+        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnViewEncountersActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnViewEncountersActionPerformed

@@ -62,7 +62,7 @@ public class CheckEncounterPatientPanel extends javax.swing.JPanel {
         ));
         jScrollPane1.setViewportView(tblEncounters);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(112, 101, 663, 164));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 100, 663, 164));
 
         jLabel2.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ui/wp2610913.jpg"))); // NOI18N

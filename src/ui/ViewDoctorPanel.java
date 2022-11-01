@@ -102,7 +102,7 @@ public class ViewDoctorPanel extends javax.swing.JPanel {
                 btnViewDoctorActionPerformed(evt);
             }
         });
-        add(btnViewDoctor, new org.netbeans.lib.awtextra.AbsoluteConstraints(524, 239, -1, -1));
+        add(btnViewDoctor, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 240, -1, -1));
 
         btnUpdateDoctor.setText("Update Doctors");
         btnUpdateDoctor.addActionListener(new java.awt.event.ActionListener() {
@@ -110,11 +110,11 @@ public class ViewDoctorPanel extends javax.swing.JPanel {
                 btnUpdateDoctorActionPerformed(evt);
             }
         });
-        add(btnUpdateDoctor, new org.netbeans.lib.awtextra.AbsoluteConstraints(657, 239, -1, -1));
+        add(btnUpdateDoctor, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 240, -1, -1));
         add(txtDoctorName, new org.netbeans.lib.awtextra.AbsoluteConstraints(176, 332, 150, -1));
 
         lblPatientLoginDetails.setText("Login Details");
-        add(lblPatientLoginDetails, new org.netbeans.lib.awtextra.AbsoluteConstraints(544, 268, -1, -1));
+        add(lblPatientLoginDetails, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 300, -1, -1));
         add(txtDoctorAge, new org.netbeans.lib.awtextra.AbsoluteConstraints(176, 376, 150, -1));
 
         lblDoctorUsername.setText("Username");
@@ -122,7 +122,7 @@ public class ViewDoctorPanel extends javax.swing.JPanel {
         add(txtDoctorGender, new org.netbeans.lib.awtextra.AbsoluteConstraints(176, 412, 150, -1));
 
         lblContactDetails.setText("Contact Details");
-        add(lblContactDetails, new org.netbeans.lib.awtextra.AbsoluteConstraints(122, 649, 94, -1));
+        add(lblContactDetails, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 650, 94, -1));
 
         lblDoctorHouse.setText("Hospital");
         add(lblDoctorHouse, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 463, -1, -1));
@@ -186,7 +186,7 @@ public class ViewDoctorPanel extends javax.swing.JPanel {
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ui/wp2610913.jpg"))); // NOI18N
         jLabel6.setText("jLabel6");
-        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, -1, -1));
+        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void txtDoctorPhoneNumberActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtDoctorPhoneNumberActionPerformed

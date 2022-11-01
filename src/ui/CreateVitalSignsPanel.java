@@ -92,7 +92,7 @@ public class CreateVitalSignsPanel extends javax.swing.JPanel {
         add(btnSaveVitalSign, new org.netbeans.lib.awtextra.AbsoluteConstraints(318, 448, -1, -1));
 
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ui/wp2610913.jpg"))); // NOI18N
-        add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, -1, -1));
+        add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnSaveVitalSignActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSaveVitalSignActionPerformed

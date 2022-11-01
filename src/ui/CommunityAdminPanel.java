@@ -97,7 +97,7 @@ public class CommunityAdminPanel extends javax.swing.JPanel {
         communityAdminLoginPanel.add(btnCommunityAdminLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 290, -1, -1));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ui/wp2610913.jpg"))); // NOI18N
-        communityAdminLoginPanel.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, -1, -1));
+        communityAdminLoginPanel.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         add(communityAdminLoginPanel, "communityAdminLoginPanel");
 

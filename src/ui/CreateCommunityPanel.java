@@ -68,7 +68,7 @@ public class CreateCommunityPanel extends javax.swing.JPanel {
         add(jComboBoxCities, new org.netbeans.lib.awtextra.AbsoluteConstraints(389, 256, 150, -1));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ui/wp2610913.jpg"))); // NOI18N
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, -1));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1380, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnSaveCommunityActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSaveCommunityActionPerformed

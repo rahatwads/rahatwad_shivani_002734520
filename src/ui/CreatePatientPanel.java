@@ -142,7 +142,7 @@ public class CreatePatientPanel extends javax.swing.JPanel {
                 btnSavePatientActionPerformed(evt);
             }
         });
-        add(btnSavePatient, new org.netbeans.lib.awtextra.AbsoluteConstraints(486, 499, 227, -1));
+        add(btnSavePatient, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 480, 227, -1));
 
         jLabel1.setText("House");
         add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 246, -1, -1));
@@ -150,7 +150,7 @@ public class CreatePatientPanel extends javax.swing.JPanel {
         add(jComboBoxHouses, new org.netbeans.lib.awtextra.AbsoluteConstraints(145, 243, 150, -1));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ui/wp2610913.jpg"))); // NOI18N
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, -1, -1));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void txtPatientPhoneNumberActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPatientPhoneNumberActionPerformed

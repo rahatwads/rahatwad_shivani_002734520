@@ -73,7 +73,7 @@ public class ViewHospitalPanel extends javax.swing.JPanel {
         ));
         jScrollPane1.setViewportView(tblHospitals);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(68, 101, 771, 178));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 100, 771, 178));
 
         btnViewHospital.setText("View Hospital");
         btnViewHospital.addActionListener(new java.awt.event.ActionListener() {
@@ -81,7 +81,7 @@ public class ViewHospitalPanel extends javax.swing.JPanel {
                 btnViewHospitalActionPerformed(evt);
             }
         });
-        add(btnViewHospital, new org.netbeans.lib.awtextra.AbsoluteConstraints(445, 305, -1, -1));
+        add(btnViewHospital, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 300, -1, -1));
 
         btnUpdateHospital.setText("Update Hospital");
         btnUpdateHospital.addActionListener(new java.awt.event.ActionListener() {
@@ -89,7 +89,7 @@ public class ViewHospitalPanel extends javax.swing.JPanel {
                 btnUpdateHospitalActionPerformed(evt);
             }
         });
-        add(btnUpdateHospital, new org.netbeans.lib.awtextra.AbsoluteConstraints(601, 305, -1, -1));
+        add(btnUpdateHospital, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 300, -1, -1));
 
         add(jComboBoxHospitalCommunity, new org.netbeans.lib.awtextra.AbsoluteConstraints(406, 568, 149, -1));
 
@@ -117,7 +117,7 @@ public class ViewHospitalPanel extends javax.swing.JPanel {
         add(txtHospitalId, new org.netbeans.lib.awtextra.AbsoluteConstraints(406, 397, 149, -1));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ui/wp2610913.jpg"))); // NOI18N
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, -1, -1));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnSaveHospitalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSaveHospitalActionPerformed
