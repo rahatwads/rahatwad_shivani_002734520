@@ -8,7 +8,7 @@ import java.util.Date;
 
 /**
  *
- * @author adityaraj
+ * @author shivanirahatwad
  */
 public class Encounter {
     private String encounterId;

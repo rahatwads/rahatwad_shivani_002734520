@@ -9,7 +9,7 @@ import javax.swing.JTextField;
 
 /**
  *
- * @author adityaraj
+ * @author shivanirahatwad
  */
 public class EncounterHistory {
     private ArrayList<Encounter> encounterHistory;

@@ -9,7 +9,7 @@ import javax.swing.JTextField;
 
 /**
  *
- * @author adityaraj
+ * @author shivanirahatwad
  */
 public class HospitalDirectory {
     private ArrayList<Hospital> hospitalDirectory;
