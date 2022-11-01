@@ -79,7 +79,7 @@ public class ViewEncountersPanel extends javax.swing.JPanel {
         ));
         jScrollPane1.setViewportView(tblEncounters);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 130, 788, 158));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 130, 660, 158));
 
         btnViewEncounters.setText("View Encounter");
         btnViewEncounters.addActionListener(new java.awt.event.ActionListener() {
@@ -87,7 +87,7 @@ public class ViewEncountersPanel extends javax.swing.JPanel {
                 btnViewEncountersActionPerformed(evt);
             }
         });
-        add(btnViewEncounters, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 300, -1, -1));
+        add(btnViewEncounters, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 300, -1, -1));
 
         btnUpdateEncounters.setText("Update Encounter");
         btnUpdateEncounters.addActionListener(new java.awt.event.ActionListener() {
@@ -95,7 +95,7 @@ public class ViewEncountersPanel extends javax.swing.JPanel {
                 btnUpdateEncountersActionPerformed(evt);
             }
         });
-        add(btnUpdateEncounters, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 300, -1, -1));
+        add(btnUpdateEncounters, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 300, -1, -1));
 
         btnAddEncounter.setText("Add Encounter");
         btnAddEncounter.addActionListener(new java.awt.event.ActionListener() {
@@ -103,25 +103,25 @@ public class ViewEncountersPanel extends javax.swing.JPanel {
                 btnAddEncounterActionPerformed(evt);
             }
         });
-        add(btnAddEncounter, new org.netbeans.lib.awtextra.AbsoluteConstraints(275, 628, -1, -1));
+        add(btnAddEncounter, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 590, -1, -1));
 
         jLabel2.setText("Doctor");
         add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(235, 392, -1, -1));
-        add(txtEncounterDate, new org.netbeans.lib.awtextra.AbsoluteConstraints(313, 521, 293, -1));
+        add(txtEncounterDate, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 500, 190, -1));
 
-        add(jComboBoxDoctor, new org.netbeans.lib.awtextra.AbsoluteConstraints(313, 389, 293, -1));
+        add(jComboBoxDoctor, new org.netbeans.lib.awtextra.AbsoluteConstraints(313, 389, 200, -1));
 
         jLabel3.setText("Patient");
         add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(233, 448, -1, -1));
 
-        add(jComboBoxPatient, new org.netbeans.lib.awtextra.AbsoluteConstraints(313, 445, 293, -1));
+        add(jComboBoxPatient, new org.netbeans.lib.awtextra.AbsoluteConstraints(313, 445, 200, -1));
 
         jLabel4.setText("Date of Encounter");
-        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(169, 527, -1, -1));
+        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 500, -1, -1));
 
         jLabel5.setText("Encounter Id");
         add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 354, -1, -1));
-        add(txtEncounterId, new org.netbeans.lib.awtextra.AbsoluteConstraints(313, 348, 293, -1));
+        add(txtEncounterId, new org.netbeans.lib.awtextra.AbsoluteConstraints(313, 348, 200, -1));
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ui/wp2610913.jpg"))); // NOI18N
         add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));

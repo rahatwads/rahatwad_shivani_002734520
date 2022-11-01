@@ -131,7 +131,7 @@ public class HomePage extends javax.swing.JFrame {
             viewPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(viewPanelLayout.createSequentialGroup()
                 .addComponent(jLabel2)
-                .addGap(0, 371, Short.MAX_VALUE))
+                .addGap(0, 296, Short.MAX_VALUE))
         );
 
         splitPaneMainPage.setRightComponent(viewPanel);

@@ -62,12 +62,12 @@ public class AddEncounterPanel extends javax.swing.JPanel {
         jLabel2.setText("Doctor");
         add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(174, 101, -1, -1));
 
-        add(jComboBoxDoctor, new org.netbeans.lib.awtextra.AbsoluteConstraints(254, 95, 293, -1));
+        add(jComboBoxDoctor, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 100, 220, -1));
 
         jLabel3.setText("Patient");
         add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(174, 183, -1, -1));
 
-        add(jComboBoxPatient, new org.netbeans.lib.awtextra.AbsoluteConstraints(254, 180, 293, -1));
+        add(jComboBoxPatient, new org.netbeans.lib.awtextra.AbsoluteConstraints(254, 180, 220, -1));
 
         jLabel4.setText("Date of Encounter");
         add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 262, -1, -1));
@@ -79,8 +79,8 @@ public class AddEncounterPanel extends javax.swing.JPanel {
                 btnAddEncounterActionPerformed(evt);
             }
         });
-        add(btnAddEncounter, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 360, -1, -1));
-        add(txtEncounterDate, new org.netbeans.lib.awtextra.AbsoluteConstraints(254, 256, 293, -1));
+        add(btnAddEncounter, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 340, -1, -1));
+        add(txtEncounterDate, new org.netbeans.lib.awtextra.AbsoluteConstraints(254, 256, 220, -1));
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ui/wp2610913.jpg"))); // NOI18N
         add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));

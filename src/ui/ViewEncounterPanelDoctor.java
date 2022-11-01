@@ -78,7 +78,7 @@ public class ViewEncounterPanelDoctor extends javax.swing.JPanel {
         ));
         jScrollPane1.setViewportView(tblEncounters);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 125, 788, 158));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 125, 660, 158));
         add(txtEncounterId, new org.netbeans.lib.awtextra.AbsoluteConstraints(313, 330, 293, -1));
 
         btnViewEncounters.setText("View Encounter");
@@ -87,7 +87,7 @@ public class ViewEncounterPanelDoctor extends javax.swing.JPanel {
                 btnViewEncountersActionPerformed(evt);
             }
         });
-        add(btnViewEncounters, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 300, -1, -1));
+        add(btnViewEncounters, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 300, -1, -1));
 
         btnUpdateEncounters.setText("Update Encounter");
         btnUpdateEncounters.addActionListener(new java.awt.event.ActionListener() {
@@ -95,7 +95,7 @@ public class ViewEncounterPanelDoctor extends javax.swing.JPanel {
                 btnUpdateEncountersActionPerformed(evt);
             }
         });
-        add(btnUpdateEncounters, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 300, -1, -1));
+        add(btnUpdateEncounters, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 300, -1, -1));
 
         btnAddEncounter.setText("Add Encounter");
         btnAddEncounter.addActionListener(new java.awt.event.ActionListener() {
@@ -111,8 +111,9 @@ public class ViewEncounterPanelDoctor extends javax.swing.JPanel {
 
         add(jComboBoxPatient, new org.netbeans.lib.awtextra.AbsoluteConstraints(313, 398, 293, -1));
 
+        jLabel1.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
         jLabel1.setText("View Encounters");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(382, 51, -1, -1));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 50, -1, -1));
 
         jLabel4.setText("Date of Encounter");
         add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(169, 476, -1, -1));

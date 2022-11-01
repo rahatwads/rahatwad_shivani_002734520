@@ -86,7 +86,7 @@ public class ViewDoctorPanelSystemAdmin extends javax.swing.JPanel {
                 btnViewDoctorActionPerformed(evt);
             }
         });
-        add(btnViewDoctor, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 240, -1, -1));
+        add(btnViewDoctor, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 230, -1, -1));
 
         btnUpdateDoctor.setText("Update Doctors");
         btnUpdateDoctor.addActionListener(new java.awt.event.ActionListener() {
@@ -94,15 +94,15 @@ public class ViewDoctorPanelSystemAdmin extends javax.swing.JPanel {
                 btnUpdateDoctorActionPerformed(evt);
             }
         });
-        add(btnUpdateDoctor, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 240, -1, -1));
+        add(btnUpdateDoctor, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 230, 130, -1));
         add(txtDoctorName, new org.netbeans.lib.awtextra.AbsoluteConstraints(176, 332, 150, -1));
 
         lblPatientLoginDetails.setText("Login Details");
-        add(lblPatientLoginDetails, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 300, -1, -1));
+        add(lblPatientLoginDetails, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 290, -1, -1));
         add(txtDoctorAge, new org.netbeans.lib.awtextra.AbsoluteConstraints(176, 376, 150, -1));
 
         lblDoctorUsername.setText("Username");
-        add(lblDoctorUsername, new org.netbeans.lib.awtextra.AbsoluteConstraints(451, 335, -1, -1));
+        add(lblDoctorUsername, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 340, -1, -1));
         add(txtDoctorGender, new org.netbeans.lib.awtextra.AbsoluteConstraints(176, 412, 150, -1));
 
         lblContactDetails.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
@@ -123,15 +123,15 @@ public class ViewDoctorPanelSystemAdmin extends javax.swing.JPanel {
         add(lblDoctorAge, new org.netbeans.lib.awtextra.AbsoluteConstraints(136, 379, -1, -1));
 
         lblDoctorPassword.setText("Password");
-        add(lblDoctorPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(452, 376, -1, -1));
-        add(txtDoctorUsername, new org.netbeans.lib.awtextra.AbsoluteConstraints(544, 332, 150, -1));
+        add(lblDoctorPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 380, -1, -1));
+        add(txtDoctorUsername, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 340, 150, -1));
 
         lblDoctorGender.setText("Gender");
         add(lblDoctorGender, new org.netbeans.lib.awtextra.AbsoluteConstraints(115, 415, -1, -1));
 
         lblDoctorPhoneNumber.setText("Phone Number");
         add(lblDoctorPhoneNumber, new org.netbeans.lib.awtextra.AbsoluteConstraints(72, 678, -1, -1));
-        add(txtDoctorPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(544, 373, 150, -1));
+        add(txtDoctorPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 380, 150, -1));
 
         lblDoctorEmailAddress.setText("Email Address");
         add(lblDoctorEmailAddress, new org.netbeans.lib.awtextra.AbsoluteConstraints(73, 718, -1, -1));
@@ -143,7 +143,7 @@ public class ViewDoctorPanelSystemAdmin extends javax.swing.JPanel {
                 btnSaveDoctorActionPerformed(evt);
             }
         });
-        add(btnSaveDoctor, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 460, 200, -1));
+        add(btnSaveDoctor, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 450, 150, -1));
 
         jLabel5.setText("DoctorId");
         add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(109, 297, -1, -1));
@@ -165,7 +165,7 @@ public class ViewDoctorPanelSystemAdmin extends javax.swing.JPanel {
         ));
         jScrollPane1.setViewportView(tblDoctors);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(24, 35, 825, 173));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 40, 790, 173));
 
         jLabel3.setText("Occupation");
         add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(91, 511, -1, -1));
@@ -178,7 +178,7 @@ public class ViewDoctorPanelSystemAdmin extends javax.swing.JPanel {
         add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(93, 560, -1, -1));
 
         lblpersonalDetails.setText("Personal Details");
-        add(lblpersonalDetails, new org.netbeans.lib.awtextra.AbsoluteConstraints(176, 242, -1, -1));
+        add(lblpersonalDetails, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 260, -1, -1));
         add(txtDoctorExperience, new org.netbeans.lib.awtextra.AbsoluteConstraints(176, 557, 150, -1));
 
         jLabel4.setText("Specialisation");
@@ -193,11 +193,11 @@ public class ViewDoctorPanelSystemAdmin extends javax.swing.JPanel {
                 btnDeleteDoctorActionPerformed(evt);
             }
         });
-        add(btnDeleteDoctor, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 240, -1, -1));
+        add(btnDeleteDoctor, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 230, -1, -1));
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ui/wp2610913.jpg"))); // NOI18N
         jLabel6.setText("jLabel6");
-        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 0, -1, -1));
+        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(-20, 0, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnViewDoctorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnViewDoctorActionPerformed

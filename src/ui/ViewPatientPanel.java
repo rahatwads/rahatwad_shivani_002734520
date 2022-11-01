@@ -93,7 +93,7 @@ public class ViewPatientPanel extends javax.swing.JPanel {
         ));
         jScrollPane1.setViewportView(tblPatientDirectory);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(77, 67, 740, 195));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 70, 630, 195));
 
         btnviewPatientDetails.setText("view Details");
         btnviewPatientDetails.addActionListener(new java.awt.event.ActionListener() {
@@ -101,7 +101,7 @@ public class ViewPatientPanel extends javax.swing.JPanel {
                 btnviewPatientDetailsActionPerformed(evt);
             }
         });
-        add(btnviewPatientDetails, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 270, -1, -1));
+        add(btnviewPatientDetails, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 270, -1, -1));
 
         btnupdatePatientDetails.setText("update Details");
         btnupdatePatientDetails.addActionListener(new java.awt.event.ActionListener() {
@@ -109,7 +109,7 @@ public class ViewPatientPanel extends javax.swing.JPanel {
                 btnupdatePatientDetailsActionPerformed(evt);
             }
         });
-        add(btnupdatePatientDetails, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 270, -1, -1));
+        add(btnupdatePatientDetails, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 270, -1, -1));
 
         lblPatientPhoneNumber.setText("Phone Number");
         add(lblPatientPhoneNumber, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 630, -1, -1));
@@ -129,19 +129,19 @@ public class ViewPatientPanel extends javax.swing.JPanel {
         add(txtPatientEmailAddress, new org.netbeans.lib.awtextra.AbsoluteConstraints(169, 670, 222, -1));
 
         lblPatientFundamentals.setText("Fundamentals");
-        add(lblPatientFundamentals, new org.netbeans.lib.awtextra.AbsoluteConstraints(489, 317, -1, -1));
+        add(lblPatientFundamentals, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 320, -1, -1));
 
         lblPatientHeight.setText("Height");
-        add(lblPatientHeight, new org.netbeans.lib.awtextra.AbsoluteConstraints(498, 343, -1, -1));
+        add(lblPatientHeight, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 340, -1, -1));
 
         lblPatientWeight.setText("Weight");
-        add(lblPatientWeight, new org.netbeans.lib.awtextra.AbsoluteConstraints(498, 383, -1, -1));
+        add(lblPatientWeight, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 380, -1, -1));
 
         lblPatientName.setText("Name");
         add(lblPatientName, new org.netbeans.lib.awtextra.AbsoluteConstraints(125, 352, -1, -1));
 
         lblPatientAllergies.setText("Allergies");
-        add(lblPatientAllergies, new org.netbeans.lib.awtextra.AbsoluteConstraints(489, 418, -1, -1));
+        add(lblPatientAllergies, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 420, -1, -1));
 
         lblPatientAge.setText("Age");
         add(lblPatientAge, new org.netbeans.lib.awtextra.AbsoluteConstraints(137, 320, -1, -1));
@@ -151,12 +151,12 @@ public class ViewPatientPanel extends javax.swing.JPanel {
                 txtPatientHeightActionPerformed(evt);
             }
         });
-        add(txtPatientHeight, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 340, 150, -1));
+        add(txtPatientHeight, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 340, 150, -1));
 
         lblPatientGender.setText("Gender");
         add(lblPatientGender, new org.netbeans.lib.awtextra.AbsoluteConstraints(116, 392, -1, -1));
-        add(txtPatientWeight, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 380, 150, -1));
-        add(txtPatientAllergies, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 415, 150, -1));
+        add(txtPatientWeight, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 380, 150, -1));
+        add(txtPatientAllergies, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 420, 150, -1));
 
         lblContactDetails.setText("Contact Details");
         add(lblContactDetails, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 590, 94, -1));
@@ -179,7 +179,7 @@ public class ViewPatientPanel extends javax.swing.JPanel {
                 btnSavePatientActionPerformed(evt);
             }
         });
-        add(btnSavePatient, new org.netbeans.lib.awtextra.AbsoluteConstraints(515, 521, -1, -1));
+        add(btnSavePatient, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 470, -1, -1));
         add(txtPatientPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(177, 521, 214, -1));
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ui/wp2610913.jpg"))); // NOI18N

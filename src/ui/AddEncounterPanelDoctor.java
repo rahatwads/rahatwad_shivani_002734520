@@ -62,13 +62,13 @@ public class AddEncounterPanelDoctor extends javax.swing.JPanel {
                 btnAddEncounterActionPerformed(evt);
             }
         });
-        add(btnAddEncounter, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 360, -1, -1));
-        add(txtEncounterDate, new org.netbeans.lib.awtextra.AbsoluteConstraints(254, 256, 293, -1));
+        add(btnAddEncounter, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 340, -1, -1));
+        add(txtEncounterDate, new org.netbeans.lib.awtextra.AbsoluteConstraints(254, 256, 190, -1));
 
         jLabel3.setText("Patient");
         add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(174, 183, -1, -1));
 
-        add(jComboBoxPatient, new org.netbeans.lib.awtextra.AbsoluteConstraints(254, 180, 293, -1));
+        add(jComboBoxPatient, new org.netbeans.lib.awtextra.AbsoluteConstraints(254, 180, 190, -1));
 
         jLabel4.setText("Date of Encounter");
         add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 262, -1, -1));

@@ -72,7 +72,7 @@ public class ViewHousePanel extends javax.swing.JPanel {
         ));
         jScrollPane1.setViewportView(tblHouses);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 90, 700, 193));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 90, 620, 193));
 
         btnViewHouse.setText("View House");
         btnViewHouse.addActionListener(new java.awt.event.ActionListener() {
@@ -80,7 +80,7 @@ public class ViewHousePanel extends javax.swing.JPanel {
                 btnViewHouseActionPerformed(evt);
             }
         });
-        add(btnViewHouse, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 310, -1, -1));
+        add(btnViewHouse, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 310, -1, -1));
 
         btnUpdateHouse.setText("Update House");
         btnUpdateHouse.addActionListener(new java.awt.event.ActionListener() {
@@ -88,7 +88,7 @@ public class ViewHousePanel extends javax.swing.JPanel {
                 btnUpdateHouseActionPerformed(evt);
             }
         });
-        add(btnUpdateHouse, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 310, -1, -1));
+        add(btnUpdateHouse, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 310, -1, -1));
 
         jLabel2.setText("Pin Code");
         add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(242, 482, -1, -1));

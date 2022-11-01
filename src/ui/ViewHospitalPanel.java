@@ -57,8 +57,9 @@ public class ViewHospitalPanel extends javax.swing.JPanel {
 
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jLabel1.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
         jLabel1.setText("View Hospitals");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(376, 56, -1, -1));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 60, -1, -1));
 
         tblHospitals.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -73,7 +74,7 @@ public class ViewHospitalPanel extends javax.swing.JPanel {
         ));
         jScrollPane1.setViewportView(tblHospitals);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 100, 771, 178));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 100, 660, 178));
 
         btnViewHospital.setText("View Hospital");
         btnViewHospital.addActionListener(new java.awt.event.ActionListener() {
@@ -81,7 +82,7 @@ public class ViewHospitalPanel extends javax.swing.JPanel {
                 btnViewHospitalActionPerformed(evt);
             }
         });
-        add(btnViewHospital, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 300, -1, -1));
+        add(btnViewHospital, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 300, -1, -1));
 
         btnUpdateHospital.setText("Update Hospital");
         btnUpdateHospital.addActionListener(new java.awt.event.ActionListener() {
@@ -89,9 +90,9 @@ public class ViewHospitalPanel extends javax.swing.JPanel {
                 btnUpdateHospitalActionPerformed(evt);
             }
         });
-        add(btnUpdateHospital, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 300, -1, -1));
+        add(btnUpdateHospital, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 300, -1, -1));
 
-        add(jComboBoxHospitalCommunity, new org.netbeans.lib.awtextra.AbsoluteConstraints(406, 568, 149, -1));
+        add(jComboBoxHospitalCommunity, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 570, 149, -1));
 
         btnSaveHospital.setText("Save Hospital");
         btnSaveHospital.addActionListener(new java.awt.event.ActionListener() {
@@ -99,24 +100,25 @@ public class ViewHospitalPanel extends javax.swing.JPanel {
                 btnSaveHospitalActionPerformed(evt);
             }
         });
-        add(btnSaveHospital, new org.netbeans.lib.awtextra.AbsoluteConstraints(325, 658, -1, -1));
+        add(btnSaveHospital, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 640, -1, -1));
 
         lblHospitalName.setText("Hospital Name");
-        add(lblHospitalName, new org.netbeans.lib.awtextra.AbsoluteConstraints(258, 459, -1, -1));
+        add(lblHospitalName, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 460, -1, -1));
 
         lblHospitalphoneNumber.setText("Hospital Phone Number");
-        add(lblHospitalphoneNumber, new org.netbeans.lib.awtextra.AbsoluteConstraints(206, 516, -1, -1));
+        add(lblHospitalphoneNumber, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 520, -1, -1));
 
         lblHospitalCommunity.setText("Hospital Community");
-        add(lblHospitalCommunity, new org.netbeans.lib.awtextra.AbsoluteConstraints(206, 574, 138, -1));
-        add(txtHospitalName, new org.netbeans.lib.awtextra.AbsoluteConstraints(406, 453, 149, -1));
-        add(txtHospitalPhone, new org.netbeans.lib.awtextra.AbsoluteConstraints(406, 510, 149, -1));
+        add(lblHospitalCommunity, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 570, 138, -1));
+        add(txtHospitalName, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 460, 149, -1));
+        add(txtHospitalPhone, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 520, 149, -1));
 
         lblHospitalId.setText("Hospital Id");
-        add(lblHospitalId, new org.netbeans.lib.awtextra.AbsoluteConstraints(281, 403, -1, -1));
-        add(txtHospitalId, new org.netbeans.lib.awtextra.AbsoluteConstraints(406, 397, 149, -1));
+        add(lblHospitalId, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 400, -1, -1));
+        add(txtHospitalId, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 400, 149, -1));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ui/wp2610913.jpg"))); // NOI18N
+        jLabel2.setText("jLabel2");
         add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 

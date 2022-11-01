@@ -48,7 +48,7 @@ public class ViewDoctorsPatientPanel extends javax.swing.JPanel {
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setText("View Doctors Near You");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(351, 39, -1, -1));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 40, -1, -1));
 
         tblDoctorsList.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -63,7 +63,7 @@ public class ViewDoctorsPatientPanel extends javax.swing.JPanel {
         ));
         jScrollPane1.setViewportView(tblDoctorsList);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 100, 777, 166));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 90, 680, 166));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ui/wp2610913.jpg"))); // NOI18N
         add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, -1, -1));

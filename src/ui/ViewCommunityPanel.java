@@ -70,7 +70,7 @@ public class ViewCommunityPanel extends javax.swing.JPanel {
         ));
         jScrollPane1.setViewportView(tblCommunities);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 90, 813, 154));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 90, 680, 154));
 
         btnViewCommunity.setText("View Community");
         btnViewCommunity.addActionListener(new java.awt.event.ActionListener() {
@@ -78,7 +78,7 @@ public class ViewCommunityPanel extends javax.swing.JPanel {
                 btnViewCommunityActionPerformed(evt);
             }
         });
-        add(btnViewCommunity, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 280, -1, -1));
+        add(btnViewCommunity, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 280, -1, -1));
 
         btnUpdateCommunity.setText("Update Community");
         btnUpdateCommunity.addActionListener(new java.awt.event.ActionListener() {
@@ -86,7 +86,7 @@ public class ViewCommunityPanel extends javax.swing.JPanel {
                 btnUpdateCommunityActionPerformed(evt);
             }
         });
-        add(btnUpdateCommunity, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 280, -1, -1));
+        add(btnUpdateCommunity, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 280, -1, -1));
 
         btnSaveCommunity.setText("Save Community");
         btnSaveCommunity.addActionListener(new java.awt.event.ActionListener() {
@@ -94,20 +94,20 @@ public class ViewCommunityPanel extends javax.swing.JPanel {
                 btnSaveCommunityActionPerformed(evt);
             }
         });
-        add(btnSaveCommunity, new org.netbeans.lib.awtextra.AbsoluteConstraints(353, 551, -1, -1));
+        add(btnSaveCommunity, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 550, -1, -1));
 
-        add(jComboBoxCities, new org.netbeans.lib.awtextra.AbsoluteConstraints(385, 462, 150, -1));
+        add(jComboBoxCities, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 470, 150, -1));
 
         lblCommunityName.setText("Community Name");
-        add(lblCommunityName, new org.netbeans.lib.awtextra.AbsoluteConstraints(216, 413, -1, -1));
+        add(lblCommunityName, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 410, -1, -1));
 
         lblCommunityCity.setText("Community City");
-        add(lblCommunityCity, new org.netbeans.lib.awtextra.AbsoluteConstraints(227, 465, -1, -1));
-        add(txtCommunityName, new org.netbeans.lib.awtextra.AbsoluteConstraints(385, 410, 150, -1));
+        add(lblCommunityCity, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 470, -1, -1));
+        add(txtCommunityName, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 410, 150, -1));
 
         lblCommunityId.setText("Community Id");
-        add(lblCommunityId, new org.netbeans.lib.awtextra.AbsoluteConstraints(233, 363, 87, -1));
-        add(txtCommunityId, new org.netbeans.lib.awtextra.AbsoluteConstraints(385, 357, 150, -1));
+        add(lblCommunityId, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 360, 87, -1));
+        add(txtCommunityId, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 360, 150, -1));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ui/wp2610913.jpg"))); // NOI18N
         jLabel2.setText("jLabel2");

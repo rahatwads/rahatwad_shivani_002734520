@@ -79,8 +79,8 @@ public class ViewEncountersPanelSystemAdmin extends javax.swing.JPanel {
         ));
         jScrollPane1.setViewportView(tblEncounters);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(28, 125, 788, 158));
-        add(txtEncounterId, new org.netbeans.lib.awtextra.AbsoluteConstraints(301, 358, 293, -1));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 120, 640, 158));
+        add(txtEncounterId, new org.netbeans.lib.awtextra.AbsoluteConstraints(301, 358, 210, -1));
 
         btnViewEncounters.setText("View Encounter");
         btnViewEncounters.addActionListener(new java.awt.event.ActionListener() {
@@ -88,7 +88,7 @@ public class ViewEncountersPanelSystemAdmin extends javax.swing.JPanel {
                 btnViewEncountersActionPerformed(evt);
             }
         });
-        add(btnViewEncounters, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 300, -1, -1));
+        add(btnViewEncounters, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 300, -1, -1));
 
         btnUpdateEncounters.setText("Update Encounter");
         btnUpdateEncounters.addActionListener(new java.awt.event.ActionListener() {
@@ -96,7 +96,7 @@ public class ViewEncountersPanelSystemAdmin extends javax.swing.JPanel {
                 btnUpdateEncountersActionPerformed(evt);
             }
         });
-        add(btnUpdateEncounters, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 300, -1, -1));
+        add(btnUpdateEncounters, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 300, -1, -1));
 
         btnAddEncounter.setText("Add Encounter");
         btnAddEncounter.addActionListener(new java.awt.event.ActionListener() {
@@ -104,24 +104,25 @@ public class ViewEncountersPanelSystemAdmin extends javax.swing.JPanel {
                 btnAddEncounterActionPerformed(evt);
             }
         });
-        add(btnAddEncounter, new org.netbeans.lib.awtextra.AbsoluteConstraints(263, 638, -1, -1));
+        add(btnAddEncounter, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 620, -1, -1));
 
         jLabel2.setText("Doctor");
         add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(223, 402, -1, -1));
-        add(txtEncounterDate, new org.netbeans.lib.awtextra.AbsoluteConstraints(301, 531, 293, -1));
+        add(txtEncounterDate, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 520, 210, -1));
 
-        add(jComboBoxDoctor, new org.netbeans.lib.awtextra.AbsoluteConstraints(301, 399, 293, -1));
+        add(jComboBoxDoctor, new org.netbeans.lib.awtextra.AbsoluteConstraints(301, 399, 210, -1));
 
         jLabel3.setText("Patient");
         add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(221, 458, -1, -1));
 
-        add(jComboBoxPatient, new org.netbeans.lib.awtextra.AbsoluteConstraints(301, 455, 293, -1));
+        add(jComboBoxPatient, new org.netbeans.lib.awtextra.AbsoluteConstraints(301, 455, 210, -1));
 
+        jLabel1.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
         jLabel1.setText("View Encounters");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 51, -1, -1));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 50, -1, -1));
 
         jLabel4.setText("Date of Encounter");
-        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(157, 537, -1, -1));
+        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 520, -1, -1));
 
         btnDeleteEncounter.setText("Delete Encounter");
         btnDeleteEncounter.addActionListener(new java.awt.event.ActionListener() {
@@ -129,7 +130,7 @@ public class ViewEncountersPanelSystemAdmin extends javax.swing.JPanel {
                 btnDeleteEncounterActionPerformed(evt);
             }
         });
-        add(btnDeleteEncounter, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 300, -1, -1));
+        add(btnDeleteEncounter, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 300, -1, -1));
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ui/wp2610913.jpg"))); // NOI18N
         jLabel6.setText("jLabel6");

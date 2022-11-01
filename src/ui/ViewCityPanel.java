@@ -52,7 +52,7 @@ public class ViewCityPanel extends javax.swing.JPanel {
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setText("View City ");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(375, 34, -1, -1));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 40, -1, -1));
 
         tblCities.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -67,7 +67,7 @@ public class ViewCityPanel extends javax.swing.JPanel {
         ));
         jScrollPane1.setViewportView(tblCities);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(26, 69, 759, 152));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 70, 640, 152));
 
         btnViewCity.setText("View City");
         btnViewCity.addActionListener(new java.awt.event.ActionListener() {
@@ -75,7 +75,7 @@ public class ViewCityPanel extends javax.swing.JPanel {
                 btnViewCityActionPerformed(evt);
             }
         });
-        add(btnViewCity, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 250, -1, -1));
+        add(btnViewCity, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 250, -1, -1));
 
         btnUpdateCity.setText("Update City");
         btnUpdateCity.addActionListener(new java.awt.event.ActionListener() {
@@ -83,15 +83,15 @@ public class ViewCityPanel extends javax.swing.JPanel {
                 btnUpdateCityActionPerformed(evt);
             }
         });
-        add(btnUpdateCity, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 250, -1, -1));
+        add(btnUpdateCity, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 250, -1, -1));
 
         lblCityName.setText("City Name");
-        add(lblCityName, new org.netbeans.lib.awtextra.AbsoluteConstraints(193, 383, -1, -1));
+        add(lblCityName, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 380, -1, -1));
 
         lblCityState.setText("City State");
-        add(lblCityState, new org.netbeans.lib.awtextra.AbsoluteConstraints(197, 424, -1, -1));
-        add(txtCityName, new org.netbeans.lib.awtextra.AbsoluteConstraints(287, 377, 150, -1));
-        add(txtCityState, new org.netbeans.lib.awtextra.AbsoluteConstraints(287, 418, 150, -1));
+        add(lblCityState, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 430, -1, -1));
+        add(txtCityName, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 380, 150, -1));
+        add(txtCityState, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 430, 150, -1));
 
         btnSaveCity.setText("Save City");
         btnSaveCity.addActionListener(new java.awt.event.ActionListener() {
@@ -99,11 +99,11 @@ public class ViewCityPanel extends javax.swing.JPanel {
                 btnSaveCityActionPerformed(evt);
             }
         });
-        add(btnSaveCity, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 490, -1, -1));
+        add(btnSaveCity, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 490, -1, -1));
 
         jLabel2.setText("City ID");
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(193, 340, -1, -1));
-        add(txtCityId, new org.netbeans.lib.awtextra.AbsoluteConstraints(287, 334, 150, -1));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 340, -1, -1));
+        add(txtCityId, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 340, 150, -1));
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ui/wp2610913.jpg"))); // NOI18N
         jLabel3.setText("jLabel3");

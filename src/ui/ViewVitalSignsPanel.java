@@ -77,7 +77,7 @@ public class ViewVitalSignsPanel extends javax.swing.JPanel {
         ));
         jScrollPane1.setViewportView(tblVitalSigns);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(39, 104, 795, 146));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 100, 600, 146));
 
         jButton1.setText("View Vitals");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -85,7 +85,7 @@ public class ViewVitalSignsPanel extends javax.swing.JPanel {
                 jButton1ActionPerformed(evt);
             }
         });
-        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 270, -1, -1));
+        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 270, -1, -1));
 
         jButton2.setText("Update Vitals");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -93,16 +93,16 @@ public class ViewVitalSignsPanel extends javax.swing.JPanel {
                 jButton2ActionPerformed(evt);
             }
         });
-        add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 270, -1, -1));
-        add(txtTemperature, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 446, 150, -1));
+        add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 270, -1, -1));
+        add(txtTemperature, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 450, 150, -1));
 
         jLabel5.setText("Pulse rate");
-        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(285, 505, 97, -1));
-        add(txtPulseRate, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 499, 150, -1));
+        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 500, 97, -1));
+        add(txtPulseRate, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 500, 150, -1));
 
         jLabel6.setText("Respiration Rate");
-        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(285, 560, -1, -1));
-        add(txtRespirationRate, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 554, 150, -1));
+        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 560, -1, -1));
+        add(txtRespirationRate, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 550, 150, -1));
 
         btnSaveVitalSign.setText("Save");
         btnSaveVitalSign.addActionListener(new java.awt.event.ActionListener() {
@@ -110,19 +110,19 @@ public class ViewVitalSignsPanel extends javax.swing.JPanel {
                 btnSaveVitalSignActionPerformed(evt);
             }
         });
-        add(btnSaveVitalSign, new org.netbeans.lib.awtextra.AbsoluteConstraints(361, 647, -1, -1));
+        add(btnSaveVitalSign, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 640, -1, -1));
 
         jLabel2.setText("Patient");
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(334, 334, -1, -1));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 340, -1, -1));
 
-        add(jComboBoxPatient, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 331, 150, -1));
+        add(jComboBoxPatient, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 340, 150, -1));
 
         jLabel3.setText("Blood Pressure");
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(285, 398, -1, -1));
-        add(txtBloodPressure, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 392, 150, -1));
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 400, -1, -1));
+        add(txtBloodPressure, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 390, 150, -1));
 
         jLabel4.setText("Temperature");
-        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(285, 452, 89, -1));
+        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 450, 89, -1));
 
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ui/wp2610913.jpg"))); // NOI18N
         add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(-4, -2, 1390, 770));
