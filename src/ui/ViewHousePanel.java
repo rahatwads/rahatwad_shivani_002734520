@@ -171,27 +171,7 @@ public class ViewHousePanel extends javax.swing.JPanel {
 
     private void btnSaveHouseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSaveHouseActionPerformed
         // TODO add your handling code here:
-        /*
-        City c = (City)jComboBoxCities.getSelectedItem();
-        if(txtCommunityName.getText().length()==0 || c==null){
-            JOptionPane.showMessageDialog(this, "Enter All fields");
-            return;
-        }
-        Community community = c.getCommunity(txtCommunityId.getText());
-        if(txtCommunityName.getText().length()==0 || jComboBoxCities.getSelectedItem()==null){
-            JOptionPane.showMessageDialog(this, "Enter All fields");
-            return;
-        }
-        community.setCommunityId(String.valueOf(txtCommunityName.getText()));
-        community.setCity((City)jComboBoxCities.getSelectedItem());
         
-        JOptionPane.showMessageDialog(this, "Community Info Updated");
-        
-        txtCommunityId.setText("");
-        txtCommunityName.setText("");
-        jComboBoxCities.setSelectedItem(null);
-        populateTable();
-        */
         Community community = (Community)jComboBoxHouseCommunity.getSelectedItem();
         if(txtHouseStreetAddress.getText().length()==0 || txtHousePinCode.getText().length()==0 || community==null){
             JOptionPane.showMessageDialog(this, "Enter All fields");
@@ -234,21 +214,7 @@ public class ViewHousePanel extends javax.swing.JPanel {
 
     private void btnViewHouseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnViewHouseActionPerformed
         // TODO add your handling code here:
-        /*
-        int selectedrowIndex = tblCommunities.getSelectedRow();
-        if(selectedrowIndex < 0){
-            JOptionPane.showMessageDialog(this, "Please select row to view the details");
-            return;
-        }
-        DefaultTableModel model = (DefaultTableModel) tblCommunities.getModel();
-        Community c = (Community) model.getValueAt(selectedrowIndex, 1);
-        txtCommunityId.setText(String.valueOf(c.getCommunityId()));
-        txtCommunityId.setEditable(false);
-        txtCommunityName.setText(String.valueOf(c.getCommunityName()));
-        txtCommunityName.setEditable(false);
-        jComboBoxCities.setSelectedItem(c.getCity());
-        jComboBoxCities.setEditable(false);
-        */
+        
         int selectedrowIndex = tblHouses.getSelectedRow();
         if(selectedrowIndex < 0){
             JOptionPane.showMessageDialog(this, "Please select row to view the details");

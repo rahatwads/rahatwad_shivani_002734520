@@ -185,31 +185,7 @@ public class ViewVitalSignsPanel extends javax.swing.JPanel {
 
     private void btnSaveVitalSignActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSaveVitalSignActionPerformed
         // TODO add your handling code here:
-        /*
-        Patient p = (Patient)jComboBoxPatient.getSelectedItem();
-
-        String date = txtEncounterDate.getText();
-        String dateRegex = "^(1[0-2]|0[1-9])/(3[01]|[12][0-9]|0[1-9])/[0-9]{4}$";
-        Pattern datePattern = Pattern.compile(dateRegex);
-        Matcher matcher = datePattern.matcher(date);
-        if(matcher.matches()==false){
-            JOptionPane.showMessageDialog(this, "Enter Valid Encounter Date: MM/DD/YYYY");
-            return;
-        }
-
-        Encounter e = sysAdmin.getEncounterHistory().addEncounter();
-        String eid =  String.valueOf(sysAdmin.getEncounterHistory().encounterCount() + Integer.parseInt("100000000"));
-        e.setDoctor(d);
-        e.setPatient(p);
-        e.setDate(date);
-        e.setEncounterId(eid);
-
-        JOptionPane.showMessageDialog(this, "Encounter Info Saved");
-
-        txtEncounterDate.setText("");
-
-        jComboBoxPatient.setSelectedItem(null);
-        */
+        
         Patient p = (Patient)jComboBoxPatient.getSelectedItem();
         try{
             Double bp = Double.parseDouble(txtBloodPressure.getText());
@@ -249,21 +225,7 @@ public class ViewVitalSignsPanel extends javax.swing.JPanel {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        /*
-        int selectedrowIndex = tblEncounters.getSelectedRow();
-        if(selectedrowIndex < 0){
-            JOptionPane.showMessageDialog(this, "Please select row to view the details");
-            return;
-        }
-        DefaultTableModel model = (DefaultTableModel) tblEncounters.getModel();
-        Encounter e = (Encounter) model.getValueAt(selectedrowIndex, 0);
-        txtEncounterId.setText(e.getEncounterId());
-        txtEncounterId.setEditable(false);
-        jComboBoxPatient.setSelectedItem(e.getPatient());
-        jComboBoxPatient.setEditable(false);
-        txtEncounterDate.setText(e.getDate());
-        txtEncounterDate.setEditable(false);
-        */
+        
         int selectedrowIndex = tblVitalSigns.getSelectedRow();
         if(selectedrowIndex < 0){
             JOptionPane.showMessageDialog(this, "Please select row to view the details");

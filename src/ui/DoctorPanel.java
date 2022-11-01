@@ -14,7 +14,7 @@ import model.VitalSigns;
 
 /**
  *
- * @author ashivanirahatwad
+ * @author shivanirahatwad
  */
 public class DoctorPanel extends javax.swing.JPanel {
 

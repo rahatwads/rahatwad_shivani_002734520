@@ -13,7 +13,7 @@ import model.SystemAdmin;
 
 /**
  *
- * @author adityaraj
+ * @author shivanirahatwad
  */
 public class CreateHospitalPanel extends javax.swing.JPanel {
 

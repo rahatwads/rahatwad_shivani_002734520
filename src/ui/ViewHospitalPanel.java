@@ -195,21 +195,7 @@ public class ViewHospitalPanel extends javax.swing.JPanel {
 
     private void btnViewHospitalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnViewHospitalActionPerformed
         // TODO add your handling code here:
-        /*
-        int selectedrowIndex = tblCommunities.getSelectedRow();
-        if(selectedrowIndex < 0){
-            JOptionPane.showMessageDialog(this, "Please select row to view the details");
-            return;
-        }
-        DefaultTableModel model = (DefaultTableModel) tblCommunities.getModel();
-        Community c = (Community) model.getValueAt(selectedrowIndex, 1);
-        txtCommunityId.setText(String.valueOf(c.getCommunityId()));
-        txtCommunityId.setEditable(false);
-        txtCommunityName.setText(String.valueOf(c.getCommunityName()));
-        txtCommunityName.setEditable(false);
-        jComboBoxCities.setSelectedItem(c.getCity());
-        jComboBoxCities.setEditable(false);
-        */
+        
         int selectedrowIndex = tblHospitals.getSelectedRow();
         if(selectedrowIndex < 0){
             JOptionPane.showMessageDialog(this, "Please select row to view the details");

@@ -178,24 +178,7 @@ public class ViewEncountersPanel extends javax.swing.JPanel {
 
     private void btnAddEncounterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddEncounterActionPerformed
         // TODO add your handling code here:
-        /*
-        Community c = (Community) jComboBoxHospitalCommunity.getSelectedItem();
-        if(c==null || txtHospitalName.getText().length()==0 || txtHospitalPhone.getText().length()==0){
-            JOptionPane.showMessageDialog(this, "Enter All fields");
-            return;
-        }
-        Hospital h = sysAdmin.getHospitalDirectory().getHospital(txtHospitalId.getText());
-        h.setHospitalName(String.valueOf(txtHospitalName.getText()));
-        h.setPhoneNumber(String.valueOf(txtHospitalPhone.getText()));
         
-        JOptionPane.showMessageDialog(this, "Hospital Info Updated");
-        
-        txtHospitalId.setText("");
-        txtHospitalName.setText("");
-        txtHospitalPhone.setText("");
-        jComboBoxHospitalCommunity.setSelectedItem(null);
-        populateTable();
-        */
         Doctor d = (Doctor)jComboBoxDoctor.getSelectedItem();
         Patient p = (Patient)jComboBoxPatient.getSelectedItem();
         if(d==null || p==null || txtEncounterDate.getText().length()==0){

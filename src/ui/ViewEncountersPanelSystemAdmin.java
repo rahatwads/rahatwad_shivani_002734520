@@ -229,24 +229,7 @@ public class ViewEncountersPanelSystemAdmin extends javax.swing.JPanel {
 
     private void btnAddEncounterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddEncounterActionPerformed
         // TODO add your handling code here:
-        /*
-        Community c = (Community) jComboBoxHospitalCommunity.getSelectedItem();
-        if(c==null || txtHospitalName.getText().length()==0 || txtHospitalPhone.getText().length()==0){
-            JOptionPane.showMessageDialog(this, "Enter All fields");
-            return;
-        }
-        Hospital h = sysAdmin.getHospitalDirectory().getHospital(txtHospitalId.getText());
-        h.setHospitalName(String.valueOf(txtHospitalName.getText()));
-        h.setPhoneNumber(String.valueOf(txtHospitalPhone.getText()));
-
-        JOptionPane.showMessageDialog(this, "Hospital Info Updated");
-
-        txtHospitalId.setText("");
-        txtHospitalName.setText("");
-        txtHospitalPhone.setText("");
-        jComboBoxHospitalCommunity.setSelectedItem(null);
-        populateTable();
-        */
+        
         Doctor d = (Doctor)jComboBoxDoctor.getSelectedItem();
         Patient p = (Patient)jComboBoxPatient.getSelectedItem();
         if(d==null || p==null || txtEncounterDate.getText().length()==0){
@@ -278,19 +261,7 @@ public class ViewEncountersPanelSystemAdmin extends javax.swing.JPanel {
 
     private void btnDeleteEncounterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeleteEncounterActionPerformed
         // TODO add your handling code here:
-        /*
-        int selectedrowIndex = tblHospitals.getSelectedRow();
-        if(selectedrowIndex < 0){
-            JOptionPane.showMessageDialog(this, "Please select row to delete the details");
-            return;
-        }
-        DefaultTableModel model = (DefaultTableModel) tblHospitals.getModel();
-        Hospital h = (Hospital) model.getValueAt(selectedrowIndex, 1);
-        HospitalDirectory hd = sysAdmin.getHospitalDirectory();
-        hd.deleteHospital(h);
-        JOptionPane.showMessageDialog(this, "Hospital deleted");
-        populateTable();
-        */
+        
         int selectedrowIndex = tblEncounters.getSelectedRow();
         if(selectedrowIndex < 0){
             JOptionPane.showMessageDialog(this, "Please select row to delete the details");

@@ -113,28 +113,7 @@ public class CreateHousePanel extends javax.swing.JPanel {
 
     private void btnSaveHouseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSaveHouseActionPerformed
         // TODO add your handling code here:
-        /*
-        if(jComboBoxCities.getSelectedItem()==null){
-            JOptionPane.showMessageDialog(this, "Select City");
-            return;
-        }
-        City c = (City)jComboBoxCities.getSelectedItem();
-        Community community = c.addCommunity();
         
-        String communityName = txtCommunityName.getText();
-        if(communityName.length()==0){
-            JOptionPane.showMessageDialog(this, "Enter Community Name");
-            return;
-        }
-        String cid =  String.valueOf(c.getCommunityList().size() + Integer.parseInt("1000"));
-        community.setCommunityId(cid);
-        community.setCity(c);
-        community.setCommunityName(communityName);
-        
-        txtCommunityName.setText("");
-        
-        JOptionPane.showMessageDialog(this, "Community Info Saved"); 
-        */
         if(jComboBoxHouseCommunity.getSelectedItem()==null){
             JOptionPane.showMessageDialog(this, "Select Community");
             return;

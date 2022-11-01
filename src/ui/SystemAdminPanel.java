@@ -473,20 +473,11 @@ public class SystemAdminPanel extends javax.swing.JPanel {
 
     private void btnSystemAdminLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSystemAdminLoginActionPerformed
         // TODO add your handling code here:
-        /*
-        String username = txtCommunityAdminUsername.getText();
-        String password = txtCommunityAdminPassword.getText();
-        if(username.equals("cadmin") && password.equals("12345")){
-            cardLayoutmain.show(this, "jSplitPaneCommunityAdmin");
-        }
-        else{
-            JOptionPane.showMessageDialog(this, "Enter Valid Id");
-            return;
-        }
-        */
+        
+        
         String username = txtSystemAdminUsername.getText();
         String password = txtSystemAdminPassword.getText();
-        if(username.equals("hadmin") && password.equals("12345")){
+        if(username.equals("system") && password.equals("system")){
             cardLayoutmain.show(this, "jSplitPaneHospitalAdmin");
         }
         else{

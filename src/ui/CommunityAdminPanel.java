@@ -400,7 +400,7 @@ public class CommunityAdminPanel extends javax.swing.JPanel {
         // TODO add your handling code here:
         String username = txtCommunityAdminUsername.getText();
         String password = txtCommunityAdminPassword.getText();
-        if(username.equals("cadmin") && password.equals("12345")){
+        if(username.equals("community") && password.equals("community")){
             cardLayoutmain.show(this, "jSplitPaneCommunityAdmin");
         }
         else{

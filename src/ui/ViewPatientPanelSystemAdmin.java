@@ -481,19 +481,7 @@ public class ViewPatientPanelSystemAdmin extends javax.swing.JPanel {
 
     private void btnDeletePatientActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeletePatientActionPerformed
         // TODO add your handling code here:
-        /*
-        int selectedrowIndex = tblHospitals.getSelectedRow();
-        if(selectedrowIndex < 0){
-            JOptionPane.showMessageDialog(this, "Please select row to delete the details");
-            return;
-        }
-        DefaultTableModel model = (DefaultTableModel) tblHospitals.getModel();
-        Hospital h = (Hospital) model.getValueAt(selectedrowIndex, 1);
-        HospitalDirectory hd = sysAdmin.getHospitalDirectory();
-        hd.deleteHospital(h);
-        JOptionPane.showMessageDialog(this, "Hospital deleted");
-        populateTable();
-        */
+       
         int selectedrowIndex = tblPatientDirectory.getSelectedRow();
         if(selectedrowIndex < 0){
             JOptionPane.showMessageDialog(this, "Please select row to delete the details");
