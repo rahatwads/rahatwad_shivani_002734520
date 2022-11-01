@@ -57,8 +57,12 @@ public class ViewVitalSignsPanel extends javax.swing.JPanel {
         jLabel3 = new javax.swing.JLabel();
         txtBloodPressure = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+
+        setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setText("View Vital Signs");
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(371, 61, -1, -1));
 
         tblVitalSigns.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -73,12 +77,15 @@ public class ViewVitalSignsPanel extends javax.swing.JPanel {
         ));
         jScrollPane1.setViewportView(tblVitalSigns);
 
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(39, 104, 795, 146));
+
         jButton1.setText("View Vitals");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
+        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(553, 268, -1, -1));
 
         jButton2.setText("Update Vitals");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -86,10 +93,16 @@ public class ViewVitalSignsPanel extends javax.swing.JPanel {
                 jButton2ActionPerformed(evt);
             }
         });
+        add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(665, 268, -1, -1));
+        add(txtTemperature, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 446, 150, -1));
 
         jLabel5.setText("Pulse rate");
+        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(285, 505, 97, -1));
+        add(txtPulseRate, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 499, 150, -1));
 
         jLabel6.setText("Respiration Rate");
+        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(285, 560, -1, -1));
+        add(txtRespirationRate, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 554, 150, -1));
 
         btnSaveVitalSign.setText("Save");
         btnSaveVitalSign.addActionListener(new java.awt.event.ActionListener() {
@@ -97,90 +110,22 @@ public class ViewVitalSignsPanel extends javax.swing.JPanel {
                 btnSaveVitalSignActionPerformed(evt);
             }
         });
+        add(btnSaveVitalSign, new org.netbeans.lib.awtextra.AbsoluteConstraints(361, 647, -1, -1));
 
         jLabel2.setText("Patient");
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(334, 334, -1, -1));
+
+        add(jComboBoxPatient, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 331, 150, -1));
 
         jLabel3.setText("Blood Pressure");
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(285, 398, -1, -1));
+        add(txtBloodPressure, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 392, 150, -1));
 
         jLabel4.setText("Temperature");
+        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(285, 452, 89, -1));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jButton1)
-                .addGap(18, 18, 18)
-                .addComponent(jButton2)
-                .addGap(101, 101, 101))
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(371, 371, 371)
-                        .addComponent(jLabel1))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(39, 39, 39)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 795, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(285, 285, 285)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                        .addComponent(jLabel3)
-                                        .addComponent(jLabel2)
-                                        .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                        .addComponent(jLabel6, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(jLabel5, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                .addGap(18, 18, 18)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(jComboBoxPatient, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(txtBloodPressure)
-                                    .addComponent(txtTemperature)
-                                    .addComponent(txtPulseRate)
-                                    .addComponent(txtRespirationRate, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(76, 76, 76)
-                                .addComponent(btnSaveVitalSign)))))
-                .addContainerGap(41, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(61, 61, 61)
-                .addComponent(jLabel1)
-                .addGap(26, 26, 26)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
-                    .addComponent(jButton2))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 40, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jComboBoxPatient, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel2))
-                .addGap(38, 38, 38)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel3)
-                    .addComponent(txtBloodPressure, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(31, 31, 31)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel4)
-                    .addComponent(txtTemperature, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(30, 30, 30)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel5)
-                    .addComponent(txtPulseRate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(32, 32, 32)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel6)
-                    .addComponent(txtRespirationRate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(70, 70, 70)
-                .addComponent(btnSaveVitalSign)
-                .addGap(49, 49, 49))
-        );
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ui/wp2610913.jpg"))); // NOI18N
+        add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(-4, -2, 1390, 770));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnSaveVitalSignActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSaveVitalSignActionPerformed
@@ -283,6 +228,7 @@ public class ViewVitalSignsPanel extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable tblVitalSigns;
     private javax.swing.JTextField txtBloodPressure;

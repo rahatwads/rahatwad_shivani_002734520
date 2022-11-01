@@ -52,8 +52,12 @@ public class ViewHousePanel extends javax.swing.JPanel {
         txtHouseStreetAddress = new javax.swing.JTextField();
         lblHouseId = new javax.swing.JLabel();
         txtHouseId = new javax.swing.JTextField();
+        jLabel3 = new javax.swing.JLabel();
+
+        setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setText("View Houses");
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(357, 41, -1, -1));
 
         tblHouses.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -68,12 +72,15 @@ public class ViewHousePanel extends javax.swing.JPanel {
         ));
         jScrollPane1.setViewportView(tblHouses);
 
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(27, 86, 814, 193));
+
         btnViewHouse.setText("View House");
         btnViewHouse.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnViewHouseActionPerformed(evt);
             }
         });
+        add(btnViewHouse, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 307, -1, -1));
 
         btnUpdateHouse.setText("Update House");
         btnUpdateHouse.addActionListener(new java.awt.event.ActionListener() {
@@ -81,10 +88,16 @@ public class ViewHousePanel extends javax.swing.JPanel {
                 btnUpdateHouseActionPerformed(evt);
             }
         });
+        add(btnUpdateHouse, new org.netbeans.lib.awtextra.AbsoluteConstraints(625, 307, -1, -1));
 
         jLabel2.setText("Pin Code");
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(242, 482, -1, -1));
+        add(txtHousePinCode, new org.netbeans.lib.awtextra.AbsoluteConstraints(379, 476, 149, -1));
+
+        add(jComboBoxHouseCommunity, new org.netbeans.lib.awtextra.AbsoluteConstraints(379, 548, -1, -1));
 
         lblHouseCommunity.setText("Community");
+        add(lblHouseCommunity, new org.netbeans.lib.awtextra.AbsoluteConstraints(242, 551, -1, -1));
 
         btnSaveHouse.setText("Save House");
         btnSaveHouse.addActionListener(new java.awt.event.ActionListener() {
@@ -92,81 +105,18 @@ public class ViewHousePanel extends javax.swing.JPanel {
                 btnSaveHouseActionPerformed(evt);
             }
         });
+        add(btnSaveHouse, new org.netbeans.lib.awtextra.AbsoluteConstraints(332, 644, -1, -1));
 
         lblHouseStreetAddress.setText("Street Address");
+        add(lblHouseStreetAddress, new org.netbeans.lib.awtextra.AbsoluteConstraints(221, 417, -1, -1));
+        add(txtHouseStreetAddress, new org.netbeans.lib.awtextra.AbsoluteConstraints(379, 411, 149, -1));
 
         lblHouseId.setText("House Id");
+        add(lblHouseId, new org.netbeans.lib.awtextra.AbsoluteConstraints(256, 363, -1, -1));
+        add(txtHouseId, new org.netbeans.lib.awtextra.AbsoluteConstraints(379, 357, 149, -1));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(btnViewHouse)
-                .addGap(36, 36, 36)
-                .addComponent(btnUpdateHouse)
-                .addGap(126, 126, 126))
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(357, 357, 357)
-                        .addComponent(jLabel1))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(27, 27, 27)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 814, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(221, 221, 221)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(lblHouseStreetAddress)
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(lblHouseCommunity)
-                                        .addComponent(jLabel2))
-                                    .addComponent(lblHouseId))
-                                .addGap(71, 71, 71)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(jComboBoxHouseCommunity, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(txtHouseStreetAddress)
-                                    .addComponent(txtHousePinCode, javax.swing.GroupLayout.DEFAULT_SIZE, 149, Short.MAX_VALUE)
-                                    .addComponent(txtHouseId)))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(111, 111, 111)
-                                .addComponent(btnSaveHouse)))))
-                .addContainerGap(24, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(41, 41, 41)
-                .addComponent(jLabel1)
-                .addGap(28, 28, 28)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(28, 28, 28)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnViewHouse)
-                    .addComponent(btnUpdateHouse))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 27, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lblHouseId, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(txtHouseId, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(31, 31, 31)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(lblHouseStreetAddress)
-                    .addComponent(txtHouseStreetAddress, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(42, 42, 42)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel2)
-                    .addComponent(txtHousePinCode, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(49, 49, 49)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jComboBoxHouseCommunity, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lblHouseCommunity))
-                .addGap(73, 73, 73)
-                .addComponent(btnSaveHouse)
-                .addGap(34, 34, 34))
-        );
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ui/wp2610913.jpg"))); // NOI18N
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 10, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnSaveHouseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSaveHouseActionPerformed
@@ -241,6 +191,7 @@ public class ViewHousePanel extends javax.swing.JPanel {
     private javax.swing.JComboBox<Object> jComboBoxHouseCommunity;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel lblHouseCommunity;
     private javax.swing.JLabel lblHouseId;

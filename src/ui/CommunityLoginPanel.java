@@ -32,58 +32,33 @@ public class CommunityLoginPanel extends javax.swing.JPanel {
         txtCommunityAdminUsername = new javax.swing.JTextField();
         txtCommunityAdminPassword = new javax.swing.JTextField();
         btnCommunityAdminLogin = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
 
+        setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel1.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
         jLabel1.setText("Community Login");
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(335, 65, -1, -1));
 
         lblCommunityAdminUsername.setText("Username");
+        add(lblCommunityAdminUsername, new org.netbeans.lib.awtextra.AbsoluteConstraints(203, 155, -1, -1));
 
         lblCommunityAdminPassword.setText("Password");
+        add(lblCommunityAdminPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(204, 204, -1, -1));
+        add(txtCommunityAdminUsername, new org.netbeans.lib.awtextra.AbsoluteConstraints(288, 152, 148, -1));
+        add(txtCommunityAdminPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(288, 201, 148, -1));
 
+        btnCommunityAdminLogin.setBackground(new java.awt.Color(0, 153, 0));
         btnCommunityAdminLogin.setText("Login");
         btnCommunityAdminLogin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnCommunityAdminLoginActionPerformed(evt);
             }
         });
+        add(btnCommunityAdminLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 290, -1, -1));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(203, 203, 203)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel1)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(lblCommunityAdminPassword)
-                            .addComponent(lblCommunityAdminUsername))
-                        .addGap(26, 26, 26)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(txtCommunityAdminUsername)
-                            .addComponent(txtCommunityAdminPassword, javax.swing.GroupLayout.DEFAULT_SIZE, 148, Short.MAX_VALUE)))
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                        .addGap(1, 1, 1)
-                        .addComponent(btnCommunityAdminLogin)))
-                .addContainerGap(418, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(65, 65, 65)
-                .addComponent(jLabel1)
-                .addGap(70, 70, 70)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblCommunityAdminUsername)
-                    .addComponent(txtCommunityAdminUsername, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(26, 26, 26)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblCommunityAdminPassword)
-                    .addComponent(txtCommunityAdminPassword, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(61, 61, 61)
-                .addComponent(btnCommunityAdminLogin)
-                .addContainerGap(384, Short.MAX_VALUE))
-        );
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ui/wp2610913.jpg"))); // NOI18N
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 10, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnCommunityAdminLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCommunityAdminLoginActionPerformed
@@ -99,6 +74,7 @@ public class CommunityLoginPanel extends javax.swing.JPanel {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnCommunityAdminLogin;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel lblCommunityAdminPassword;
     private javax.swing.JLabel lblCommunityAdminUsername;
     private javax.swing.JTextField txtCommunityAdminPassword;

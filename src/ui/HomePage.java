@@ -41,6 +41,7 @@ public class HomePage extends javax.swing.JFrame {
         btnPatient = new javax.swing.JButton();
         btnHospitalAdmin = new javax.swing.JButton();
         viewPanel = new javax.swing.JPanel();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -98,7 +99,7 @@ public class HomePage extends javax.swing.JFrame {
         controlPanelLayout.setVerticalGroup(
             controlPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(controlPanelLayout.createSequentialGroup()
-                .addGap(69, 69, 69)
+                .addGap(52, 52, 52)
                 .addComponent(btnSystemAdmin)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(btnCommunityAdmin)
@@ -108,22 +109,29 @@ public class HomePage extends javax.swing.JFrame {
                 .addComponent(btnDoctor)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(btnPatient)
-                .addContainerGap(179, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         splitPaneMainPage.setLeftComponent(controlPanel);
 
         viewPanel.setName("viewPanel"); // NOI18N
 
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ui/medical-waste-disposal-for-hospitals.jpg"))); // NOI18N
+        jLabel2.setText("jLabel2");
+
         javax.swing.GroupLayout viewPanelLayout = new javax.swing.GroupLayout(viewPanel);
         viewPanel.setLayout(viewPanelLayout);
         viewPanelLayout.setHorizontalGroup(
             viewPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 802, Short.MAX_VALUE)
+            .addGroup(viewPanelLayout.createSequentialGroup()
+                .addComponent(jLabel2)
+                .addGap(409, 409, 409))
         );
         viewPanelLayout.setVerticalGroup(
             viewPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 412, Short.MAX_VALUE)
+            .addGroup(viewPanelLayout.createSequentialGroup()
+                .addComponent(jLabel2)
+                .addGap(0, 371, Short.MAX_VALUE))
         );
 
         splitPaneMainPage.setRightComponent(viewPanel);
@@ -132,11 +140,11 @@ public class HomePage extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(splitPaneMainPage)
+            .addComponent(splitPaneMainPage, javax.swing.GroupLayout.PREFERRED_SIZE, 956, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(splitPaneMainPage)
+            .addComponent(splitPaneMainPage, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
@@ -224,6 +232,7 @@ public class HomePage extends javax.swing.JFrame {
     private javax.swing.JButton btnPatient;
     private javax.swing.JButton btnSystemAdmin;
     private javax.swing.JPanel controlPanel;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JSplitPane splitPaneMainPage;
     private javax.swing.JPanel viewPanel;
     // End of variables declaration//GEN-END:variables

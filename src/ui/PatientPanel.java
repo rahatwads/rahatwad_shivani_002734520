@@ -46,6 +46,7 @@ public class PatientPanel extends javax.swing.JPanel {
         jLabel4 = new javax.swing.JLabel();
         txtPatientPassword = new javax.swing.JPasswordField();
         btnDoctorLogin = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
         jSplitPanePatientPanel = new javax.swing.JSplitPane();
         controlPanelPatientHome = new javax.swing.JPanel();
         btnCheckDoctors = new javax.swing.JButton();
@@ -56,59 +57,33 @@ public class PatientPanel extends javax.swing.JPanel {
 
         setLayout(new java.awt.CardLayout());
 
+        PatientLoginPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel2.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
         jLabel2.setText("Patient Login");
+        PatientLoginPanel.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(369, 100, -1, -1));
 
+        jLabel3.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
         jLabel3.setText("Username");
+        PatientLoginPanel.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(291, 197, -1, -1));
+        PatientLoginPanel.add(txtPatientUsername, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 191, 150, -1));
 
+        jLabel4.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
         jLabel4.setText("Password");
+        PatientLoginPanel.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(291, 254, -1, -1));
+        PatientLoginPanel.add(txtPatientPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 248, 150, -1));
 
+        btnDoctorLogin.setBackground(new java.awt.Color(0, 153, 0));
         btnDoctorLogin.setText("Login");
         btnDoctorLogin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnDoctorLoginActionPerformed(evt);
             }
         });
+        PatientLoginPanel.add(btnDoctorLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 325, 130, 30));
 
-        javax.swing.GroupLayout PatientLoginPanelLayout = new javax.swing.GroupLayout(PatientLoginPanel);
-        PatientLoginPanel.setLayout(PatientLoginPanelLayout);
-        PatientLoginPanelLayout.setHorizontalGroup(
-            PatientLoginPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(PatientLoginPanelLayout.createSequentialGroup()
-                .addGap(291, 291, 291)
-                .addGroup(PatientLoginPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(PatientLoginPanelLayout.createSequentialGroup()
-                        .addGap(78, 78, 78)
-                        .addComponent(jLabel2))
-                    .addGroup(PatientLoginPanelLayout.createSequentialGroup()
-                        .addGroup(PatientLoginPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel3)
-                            .addComponent(jLabel4))
-                        .addGap(40, 40, 40)
-                        .addGroup(PatientLoginPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(txtPatientUsername)
-                            .addComponent(txtPatientPassword, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(PatientLoginPanelLayout.createSequentialGroup()
-                        .addGap(59, 59, 59)
-                        .addComponent(btnDoctorLogin)))
-                .addContainerGap(333, Short.MAX_VALUE))
-        );
-        PatientLoginPanelLayout.setVerticalGroup(
-            PatientLoginPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(PatientLoginPanelLayout.createSequentialGroup()
-                .addGap(100, 100, 100)
-                .addComponent(jLabel2)
-                .addGap(74, 74, 74)
-                .addGroup(PatientLoginPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel3)
-                    .addComponent(txtPatientUsername, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(34, 34, 34)
-                .addGroup(PatientLoginPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel4)
-                    .addComponent(txtPatientPassword, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(54, 54, 54)
-                .addComponent(btnDoctorLogin)
-                .addContainerGap(371, Short.MAX_VALUE))
-        );
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ui/wp2610913.jpg"))); // NOI18N
+        PatientLoginPanel.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, -1, -1));
 
         add(PatientLoginPanel, "PatientLoginPanel");
 
@@ -155,7 +130,7 @@ public class PatientPanel extends javax.swing.JPanel {
                 .addComponent(btnCheckDetails)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(btnBookAppointment)
-                .addContainerGap(135, Short.MAX_VALUE))
+                .addContainerGap(628, Short.MAX_VALUE))
         );
         controlPanelPatientHomeLayout.setVerticalGroup(
             controlPanelPatientHomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -175,11 +150,11 @@ public class PatientPanel extends javax.swing.JPanel {
         viewPanelPatientHome.setLayout(viewPanelPatientHomeLayout);
         viewPanelPatientHomeLayout.setHorizontalGroup(
             viewPanelPatientHomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 873, Short.MAX_VALUE)
+            .addGap(0, 1366, Short.MAX_VALUE)
         );
         viewPanelPatientHomeLayout.setVerticalGroup(
             viewPanelPatientHomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 614, Short.MAX_VALUE)
+            .addGap(0, 673, Short.MAX_VALUE)
         );
 
         jSplitPanePatientPanel.setRightComponent(viewPanelPatientHome);
@@ -239,6 +214,7 @@ public class PatientPanel extends javax.swing.JPanel {
     private javax.swing.JButton btnDoctorLogin;
     private javax.swing.JButton btncheckEncounters;
     private javax.swing.JPanel controlPanelPatientHome;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;

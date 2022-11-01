@@ -58,8 +58,12 @@ public class ViewEncounterPanelDoctor extends javax.swing.JPanel {
         jComboBoxPatient = new javax.swing.JComboBox<>();
         jLabel1 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+
+        setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel5.setText("Encounter Id");
+        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 336, -1, -1));
 
         tblEncounters.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -74,12 +78,16 @@ public class ViewEncounterPanelDoctor extends javax.swing.JPanel {
         ));
         jScrollPane1.setViewportView(tblEncounters);
 
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 125, 788, 158));
+        add(txtEncounterId, new org.netbeans.lib.awtextra.AbsoluteConstraints(313, 330, 293, -1));
+
         btnViewEncounters.setText("View Encounter");
         btnViewEncounters.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnViewEncountersActionPerformed(evt);
             }
         });
+        add(btnViewEncounters, new org.netbeans.lib.awtextra.AbsoluteConstraints(406, 301, -1, -1));
 
         btnUpdateEncounters.setText("Update Encounter");
         btnUpdateEncounters.addActionListener(new java.awt.event.ActionListener() {
@@ -87,6 +95,7 @@ public class ViewEncounterPanelDoctor extends javax.swing.JPanel {
                 btnUpdateEncountersActionPerformed(evt);
             }
         });
+        add(btnUpdateEncounters, new org.netbeans.lib.awtextra.AbsoluteConstraints(563, 301, -1, -1));
 
         btnAddEncounter.setText("Add Encounter");
         btnAddEncounter.addActionListener(new java.awt.event.ActionListener() {
@@ -94,76 +103,23 @@ public class ViewEncounterPanelDoctor extends javax.swing.JPanel {
                 btnAddEncounterActionPerformed(evt);
             }
         });
+        add(btnAddEncounter, new org.netbeans.lib.awtextra.AbsoluteConstraints(275, 610, -1, -1));
+        add(txtEncounterDate, new org.netbeans.lib.awtextra.AbsoluteConstraints(313, 473, 293, -1));
 
         jLabel3.setText("Patient");
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(233, 404, -1, -1));
+
+        add(jComboBoxPatient, new org.netbeans.lib.awtextra.AbsoluteConstraints(313, 398, 293, -1));
 
         jLabel1.setText("View Encounters");
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(382, 51, -1, -1));
 
         jLabel4.setText("Date of Encounter");
+        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(169, 476, -1, -1));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(382, 382, 382)
-                .addComponent(jLabel1)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 788, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(12, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(btnViewEncounters)
-                .addGap(37, 37, 37)
-                .addComponent(btnUpdateEncounters)
-                .addGap(108, 108, 108))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(169, 169, 169)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel4)
-                            .addComponent(jLabel3)
-                            .addComponent(jLabel5))
-                        .addGap(40, 40, 40)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jComboBoxPatient, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(txtEncounterDate, javax.swing.GroupLayout.DEFAULT_SIZE, 293, Short.MAX_VALUE)
-                            .addComponent(txtEncounterId)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(106, 106, 106)
-                        .addComponent(btnAddEncounter)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(51, 51, 51)
-                .addComponent(jLabel1)
-                .addGap(57, 57, 57)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnViewEncounters)
-                    .addComponent(btnUpdateEncounters))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel5, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(txtEncounterId, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(45, 45, 45)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel3)
-                    .addComponent(jComboBoxPatient, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(52, 52, 52)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtEncounterDate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel4))
-                .addGap(114, 114, 114)
-                .addComponent(btnAddEncounter)
-                .addContainerGap(13, Short.MAX_VALUE))
-        );
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ui/wp2610913.jpg"))); // NOI18N
+        jLabel2.setText("jLabel2");
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnViewEncountersActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnViewEncountersActionPerformed
@@ -259,6 +215,7 @@ public class ViewEncounterPanelDoctor extends javax.swing.JPanel {
     private javax.swing.JButton btnViewEncounters;
     private javax.swing.JComboBox<Object> jComboBoxPatient;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;

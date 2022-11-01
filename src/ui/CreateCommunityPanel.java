@@ -41,59 +41,34 @@ public class CreateCommunityPanel extends javax.swing.JPanel {
         lblCommunityCity = new javax.swing.JLabel();
         txtCommunityName = new javax.swing.JTextField();
         jComboBoxCities = new javax.swing.JComboBox<>();
+        jLabel1 = new javax.swing.JLabel();
 
+        setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        btnSaveCommunity.setBackground(new java.awt.Color(0, 153, 0));
         btnSaveCommunity.setText("Save Community");
         btnSaveCommunity.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnSaveCommunityActionPerformed(evt);
             }
         });
+        add(btnSaveCommunity, new org.netbeans.lib.awtextra.AbsoluteConstraints(357, 345, -1, -1));
 
+        jLabel2.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
         jLabel2.setText("Community Directory");
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(357, 106, -1, -1));
 
         lblCommunityName.setText("Community Name");
+        add(lblCommunityName, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 207, -1, -1));
 
         lblCommunityCity.setText("Community City");
+        add(lblCommunityCity, new org.netbeans.lib.awtextra.AbsoluteConstraints(231, 259, -1, -1));
+        add(txtCommunityName, new org.netbeans.lib.awtextra.AbsoluteConstraints(389, 204, 150, -1));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(220, 220, 220)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(lblCommunityName)
-                            .addComponent(lblCommunityCity))
-                        .addGap(65, 65, 65)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(txtCommunityName, javax.swing.GroupLayout.DEFAULT_SIZE, 150, Short.MAX_VALUE)
-                            .addComponent(jComboBoxCities, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(357, 357, 357)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(btnSaveCommunity)
-                            .addComponent(jLabel2))))
-                .addContainerGap(332, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(106, 106, 106)
-                .addComponent(jLabel2)
-                .addGap(81, 81, 81)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblCommunityName)
-                    .addComponent(txtCommunityName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(29, 29, 29)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblCommunityCity)
-                    .addComponent(jComboBoxCities, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(66, 66, 66)
-                .addComponent(btnSaveCommunity)
-                .addContainerGap(353, Short.MAX_VALUE))
-        );
+        add(jComboBoxCities, new org.netbeans.lib.awtextra.AbsoluteConstraints(389, 256, 150, -1));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ui/wp2610913.jpg"))); // NOI18N
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnSaveCommunityActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSaveCommunityActionPerformed
@@ -130,6 +105,7 @@ public class CreateCommunityPanel extends javax.swing.JPanel {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnSaveCommunity;
     private javax.swing.JComboBox<Object> jComboBoxCities;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel lblCommunityCity;
     private javax.swing.JLabel lblCommunityName;

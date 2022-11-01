@@ -47,8 +47,12 @@ public class ViewCityPanel extends javax.swing.JPanel {
         btnSaveCity = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         txtCityId = new javax.swing.JTextField();
+        jLabel3 = new javax.swing.JLabel();
+
+        setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setText("View City ");
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(375, 34, -1, -1));
 
         tblCities.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -63,12 +67,15 @@ public class ViewCityPanel extends javax.swing.JPanel {
         ));
         jScrollPane1.setViewportView(tblCities);
 
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(26, 69, 759, 152));
+
         btnViewCity.setText("View City");
         btnViewCity.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnViewCityActionPerformed(evt);
             }
         });
+        add(btnViewCity, new org.netbeans.lib.awtextra.AbsoluteConstraints(452, 251, -1, -1));
 
         btnUpdateCity.setText("Update City");
         btnUpdateCity.addActionListener(new java.awt.event.ActionListener() {
@@ -76,10 +83,15 @@ public class ViewCityPanel extends javax.swing.JPanel {
                 btnUpdateCityActionPerformed(evt);
             }
         });
+        add(btnUpdateCity, new org.netbeans.lib.awtextra.AbsoluteConstraints(566, 251, -1, -1));
 
         lblCityName.setText("City Name");
+        add(lblCityName, new org.netbeans.lib.awtextra.AbsoluteConstraints(193, 383, -1, -1));
 
         lblCityState.setText("City State");
+        add(lblCityState, new org.netbeans.lib.awtextra.AbsoluteConstraints(197, 424, -1, -1));
+        add(txtCityName, new org.netbeans.lib.awtextra.AbsoluteConstraints(287, 377, 150, -1));
+        add(txtCityState, new org.netbeans.lib.awtextra.AbsoluteConstraints(287, 418, 150, -1));
 
         btnSaveCity.setText("Save City");
         btnSaveCity.addActionListener(new java.awt.event.ActionListener() {
@@ -87,73 +99,15 @@ public class ViewCityPanel extends javax.swing.JPanel {
                 btnSaveCityActionPerformed(evt);
             }
         });
+        add(btnSaveCity, new org.netbeans.lib.awtextra.AbsoluteConstraints(197, 489, -1, -1));
 
         jLabel2.setText("City ID");
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(193, 340, -1, -1));
+        add(txtCityId, new org.netbeans.lib.awtextra.AbsoluteConstraints(287, 334, 150, -1));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(btnViewCity)
-                .addGap(29, 29, 29)
-                .addComponent(btnUpdateCity)
-                .addGap(214, 214, 214))
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(375, 375, 375)
-                        .addComponent(jLabel1))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(26, 26, 26)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 759, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(193, 193, 193)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(4, 4, 4)
-                                .addComponent(btnSaveCity))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                        .addComponent(lblCityState)
-                                        .addComponent(lblCityName))
-                                    .addComponent(jLabel2))
-                                .addGap(33, 33, 33)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(txtCityName)
-                                    .addComponent(txtCityState, javax.swing.GroupLayout.DEFAULT_SIZE, 150, Short.MAX_VALUE)
-                                    .addComponent(txtCityId))))))
-                .addContainerGap(95, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(34, 34, 34)
-                .addComponent(jLabel1)
-                .addGap(18, 18, 18)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 152, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(30, 30, 30)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnViewCity)
-                    .addComponent(btnUpdateCity))
-                .addGap(60, 60, 60)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel2)
-                    .addComponent(txtCityId, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(20, 20, 20)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(lblCityName)
-                    .addComponent(txtCityName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(lblCityState)
-                    .addComponent(txtCityState, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(48, 48, 48)
-                .addComponent(btnSaveCity)
-                .addContainerGap(213, Short.MAX_VALUE))
-        );
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ui/wp2610913.jpg"))); // NOI18N
+        jLabel3.setText("jLabel3");
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnViewCityActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnViewCityActionPerformed
@@ -219,6 +173,7 @@ public class ViewCityPanel extends javax.swing.JPanel {
     private javax.swing.JButton btnViewCity;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel lblCityName;
     private javax.swing.JLabel lblCityState;

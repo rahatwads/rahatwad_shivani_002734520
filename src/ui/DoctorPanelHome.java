@@ -33,6 +33,7 @@ public class DoctorPanelHome extends javax.swing.JPanel {
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         viewPanelDoctor = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
 
         jSplitPaneDoctorPanel.setOrientation(javax.swing.JSplitPane.VERTICAL_SPLIT);
 
@@ -78,16 +79,11 @@ public class DoctorPanelHome extends javax.swing.JPanel {
 
         jSplitPaneDoctorPanel.setLeftComponent(controlPanelDoctor);
 
-        javax.swing.GroupLayout viewPanelDoctorLayout = new javax.swing.GroupLayout(viewPanelDoctor);
-        viewPanelDoctor.setLayout(viewPanelDoctorLayout);
-        viewPanelDoctorLayout.setHorizontalGroup(
-            viewPanelDoctorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 882, Short.MAX_VALUE)
-        );
-        viewPanelDoctorLayout.setVerticalGroup(
-            viewPanelDoctorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 615, Short.MAX_VALUE)
-        );
+        viewPanelDoctor.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel1.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ui/wp2610913.jpg"))); // NOI18N
+        viewPanelDoctor.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         jSplitPaneDoctorPanel.setRightComponent(viewPanelDoctor);
 
@@ -127,6 +123,7 @@ public class DoctorPanelHome extends javax.swing.JPanel {
     private javax.swing.JPanel controlPanelDoctor;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JSplitPane jSplitPaneDoctorPanel;
     private javax.swing.JPanel viewPanelDoctor;
     // End of variables declaration//GEN-END:variables

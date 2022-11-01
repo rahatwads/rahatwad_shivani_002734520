@@ -47,61 +47,34 @@ public class AddEncounterPanelDoctor extends javax.swing.JPanel {
         jLabel3 = new javax.swing.JLabel();
         jComboBoxPatient = new javax.swing.JComboBox<>();
         jLabel4 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
 
+        setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel1.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
         jLabel1.setText("Add Encounter");
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(345, 37, -1, -1));
 
+        btnAddEncounter.setBackground(new java.awt.Color(0, 153, 0));
         btnAddEncounter.setText("Add Encounter");
         btnAddEncounter.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAddEncounterActionPerformed(evt);
             }
         });
+        add(btnAddEncounter, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 360, -1, -1));
+        add(txtEncounterDate, new org.netbeans.lib.awtextra.AbsoluteConstraints(254, 256, 293, -1));
 
         jLabel3.setText("Patient");
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(174, 183, -1, -1));
+
+        add(jComboBoxPatient, new org.netbeans.lib.awtextra.AbsoluteConstraints(254, 180, 293, -1));
 
         jLabel4.setText("Date of Encounter");
+        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 262, -1, -1));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(345, 345, 345)
-                        .addComponent(jLabel1))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(110, 110, 110)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel4)
-                            .addComponent(jLabel3))
-                        .addGap(40, 40, 40)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jComboBoxPatient, 0, 293, Short.MAX_VALUE)
-                            .addComponent(txtEncounterDate)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(216, 216, 216)
-                        .addComponent(btnAddEncounter)))
-                .addContainerGap(306, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(37, 37, 37)
-                .addComponent(jLabel1)
-                .addGap(126, 126, 126)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel3)
-                            .addComponent(jComboBoxPatient, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(59, 59, 59)
-                        .addComponent(jLabel4))
-                    .addComponent(txtEncounterDate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(84, 84, 84)
-                .addComponent(btnAddEncounter)
-                .addContainerGap(307, Short.MAX_VALUE))
-        );
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ui/wp2610913.jpg"))); // NOI18N
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnAddEncounterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddEncounterActionPerformed
@@ -138,6 +111,7 @@ public class AddEncounterPanelDoctor extends javax.swing.JPanel {
     private javax.swing.JButton btnAddEncounter;
     private javax.swing.JComboBox<Object> jComboBoxPatient;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JTextField txtEncounterDate;

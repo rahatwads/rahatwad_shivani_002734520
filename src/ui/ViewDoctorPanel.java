@@ -74,8 +74,12 @@ public class ViewDoctorPanel extends javax.swing.JPanel {
         btnSaveDoctor = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
         txtDoctorId = new javax.swing.JTextField();
+        jLabel6 = new javax.swing.JLabel();
+
+        setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setText("View Doctors");
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(369, 6, -1, -1));
 
         tblDoctors.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -90,12 +94,15 @@ public class ViewDoctorPanel extends javax.swing.JPanel {
         ));
         jScrollPane1.setViewportView(tblDoctors);
 
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(24, 35, 825, 173));
+
         btnViewDoctor.setText("View Doctor");
         btnViewDoctor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnViewDoctorActionPerformed(evt);
             }
         });
+        add(btnViewDoctor, new org.netbeans.lib.awtextra.AbsoluteConstraints(524, 239, -1, -1));
 
         btnUpdateDoctor.setText("Update Doctors");
         btnUpdateDoctor.addActionListener(new java.awt.event.ActionListener() {
@@ -103,40 +110,67 @@ public class ViewDoctorPanel extends javax.swing.JPanel {
                 btnUpdateDoctorActionPerformed(evt);
             }
         });
+        add(btnUpdateDoctor, new org.netbeans.lib.awtextra.AbsoluteConstraints(657, 239, -1, -1));
+        add(txtDoctorName, new org.netbeans.lib.awtextra.AbsoluteConstraints(176, 332, 150, -1));
 
         lblPatientLoginDetails.setText("Login Details");
+        add(lblPatientLoginDetails, new org.netbeans.lib.awtextra.AbsoluteConstraints(544, 268, -1, -1));
+        add(txtDoctorAge, new org.netbeans.lib.awtextra.AbsoluteConstraints(176, 376, 150, -1));
 
         lblDoctorUsername.setText("Username");
+        add(lblDoctorUsername, new org.netbeans.lib.awtextra.AbsoluteConstraints(451, 335, -1, -1));
+        add(txtDoctorGender, new org.netbeans.lib.awtextra.AbsoluteConstraints(176, 412, 150, -1));
 
         lblContactDetails.setText("Contact Details");
+        add(lblContactDetails, new org.netbeans.lib.awtextra.AbsoluteConstraints(122, 649, 94, -1));
 
         lblDoctorHouse.setText("Hospital");
+        add(lblDoctorHouse, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 463, -1, -1));
 
         txtDoctorPhoneNumber.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtDoctorPhoneNumberActionPerformed(evt);
             }
         });
+        add(txtDoctorPhoneNumber, new org.netbeans.lib.awtextra.AbsoluteConstraints(176, 672, 151, -1));
 
         jLabel3.setText("Occupation");
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(91, 511, -1, -1));
+        add(txtDoctorEmailAddress, new org.netbeans.lib.awtextra.AbsoluteConstraints(176, 715, 155, -1));
+        add(txtDoctorOccupation, new org.netbeans.lib.awtextra.AbsoluteConstraints(176, 508, 150, -1));
+
+        add(jComboBoxDoctorHospital, new org.netbeans.lib.awtextra.AbsoluteConstraints(176, 460, 150, -1));
 
         jLabel2.setText("Experience");
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(93, 560, -1, -1));
 
         lblpersonalDetails.setText("Personal Details");
+        add(lblpersonalDetails, new org.netbeans.lib.awtextra.AbsoluteConstraints(176, 242, -1, -1));
+        add(txtDoctorExperience, new org.netbeans.lib.awtextra.AbsoluteConstraints(176, 557, 150, -1));
 
         jLabel4.setText("Specialisation");
+        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(77, 614, -1, -1));
 
         lbDoctorName.setText("Name");
+        add(lbDoctorName, new org.netbeans.lib.awtextra.AbsoluteConstraints(124, 335, -1, -1));
+        add(txtDoctorSpecialisation, new org.netbeans.lib.awtextra.AbsoluteConstraints(176, 608, 150, -1));
 
         lblDoctorAge.setText("Age");
+        add(lblDoctorAge, new org.netbeans.lib.awtextra.AbsoluteConstraints(136, 379, -1, -1));
 
         lblDoctorPassword.setText("Password");
+        add(lblDoctorPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(452, 376, -1, -1));
+        add(txtDoctorUsername, new org.netbeans.lib.awtextra.AbsoluteConstraints(544, 332, 150, -1));
 
         lblDoctorGender.setText("Gender");
+        add(lblDoctorGender, new org.netbeans.lib.awtextra.AbsoluteConstraints(115, 415, -1, -1));
 
         lblDoctorPhoneNumber.setText("Phone Number");
+        add(lblDoctorPhoneNumber, new org.netbeans.lib.awtextra.AbsoluteConstraints(72, 678, -1, -1));
+        add(txtDoctorPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(544, 373, 150, -1));
 
         lblDoctorEmailAddress.setText("Email Address");
+        add(lblDoctorEmailAddress, new org.netbeans.lib.awtextra.AbsoluteConstraints(73, 718, -1, -1));
 
         btnSaveDoctor.setText("Save Doctor");
         btnSaveDoctor.addActionListener(new java.awt.event.ActionListener() {
@@ -144,159 +178,15 @@ public class ViewDoctorPanel extends javax.swing.JPanel {
                 btnSaveDoctorActionPerformed(evt);
             }
         });
+        add(btnSaveDoctor, new org.netbeans.lib.awtextra.AbsoluteConstraints(522, 474, 342, -1));
 
         jLabel5.setText("DoctorId");
+        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(109, 297, -1, -1));
+        add(txtDoctorId, new org.netbeans.lib.awtextra.AbsoluteConstraints(176, 291, 150, -1));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(369, 369, 369)
-                        .addComponent(jLabel1))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(24, 24, 24)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 825, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(122, 122, 122)
-                        .addComponent(lblContactDetails, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(72, 72, 72)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(lbDoctorName)
-                    .addComponent(lblDoctorAge)
-                    .addComponent(jLabel3)
-                    .addComponent(lblDoctorGender)
-                    .addComponent(lblDoctorHouse)
-                    .addComponent(jLabel4)
-                    .addComponent(jLabel2)
-                    .addComponent(lblDoctorPhoneNumber)
-                    .addComponent(lblDoctorEmailAddress)
-                    .addComponent(jLabel5))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(lblpersonalDetails)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(btnViewDoctor)
-                        .addGap(33, 33, 33)
-                        .addComponent(btnUpdateDoctor)
-                        .addGap(91, 91, 91))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(txtDoctorPhoneNumber, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(txtDoctorAge)
-                                .addComponent(txtDoctorGender)
-                                .addComponent(txtDoctorName)
-                                .addComponent(jComboBoxDoctorHospital, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(txtDoctorExperience)
-                                .addComponent(txtDoctorOccupation)
-                                .addComponent(txtDoctorSpecialisation, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(txtDoctorEmailAddress, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(1, 1, 1)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(119, 119, 119)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(lblDoctorUsername)
-                                    .addComponent(lblDoctorPassword))
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGap(12, 12, 12)
-                                        .addComponent(btnSaveDoctor, javax.swing.GroupLayout.DEFAULT_SIZE, 342, Short.MAX_VALUE))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGap(34, 34, 34)
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                            .addComponent(txtDoctorPassword, javax.swing.GroupLayout.DEFAULT_SIZE, 150, Short.MAX_VALUE)
-                                            .addComponent(txtDoctorUsername))
-                                        .addGap(0, 0, Short.MAX_VALUE))))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(212, 212, 212)
-                                .addComponent(lblPatientLoginDetails)
-                                .addGap(0, 0, Short.MAX_VALUE)))
-                        .addContainerGap())
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(txtDoctorId, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(31, 31, 31)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnViewDoctor)
-                    .addComponent(btnUpdateDoctor)
-                    .addComponent(lblpersonalDetails))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(lblPatientLoginDetails)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel5)
-                    .addComponent(txtDoctorId, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(lbDoctorName)
-                            .addComponent(txtDoctorName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(lblDoctorUsername)
-                            .addComponent(txtDoctorUsername, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(lblDoctorPassword)
-                            .addComponent(txtDoctorPassword, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(3, 3, 3))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(txtDoctorAge, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(lblDoctorAge)))
-                .addGap(13, 13, 13)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblDoctorGender)
-                    .addComponent(txtDoctorGender, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(25, 25, 25)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(lblDoctorHouse)
-                            .addComponent(jComboBoxDoctorHospital, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(39, 39, 39)
-                        .addComponent(btnSaveDoctor)))
-                .addGap(11, 11, 11)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(jLabel3)
-                                    .addComponent(txtDoctorOccupation, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(49, 49, 49))
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(txtDoctorExperience, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jLabel2)))
-                        .addGap(34, 34, 34)
-                        .addComponent(jLabel4))
-                    .addComponent(txtDoctorSpecialisation, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addComponent(lblContactDetails)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(txtDoctorPhoneNumber, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lblDoctorPhoneNumber, javax.swing.GroupLayout.Alignment.TRAILING))
-                .addGap(20, 20, 20)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblDoctorEmailAddress)
-                    .addComponent(txtDoctorEmailAddress, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(44, 44, 44))
-        );
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ui/wp2610913.jpg"))); // NOI18N
+        jLabel6.setText("jLabel6");
+        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void txtDoctorPhoneNumberActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtDoctorPhoneNumberActionPerformed
@@ -476,6 +366,7 @@ public class ViewDoctorPanel extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel lbDoctorName;
     private javax.swing.JLabel lblContactDetails;

@@ -44,70 +44,38 @@ public class CreateHospitalPanel extends javax.swing.JPanel {
         txtHospitalPhone = new javax.swing.JTextField();
         jComboBoxHospitalCommunity = new javax.swing.JComboBox<>();
         btnSaveHospital = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
 
+        setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel1.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
         jLabel1.setText("Create Hospital");
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(334, 92, -1, -1));
 
         lblHospitalName.setText("Hospital Name");
+        add(lblHospitalName, new org.netbeans.lib.awtextra.AbsoluteConstraints(253, 187, -1, -1));
 
         lblHospitalphoneNumber.setText("Hospital Phone Number");
+        add(lblHospitalphoneNumber, new org.netbeans.lib.awtextra.AbsoluteConstraints(201, 244, -1, -1));
 
         lblHospitalCommunity.setText("Hospital Community");
+        add(lblHospitalCommunity, new org.netbeans.lib.awtextra.AbsoluteConstraints(201, 302, 138, -1));
+        add(txtHospitalName, new org.netbeans.lib.awtextra.AbsoluteConstraints(401, 181, 149, -1));
+        add(txtHospitalPhone, new org.netbeans.lib.awtextra.AbsoluteConstraints(401, 238, 149, -1));
 
+        add(jComboBoxHospitalCommunity, new org.netbeans.lib.awtextra.AbsoluteConstraints(401, 296, 149, -1));
+
+        btnSaveHospital.setBackground(new java.awt.Color(51, 153, 0));
         btnSaveHospital.setText("Save Hospital");
         btnSaveHospital.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnSaveHospitalActionPerformed(evt);
             }
         });
+        add(btnSaveHospital, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 386, -1, -1));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(334, 334, 334)
-                        .addComponent(jLabel1))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(201, 201, 201)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(lblHospitalphoneNumber, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(lblHospitalCommunity, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(lblHospitalName, javax.swing.GroupLayout.Alignment.TRAILING))
-                        .addGap(62, 62, 62)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(txtHospitalName)
-                            .addComponent(txtHospitalPhone)
-                            .addComponent(jComboBoxHospitalCommunity, 0, 149, Short.MAX_VALUE)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(320, 320, 320)
-                        .addComponent(btnSaveHospital)))
-                .addContainerGap(324, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(92, 92, 92)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel1)
-                                .addGap(78, 78, 78)
-                                .addComponent(lblHospitalName))
-                            .addComponent(txtHospitalName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(40, 40, 40)
-                        .addComponent(lblHospitalphoneNumber))
-                    .addComponent(txtHospitalPhone, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(35, 35, 35)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(lblHospitalCommunity)
-                    .addComponent(jComboBoxHospitalCommunity, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(67, 67, 67)
-                .addComponent(btnSaveHospital)
-                .addContainerGap(308, Short.MAX_VALUE))
-        );
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ui/wp2610913.jpg"))); // NOI18N
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnSaveHospitalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSaveHospitalActionPerformed
@@ -146,6 +114,7 @@ public class CreateHospitalPanel extends javax.swing.JPanel {
     private javax.swing.JButton btnSaveHospital;
     private javax.swing.JComboBox<Object> jComboBoxHospitalCommunity;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel lblHospitalCommunity;
     private javax.swing.JLabel lblHospitalName;
     private javax.swing.JLabel lblHospitalphoneNumber;

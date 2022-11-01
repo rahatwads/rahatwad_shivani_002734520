@@ -59,8 +59,12 @@ public class ViewEncountersPanelSystemAdmin extends javax.swing.JPanel {
         jLabel1 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         btnDeleteEncounter = new javax.swing.JButton();
+        jLabel6 = new javax.swing.JLabel();
+
+        setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel5.setText("Encounter Id");
+        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(188, 364, -1, -1));
 
         tblEncounters.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -75,12 +79,16 @@ public class ViewEncountersPanelSystemAdmin extends javax.swing.JPanel {
         ));
         jScrollPane1.setViewportView(tblEncounters);
 
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(28, 125, 788, 158));
+        add(txtEncounterId, new org.netbeans.lib.awtextra.AbsoluteConstraints(301, 358, 293, -1));
+
         btnViewEncounters.setText("View Encounter");
         btnViewEncounters.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnViewEncountersActionPerformed(evt);
             }
         });
+        add(btnViewEncounters, new org.netbeans.lib.awtextra.AbsoluteConstraints(371, 301, -1, -1));
 
         btnUpdateEncounters.setText("Update Encounter");
         btnUpdateEncounters.addActionListener(new java.awt.event.ActionListener() {
@@ -88,6 +96,7 @@ public class ViewEncountersPanelSystemAdmin extends javax.swing.JPanel {
                 btnUpdateEncountersActionPerformed(evt);
             }
         });
+        add(btnUpdateEncounters, new org.netbeans.lib.awtextra.AbsoluteConstraints(509, 301, -1, -1));
 
         btnAddEncounter.setText("Add Encounter");
         btnAddEncounter.addActionListener(new java.awt.event.ActionListener() {
@@ -95,14 +104,24 @@ public class ViewEncountersPanelSystemAdmin extends javax.swing.JPanel {
                 btnAddEncounterActionPerformed(evt);
             }
         });
+        add(btnAddEncounter, new org.netbeans.lib.awtextra.AbsoluteConstraints(263, 638, -1, -1));
 
         jLabel2.setText("Doctor");
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(223, 402, -1, -1));
+        add(txtEncounterDate, new org.netbeans.lib.awtextra.AbsoluteConstraints(301, 531, 293, -1));
+
+        add(jComboBoxDoctor, new org.netbeans.lib.awtextra.AbsoluteConstraints(301, 399, 293, -1));
 
         jLabel3.setText("Patient");
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(221, 458, -1, -1));
+
+        add(jComboBoxPatient, new org.netbeans.lib.awtextra.AbsoluteConstraints(301, 455, 293, -1));
 
         jLabel1.setText("View Encounters");
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 51, -1, -1));
 
         jLabel4.setText("Date of Encounter");
+        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(157, 537, -1, -1));
 
         btnDeleteEncounter.setText("Delete Encounter");
         btnDeleteEncounter.addActionListener(new java.awt.event.ActionListener() {
@@ -110,81 +129,11 @@ public class ViewEncountersPanelSystemAdmin extends javax.swing.JPanel {
                 btnDeleteEncounterActionPerformed(evt);
             }
         });
+        add(btnDeleteEncounter, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 301, -1, -1));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(28, 28, 28)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 788, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(btnViewEncounters)
-                        .addGap(18, 18, 18)
-                        .addComponent(btnUpdateEncounters)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnDeleteEncounter)
-                        .addGap(37, 37, 37))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(342, 342, 342)
-                                .addComponent(jLabel1))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(129, 129, 129)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                            .addComponent(jLabel4)
-                                            .addComponent(jLabel3)
-                                            .addComponent(jLabel2)
-                                            .addComponent(jLabel5))
-                                        .addGap(40, 40, 40)
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                            .addComponent(jComboBoxDoctor, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                            .addComponent(jComboBoxPatient, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                            .addComponent(txtEncounterDate)
-                                            .addComponent(txtEncounterId, javax.swing.GroupLayout.PREFERRED_SIZE, 293, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGap(106, 106, 106)
-                                        .addComponent(btnAddEncounter)))))
-                        .addGap(222, 222, 222)))
-                .addContainerGap(59, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(51, 51, 51)
-                .addComponent(jLabel1)
-                .addGap(57, 57, 57)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnViewEncounters)
-                    .addComponent(btnUpdateEncounters)
-                    .addComponent(btnDeleteEncounter))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 34, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel5, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(txtEncounterId, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jComboBoxDoctor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel2))
-                .addGap(33, 33, 33)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel3)
-                            .addComponent(jComboBoxPatient, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(59, 59, 59)
-                        .addComponent(jLabel4))
-                    .addComponent(txtEncounterDate, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(84, 84, 84)
-                .addComponent(btnAddEncounter)
-                .addContainerGap(52, Short.MAX_VALUE))
-        );
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ui/wp2610913.jpg"))); // NOI18N
+        jLabel6.setText("jLabel6");
+        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 10, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnViewEncountersActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnViewEncountersActionPerformed
@@ -291,6 +240,7 @@ public class ViewEncountersPanelSystemAdmin extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable tblEncounters;
     private javax.swing.JTextField txtEncounterDate;
